@@ -1,13 +1,12 @@
-name: Jacky Zhao
+name: Geoffrey Garrett
 enableToc: true
 enableLinkPreview: true
 description:
-  Here is the page description. This is an example Quartz site that details installation,
-  setup, customization, and troubleshooting for Quartz itself.
+  My little piece of the internet.
 page_title:
-  "🪴 Quartz 3.1"
+  "Geoffrey's Notes"
 links:
   - link_name: Twitter
-    link: https://twitter.com/_jzhao
-  - link_name: Github
-    link: https://github.com/jackyzha0
+    link: https://twitter.com/GarrettHGeoff
+  - link_name: GitHub
+    link: https://github.com/geoffreygarrett
