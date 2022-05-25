@@ -11,7 +11,7 @@ to model these representations. MLP are fully connected layers of
 biologically inspired artifical neurons, also known as perceptrons. A
 brief history are these biologically inspired models are covered in
 Section X with adapted notation from the field of DL.
-Although not all practices in \gls{DL}, strictly speaking, make use of
+Although not all practices in DL, strictly speaking, make use of
 MLPs, they are a fundamental concept which must be understood in the
 stepping stones towards concepts of higher complexity in the field.
 Section X covers this concept, extending directly on their composite
