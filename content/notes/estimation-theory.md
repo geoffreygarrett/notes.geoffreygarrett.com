@@ -31,33 +31,27 @@ estimate is given, without derivation, by:
 $$
 \begin{equation}
     \bm{\hat{\beta}} = (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}\bm{A}^T\bm{W}^{-1}\bm{z},
-    \mathbb{E}[\bm{\hat{\beta}}]=\bm{\beta},
-    \text{Cov}[\bm{\hat{\beta}}|\bm{A}] = (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}.
 \end{equation}
 $$
 
-where $\bm{\hat{\beta}}$ is an
+$\mathbb{E}[\bm{\hat{\beta}}]=\bm{\beta}$, $\text{Cov}[\bm{\hat{\beta}}|\bm{A}] 
+= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}$.
 
-%\begin{equation}
-%    z_i=\bm{A}\bm{x}+\bm{\epsilon},\;\;\;\gls{E}{}[\bm{\epsilon}]=\bm{0},\;\;\;\text{Cov}(\bm{\epsilon}|\bm{A})=\bm{W}.
-%\label{eq:linear-regression-i}
-%\end{equation}
+where $\bm{\hat{\beta}}$ is an unbiased estimator 
+$\mathbb{E}[\bm{\hat{\beta}}]=\bm{\beta}$
 
 ### Non-linear Weighted Least-Squares Estimation
 
 The problem arises when considering the highly non-linear modelled measurements
-$\bm{h}(\bm{x}_0)$  cannot be described by the linear relation in
-\autoref{eq:linear-regression}. For this reason, the model is linearized by
-approximation to a first-order Taylor polynomial expansion about $\bm{x}_0^k$,
-where $k$ is an iteration number:
+$\bm{h}(\bm{x}_0)$ cannot be described by the linear relation above. For this
+reason, the model is linearized by approximation to a first-order Taylor
+polynomial expansion about $\bm{x}_0^k$, where $k$ is an iteration number:
 
 $$
 \begin{equation}
     \begin{aligned}
         \bm{z}                              &=        \bm{f}(\bm{\beta}) + \bm{\epsilon}                                                              \\
-        \bm{f}(\bm{\beta}+\Delta\bm{\beta}) &\approx  \bm{f}(\bm{\beta}) + \frac{\partial{\bm{f}(\bm{\beta})}}{\partial{\bm{\beta}}}\Delta\bm{\beta}  \\                                                                  \\
-        \bm{z}                              &=        \bm{f}(\bm{\beta}) + \bm{\epsilon}                                                              \\
-        \bm{h}(\bm{x}_0+\Delta\bm{x}_0)     &\approx  \bm{h}(\bm{x}_0) + \frac{\partial{\bm{h}(\bm{x}_0)}}{\partial{\bm{x}}_0}\Delta\bm{x}_0          \\
+        \bm{f}(\bm{\beta}+\Delta\bm{\beta}) &\approx  \bm{f}(\bm{\beta}) + \frac{\partial{\bm{f}(\bm{\beta})}}{\partial{\bm{\beta}}}\Delta\bm{\beta}  \\
     \end{aligned}
 \end{equation}
 $$
@@ -119,7 +113,7 @@ obtain the state transition matrix $\bm{\Phi}(t_0, t)$ of the spacecraft, which
 may be interpolated for any arbitrary time within the temporal bounds of the ODE
 solution across $t_i\in[t_0, t_f]$, so that one may
 relate an empirical $z_i$ at $\bm{x}(t_i)$ to $\bm{x}_0$ through $\bm{\Phi}(t_0,
-t_i)^{-1}\bm{x}_0$. This effectively constrains the trajectory to the designed
+t_i)^{-1}\bm{x}_0$. This effectively constrains the trajectory to the designed m
 IVP dynamical solution. Consequentially, the measurements concisely:
 
 $$
