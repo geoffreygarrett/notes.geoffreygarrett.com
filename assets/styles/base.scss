@@ -28,7 +28,8 @@ h1, h2, h3, h4, h5, h6, ol, ul, thead {
 }
 
 p, ul, text {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Computer Modern Serif", serif;
+  //font-family: 'Source Sans Pro', sans-serif;
   color: var(--gray);
   fill: var(--gray);
   font-weight: revert;
@@ -75,7 +76,7 @@ p, ul, text {
   }
 
   & > li::marker, & > li > ol > li::marker {
-    font-family: Source Sans Pro;
+    font-family: Computer Modern Serif;
     font-weight: 700;
   }
 }
@@ -100,7 +101,7 @@ sup {
 }
 
 p, tbody, li {
-  font-family: Source Sans Pro;
+  font-family: Computer Modern Serif;
   color: var(--gray);
   line-height: 1.5em;
 }
@@ -172,7 +173,7 @@ article {
   }
 
   & a {
-    font-family: Source Sans Pro;
+    font-family: Computer Modern Serif;
     font-weight: 600;
 
     &.internal-link {
