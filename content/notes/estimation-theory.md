@@ -16,6 +16,17 @@ equation (ODE). However the inverse problem  is more involved, that is, given a
 set of measurements ($\bm{z}$) resulting from the dynamical system, we would
 like to estimate the trajectory of the satellite and the parameters describing
 the dynamical models, described mathematically as:
+
+$$
+\bm{x}(t) =
+\begin{bmatrix}
+    \bm{r}(t) \\
+    \bm{v}(t) \\
+    \bm{p} \\
+    \bm{q} \\
+\end{bmatrix}
+$$
+
 $$
 \begin{equation}
     \bm{x}(t) =
@@ -40,6 +51,7 @@ The measurements made throughout the trajectory of the spacecraft at times
 $t_1,...,t_n$ are described by $\bm{z}=[z_1,...,z_n]^T$, where each $z_i$ is
 either defined as a function of the state of the spacecraft at time $t_i$, or
 as a function of the state of the spacecraft at time $t_0$:
+
 $$
 \begin{equation}
     z_i(t_i) = g_i(t_i, \bm{x}(t_i))+\epsilon_i = h_i(t_i, \bm{x}_0)+\epsilon_i.
