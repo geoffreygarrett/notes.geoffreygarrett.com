@@ -104,10 +104,10 @@ $$
 $$
 \begin{aligned}
     \textrm{where  }
-        z_i &= \text{the i$^{th}$ empirical measurement, assumed to be a random variable,} \\
-        g_i &= \text{the i$^{th}$ model measurement as a function time and instantaneous state,} \\
-        h_i &= \text{the i$^{th}$ model measurement as a function time and initial state,} \\
-        \epsilon_i &= \text{the i$^{th}$ residual, accounting for measurement errors.} \\
+        z_i &= \text{the i}^{th}\text{ empirical measurement, assumed to be a random variable,} \\
+        g_i &= \text{the i}^{th}\text{ model measurement as a function time and instantaneous state,} \\
+        h_i &= \text{the i}^{th}\text{ model measurement as a function time and initial state,} \\
+        \epsilon_i &= \text{the i}^{th}\text{ residual, accounting for measurement errors.} \\
 \end{aligned}
 $$
 
