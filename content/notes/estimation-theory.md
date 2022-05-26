@@ -11,7 +11,7 @@ tags:
 ### Weighted Least-Squares Estimation
 
 The Weighted Least-Squares Estimation method is an application of the
-Generalized Least-Squares (GLS) algorithm~\cite{Aitken1936}, which aims at
+Generalized Least-Squares (GLS) algorithm, which aims at
 estimating unknown parameters ($\bm{\beta}$) in a linear regression model, given a
 set of observations ($\bm{z}$), where there is a certain degree of correlation
 ($\bm{W}$) between the residuals ($\bm{\epsilon}$) in the regression model. It
@@ -81,11 +81,14 @@ $$
 \end{equation}
 $$
 
-| Symbol                 | Description                                                       |
-|------------------------|-------------------------------------------------------------------|
-| $\bm{r}(t), \bm{v}(t)$ | the position and velocity of the spacecraft as a function of time |
-| $\bm{p}$               | the parameters describing the force models                        |
-| $\bm{q}$               | the parameters describing the measurement models                  |
+$$
+\begin{aligned}
+    \textrm{where  }
+        \bm{r}(t), \bm{v}(t) &= \text{the position and velocity of the spacecraft as a function of time,} \\
+        \bm{p}               &= \text{the parameters describing the force models,} \\
+        \bm{q}               &= \text{the parameters describing the measurement models.} \\
+\end{aligned}
+$$
 
 The measurements made throughout the trajectory of the spacecraft at times
 $t_1,...,t_n$ are described by $\bm{z}=[z_1,...,z_n]^T$, where each $z_i$ is
@@ -98,12 +101,15 @@ $$
 \end{equation}
 $$
 
-| Symbol       | Description                                                               |
-|--------------|---------------------------------------------------------------------------|
-| $z_i$        | the i$^{th}$ empirical measurement, assumed to be a random variable       |
-| $g_i$        | the i$^{th}$ model measurement as a function time and instantaneous state |
-| $h_i$        | the i$^{th}$ model measurement as a function time and initial state       |
-| $\epsilon_i$ | the i$^{th}$ residual, accounting for measurement errors                  |
+$$
+\begin{aligned}
+    \textrm{where  }
+        z_i &= \text{the i$^{th}$ empirical measurement, assumed to be a random variable,} \\
+        g_i &= \text{the i$^{th}$ model measurement as a function time and instantaneous state,} \\
+        h_i &= \text{the i$^{th}$ model measurement as a function time and initial state,} \\
+        \epsilon_i &= \text{the i$^{th}$ residual, accounting for measurement errors.} \\
+\end{aligned}
+$$
 
 The expressions of $h_i$ and $g_i$ can be used interchangeably in the
 measurement model predictions, to account for the fact that the measurements are
