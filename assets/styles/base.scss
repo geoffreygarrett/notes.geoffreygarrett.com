@@ -7,7 +7,7 @@
 }
 
 h1, h2, h3, h4, h5, h6, ol, ul, thead {
-  font-family: $secondary_font_family;
+  font-family: var(--secondaryfontfamily);
   color: var(--dark);
   font-weight: revert;
   margin: revert;

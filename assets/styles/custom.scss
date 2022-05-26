@@ -14,12 +14,14 @@
 :root {
   --lineheight: 1.8em;
   --textalign: justify;
+  --secondaryfontfamily: 'Computer Modern Serif', serif;
 }
 
 .katex { font-size: 1em !important; }
 
-$primary_font_family: 'Computer Modern Serif', serif;
-$secondary_font_family: 'Computer Modern Serif', serif;
+//
+//$primary_font_family: 'Computer Modern Serif', serif;
+//$secondary_font_family: 'Computer Modern Serif', serif;
 
 //$primary_font_family: 'Whitney-Bold', sans-serif;
 
