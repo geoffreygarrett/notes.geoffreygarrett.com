@@ -7,7 +7,7 @@
 }
 
 h1, h2, h3, h4, h5, h6, ol, ul, thead {
-  font-family: var(--secondaryfontfamily);
+  font-family: var(--headerfontfamily);
   color: var(--dark);
   font-weight: revert;
   margin: revert;
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, thead {
 }
 
 p, ul, text {
-  font-family: "Computer Modern Serif", serif;
+  font-family: var(--bodyfontfamily);
   text-align: var(--textalign);
   //font-family: 'Source Sans Pro', sans-serif;
   color: var(--gray);
@@ -77,7 +77,7 @@ p, ul, text {
   }
 
   & > li::marker, & > li > ol > li::marker {
-    font-family: Computer Modern Serif;
+    font-family: var(--bodyfontfamily);
     font-weight: 700;
   }
 }
@@ -102,7 +102,7 @@ sup {
 }
 
 p, tbody, li {
-  font-family: Computer Modern Serif;
+  font-family: var(--bodyfontfamily);
   color: var(--gray);
   line-height: var(--lineheight);
 }
@@ -174,7 +174,7 @@ article {
   }
 
   & a {
-    font-family: Computer Modern Serif;
+    font-family: var(--bodyfontfamily);
     font-weight: 600;
 
     &.internal-link {
@@ -434,7 +434,7 @@ header {
     & > input {
       box-sizing: border-box;
       padding: 0.5em 1em;
-      font-family: Inter, sans-serif;
+      font-family: var(--bodyfontfamily);
       color: var(--dark);
       font-size: 1.1em;
       border: 1px solid var(--outlinegray);
