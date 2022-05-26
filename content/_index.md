@@ -1,6 +1,8 @@
 ---
 title: Geoffrey's Notes
 ---
-[Deep Learning MOC](notes/config.md)
+
+- [Machine Learning MOC](notes/machine-learning.md)
+- [Estimation Theory MOC](notes/estimation-theory.md)
 
 - [All Notes](/notes)
