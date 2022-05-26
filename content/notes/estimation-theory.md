@@ -6,7 +6,7 @@ tags:
 
 # Estimation Theory
 
-## Orbit Determination and Parameter Estimation}
+## Orbit Determination and Parameter Estimation
 
 Predicting the state ($\bm{x}_t$) of a spacecraft given an initial condition
 ($\bm{x}_0$), and models which form the equations of motion of the satellite,
@@ -18,33 +18,21 @@ like to estimate the trajectory of the satellite and the parameters describing
 the dynamical models, described mathematically as:
 
 $$
-\bm{x}(t) =
-\begin{bmatrix}
-    \bm{r}(t) \\
-    \bm{v}(t) \\
-    \bm{p} \\
-    \bm{q} \\
-\end{bmatrix}
-$$
-
-$$
 \begin{equation}
-    \bm{x}(t) =
+    \begin{aligned}
+    \bm{x}(t) &=
     \begin{bmatrix}
         \bm{r}(t) \\
         \bm{v}(t) \\
         \bm{p} \\
         \bm{q} \\
-    \end{bmatrix}.
-\end{equation}
-\begin{equation*}
-    \begin{aligned}
+    \end{bmatrix}, \\
         \textrm{where  }
             \bm{r}(t), \bm{v}(t) &= \text{the position and velocity of the spacecraft as a function of time,} \\
             \bm{p}               &= \text{the parameters describing the force models,} \\
             \bm{q}               &= \text{the parameters describing the measurement models.} \\
     \end{aligned}
-\end{equation*}
+\end{equation}
 $$
 
 The measurements made throughout the trajectory of the spacecraft at times
