@@ -25,7 +25,7 @@ $$
 
 The residual vector is defined as $\rho=\bm{z}-\bm{A}\bm{\beta}$. The Weighted
 Least-Squares estimate ($\bm{\hat{\beta}}$) is unbiased, consistent and
-efficient, and obtained through minimising $\bm{rho}^T\bm{W}^{-1}\bm{rho}$. The
+efficient, and obtained through minimising $\bm{\rho}^T\bm{W}^{-1}\bm{\rho}$. The
 estimate is given, without derivation, by:
 
 $$
