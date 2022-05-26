@@ -27,24 +27,6 @@ $$
         \bm{q} \\
     \end{bmatrix},
 \end{equation}
-\begin{aligned}
-    \text{where  }
-        \bm{r}(t), \bm{v}(t) &= \text{the position and velocity of the spacecraft as a function of time,} \\
-        \bm{p}               &= \text{the parameters describing the force models,} \\
-        \bm{q}               &= \text{the parameters describing the measurement models.} \\
-\end{aligned}
-$$
-
-$$
-\begin{equation}
-    \bm{x}(t) =
-    \begin{bmatrix}
-        \bm{r}(t) \\
-        \bm{v}(t) \\
-        \bm{p} \\
-        \bm{q} \\
-    \end{bmatrix},
-\end{equation}
 $$
 
 $$
