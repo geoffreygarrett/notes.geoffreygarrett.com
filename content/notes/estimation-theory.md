@@ -27,16 +27,9 @@ $$
         \bm{q} \\
     \end{bmatrix},
 \end{equation}
-$$
-
-$$
-\begin{aligned}
-    \text{where  }
-        \bm{r}(t), \bm{v}(t) &= \text{the position and velocity of the spacecraft as a function of time,} \\
-        \bm{p}               &= \text{the parameters describing the force models,} \\
-        \bm{q}               &= \text{the parameters describing the measurement models.} \\
-\end{aligned}
-$$
+- where $\bm{r}(t), \bm{v}(t) =$ the position and velocity of the spacecraft as a function of time,
+- $\bm{p}               =$ the parameters describing the force models,
+- $\bm{q}               =$ the parameters describing the measurement models.
 
 The measurements made throughout the trajectory of the spacecraft at times
 $t_1,...,t_n$ are described by $\bm{z}=[z_1,...,z_n]^T$, where each $z_i$ is
