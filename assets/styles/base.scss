@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, thead {
 
 p, ul, text {
   font-family: "Computer Modern Serif", serif;
+  text-align: var(--textalign);
   //font-family: 'Source Sans Pro', sans-serif;
   color: var(--gray);
   fill: var(--gray);
@@ -103,7 +104,7 @@ sup {
 p, tbody, li {
   font-family: Computer Modern Serif;
   color: var(--gray);
-  line-height: 1.5em;
+  line-height: var(--lineheight);
 }
 
 blockquote {

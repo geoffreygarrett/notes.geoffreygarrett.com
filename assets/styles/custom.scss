@@ -11,6 +11,13 @@
   --outlinegray: #dadada;
 }
 
+:root {
+  --lineheight: 1.8em;
+  --textalign: justify;
+}
+
+.katex { font-size: 1em !important; }
+
 [saved-theme="dark"] {
   --light: #1e1e21 !important;
   --dark: #fbfffe !important;
