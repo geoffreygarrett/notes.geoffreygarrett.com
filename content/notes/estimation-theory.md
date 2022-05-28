@@ -38,7 +38,7 @@ $$
 \begin{equation}
     \begin{aligned}
         \bm{\hat{\beta}} &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}\bm{A}^T\bm{W}^{-1}\bm{z}, \\
-        \bm{\hat{\beta}} &= \text{argmin}(\bm{\rho}^T\bm{W}^{-1}\bm{\rho}), 
+        \bm{\hat{\beta}} &= \text{argmin}(\bm{\rho}^T\bm{W}^{-1}\bm{\rho}), \\
         \mathbb{E}[\bm{\hat{\beta}}] &= \bm{\beta}, \\
         \text{Cov}[\bm{\hat{\beta}}|\bm{A}] &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}. \\
     \end{aligned}
