@@ -19,7 +19,11 @@ is usually written as:
 
 $$
 \begin{equation}
-    \bm{z}=\bm{A}\bm{\beta}+\bm{\epsilon}, \mathbb{E}[\bm{\epsilon}|\bm{A}]=\bm{0}, \text{Cov}(\bm{\epsilon}|\bm{A})=\bm{W}.
+    \begin{aligned}
+        \bm{z} &= \bm{A}\bm{\beta}+\bm{\epsilon}, \\
+        \mathbb{E}[\bm{\epsilon}|\bm{A}] &= \bm{0}, \\
+        \text{Cov}(\bm{\epsilon}|\bm{A}) &= \bm{W}. \\
+    \end{aligned}
 \end{equation}
 $$
 
