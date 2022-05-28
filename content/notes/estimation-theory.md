@@ -8,6 +8,8 @@ tags:
 
 ## Algorithms
 
+![](https://images.app.goo.gl/7dQ2f7RCXuKdA5Aa6)
+
 ### Weighted Least-Squares Estimation
 
 The Weighted Least-Squares Estimation method is an application of the
