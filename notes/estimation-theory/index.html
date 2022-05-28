@@ -2,7 +2,7 @@
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script src=https://notes.geoffreygarrett.com/js/popover.688c5dcb89a57776d7f1cbeaf6f7c44b.min.js></script>
-<script>const BASE_URL="https://notes.geoffreygarrett.com/",fetchData=Promise.all([fetch("https://notes.geoffreygarrett.com/indices/linkIndex.1c99d2ead14a99ec04819fe3e06a1da0.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://notes.geoffreygarrett.com/indices/contentIndex.5d50c44cb635b376eff7cf8bff17ad9b.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),draw=()=>{const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(draw);e.textContent="",drawGraph("https://notes.geoffreygarrett.com",[{"/moc":"#4388cc"}],-1,!0,!1,!0),initPopover("https://notes.geoffreygarrett.com",!0,!0),renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script type=module>
+<script>const BASE_URL="https://notes.geoffreygarrett.com/",fetchData=Promise.all([fetch("https://notes.geoffreygarrett.com/indices/linkIndex.1c99d2ead14a99ec04819fe3e06a1da0.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://notes.geoffreygarrett.com/indices/contentIndex.bfec14aa325a57bc0a16f55ede68eb55.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),draw=()=>{const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(draw);e.textContent="",drawGraph("https://notes.geoffreygarrett.com",[{"/moc":"#4388cc"}],-1,!0,!1,!0),initPopover("https://notes.geoffreygarrett.com",!0,!0),renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})}</script><script type=module>
     import { attachSPARouting } from 'https:\/\/notes.geoffreygarrett.com\/js\/router.88d6def7f687fe498bfc6de6c16d554b.min.js';
     
 
@@ -25,8 +25,7 @@ efficient, and obtained through minimising $\bm{\rho}^T\bm{W}^{-1}\bm{\rho}$. Th
 estimate is given, without derivation, by:</p><p>$$
 \begin{equation}
 \begin{aligned}
-\bm{\hat{\beta}} &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}\bm{A}^T\bm{W}^{-1}\bm{z}, \\\bm{\hat{\beta}} &= \text{argmin}(\bm{\rho}^T\bm{W}^{-1}\bm{\rho}),
-\mathbb{E}[\bm{\hat{\beta}}] &= \bm{\beta}, \\\text{Cov}[\bm{\hat{\beta}}|\bm{A}] &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}. \\\end{aligned}
+\bm{\hat{\beta}} &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}\bm{A}^T\bm{W}^{-1}\bm{z}, \\\bm{\hat{\beta}} &= \text{argmin}(\bm{\rho}^T\bm{W}^{-1}\bm{\rho}), \\\mathbb{E}[\bm{\hat{\beta}}] &= \bm{\beta}, \\\text{Cov}[\bm{\hat{\beta}}|\bm{A}] &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}. \\\end{aligned}
 \end{equation}
 $$</p><a href=#non-linear-weighted-least-squares-estimation><h3 id=non-linear-weighted-least-squares-estimation><span class=hanchor arialabel=Anchor># </span>Non-linear Weighted Least-Squares Estimation</h3></a><p>The problem arises when considering the highly non-linear modelled measurements
 $\bm{h}(\bm{x}_0)$ cannot be described by the linear relation above. For this
