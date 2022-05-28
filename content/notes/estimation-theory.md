@@ -35,9 +35,8 @@ estimate is given, without derivation, by:
 $$
 \begin{equation}
     \begin{aligned}
-    
-    \bm{\hat{\beta}} &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}\bm{A}^T\bm{W}^{-1}\bm{z}, \\
-    \bm{\hat{\beta}} &= \arg\min(\bm{\rho}^T\bm{W}^{-1}\bm{\rho}). \\
+        \bm{\hat{\beta}} &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}\bm{A}^T\bm{W}^{-1}\bm{z}, \\
+        \bm{\hat{\beta}} &= \text{argmin}(\bm{\rho}^T\bm{W}^{-1}\bm{\rho}). \\
     \end{aligned}
 \end{equation}
 $$
