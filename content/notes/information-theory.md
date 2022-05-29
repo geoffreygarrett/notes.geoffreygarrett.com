@@ -6,7 +6,7 @@ tags:
 
 ## Self-information (information content)
 
-The self-information (a.k.a. _information content_,_surprisal_,
+The self-information (a.k.a. _information content_, _surprisal_,
 or _Shannon information_) is a quantity used in information theory which
 is derived from the probability of a certain event occurring from a random
 variable. The self-information was defined by Claude Shannon such that
