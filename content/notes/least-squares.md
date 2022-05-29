@@ -4,9 +4,11 @@ tags:
 - [estimation-theory]
 ---
 
+## Ordinary Least-Squares
+
 {{< svg src="/notes/images/OLS_geometric_interpretation.svg" caption="Geometric interpretation of Ordinary Least-Squares (OLS)." >}}
 
-## Weighted Least-Squares Estimation
+## Weighted Least-Squares
 
 The Weighted Least-Squares Estimation method is an application of the
 Generalized Least-Squares (GLS) algorithm, which aims at
@@ -41,7 +43,7 @@ $$
 \end{equation}
 $$
 
-## Non-linear Weighted Least-Squares Estimation
+## Non-linear Weighted Least-Squares
 
 The problem arises when considering the highly non-linear modelled measurements
 $\bm{h}(\bm{x}_0)$ cannot be described by the linear relation above. For this
