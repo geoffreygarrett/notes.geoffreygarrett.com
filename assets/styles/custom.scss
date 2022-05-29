@@ -36,11 +36,6 @@ img {
 // LaTeX
 .katex { font-size: 1em !important; }
 
-svg {
-  -webkit-filter: var(--svgfilter); /* safari 6.0 - 9.0 */
-          filter: var(--svgfilter);
-}
-
 //
 //$primary_font_family: 'Computer Modern Serif', serif;
 //$secondary_font_family: 'Computer Modern Serif', serif;
