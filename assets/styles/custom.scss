@@ -11,6 +11,10 @@
   --outlinegray: #dadada;
 }
 
+.figure {
+  width: max(70%, 300px) !important;
+}
+
 :root {
   --lineheight: 1.8em;
   --textalign: left;
