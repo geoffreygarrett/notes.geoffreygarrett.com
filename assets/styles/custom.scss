@@ -16,6 +16,11 @@ figure {
   filter: var(--svgfilter)
 }
 
+figcaption {
+  font-style: italic;
+  opacity: 0.5;
+}
+
 img {
   width: unquote('max(70%, 300px)') !important;
   height: auto;
