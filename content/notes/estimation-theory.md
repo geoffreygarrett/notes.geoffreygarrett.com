@@ -9,7 +9,8 @@ tags:
 ## Algorithms
 
 {{ readFile "static/triangle.svg" | safeHTML }}
-{{<svg src="/notes/images/OLS_geometric_interpretation.svg">}} 
+
+[comment]: <> ({{<svg src="/notes/images/OLS_geometric_interpretation.svg">}} )
 
 ### Weighted Least-Squares Estimation
 
