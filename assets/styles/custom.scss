@@ -13,7 +13,7 @@
 }
 
 figure {
-
+  filter: var(--svgfilter)
 }
 
 :root {
@@ -23,11 +23,10 @@ figure {
   --headerfontfamily: 'Computer Modern Serif', serif;
 }
 
-img {
-  width: unquote('max(70%, 300px)') !important;
-  height: auto;
-}
-
+//img {
+//  width: unquote('max(70%, 300px)') !important;
+//  height: auto;
+//}
 
 
 .katex { font-size: 1em !important; }
