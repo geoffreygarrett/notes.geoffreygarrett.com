@@ -8,7 +8,11 @@ tags:
 
 ## Algorithms
 
-{{< figure src="notes/images/OLS_geometric_interpretation.svg" >}} 
+{{
+<center>
+<figure src="/notes/images/OLS_geometric_interpretation.svg"> </figure>
+</center>
+}} 
 
 ### Weighted Least-Squares Estimation
 
