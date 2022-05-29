@@ -1,5 +1,5 @@
 <figure>
     <div style="text-align: center;">
-        {{ readFile "( .Get "src" )" | safeHTML }}
+        {{ readFile ( .Get "src" ) | safeHTML }}
     </div>
 </figure>
