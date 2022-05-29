@@ -8,8 +8,9 @@ tags:
 
 ## Algorithms
 
-{{ readFile "/notes/images/OLS_geometric_interpretation.svg" | safeHTML }}
 {{< svg src="/notes/images/OLS_geometric_interpretation.svg" >}}
+
+{{< figure src="/notes/images/OLS_geometric_interpretation.svg" >}}
 
 [comment]: <> ({{<svg src="/notes/images/OLS_geometric_interpretation.svg">}} )
 
