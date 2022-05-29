@@ -16,6 +16,11 @@ figure {
   filter: var(--svgfilter)
 }
 
+img {
+  width: unquote('max(70%, 300px)') !important;
+  height: auto;
+}
+
 :root {
   --lineheight: 1.8em;
   --textalign: left;
@@ -23,12 +28,7 @@ figure {
   --headerfontfamily: 'Computer Modern Serif', serif;
 }
 
-//img {
-//  width: unquote('max(70%, 300px)') !important;
-//  height: auto;
-//}
-
-
+// LaTeX
 .katex { font-size: 1em !important; }
 
 svg {
