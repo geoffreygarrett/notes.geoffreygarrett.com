@@ -1,7 +1,9 @@
 <figure>
     <div style="text-align: center;">
-        <img src="{{ .Get "src" }}" alt="">=
+        <img src="{{ .Get "src" }}" alt="">
+        {{ if .Get "caption" }}
         <figcaption>"{{ .Get "caption" }}"</figcaption>
+        {{ end }}
     </div>
 </figure>
 
