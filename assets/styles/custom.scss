@@ -12,7 +12,7 @@
 }
 
 .figure {
-  width: max(70%, 300px) !important;
+  width: calc(max(70%, 300px)) !important;
 }
 
 :root {
