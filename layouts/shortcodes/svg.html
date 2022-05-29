@@ -1,0 +1,5 @@
+<figure>
+    <div style="text-align: center;">
+        {{ readFile (print (index .Params 0)) | safeHTML }}
+    </div>
+</figure>
