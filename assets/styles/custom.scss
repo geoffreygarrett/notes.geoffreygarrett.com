@@ -9,10 +9,11 @@
   --gray: #4e4e4e;
   --lightgray: #f0f0f0;
   --outlinegray: #dadada;
+  --svgfilter: invert(0%) hue-rotate(0deg);
 }
 
 figure {
-  width: unquote("max(70%, 300px)") !important;
+
 }
 
 :root {
@@ -22,7 +23,19 @@ figure {
   --headerfontfamily: 'Computer Modern Serif', serif;
 }
 
+img {
+  width: unquote('max(70%, 300px)') !important;
+  height: auto;
+}
+
+
+
 .katex { font-size: 1em !important; }
+
+svg {
+  -webkit-filter: var(--svgfilter); /* safari 6.0 - 9.0 */
+          filter: var(--svgfilter);
+}
 
 //
 //$primary_font_family: 'Computer Modern Serif', serif;
@@ -40,4 +53,5 @@ figure {
   --gray: #d4d4d4 !important;
   --lightgray: #292633 !important;
   --outlinegray: #343434 !important;
+  --svgfilter: invert(100%) hue-rotate(180deg);
 }
