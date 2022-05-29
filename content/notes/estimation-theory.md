@@ -8,10 +8,7 @@ tags:
 
 ## Algorithms
 
-{{
-< svg src="/notes/images/OLS_geometric_interpretation.svg"
-      caption="Geometric interpretation of Ordinary Least-Squares (OLS)." >
-}}
+{{< svg src="/notes/images/OLS_geometric_interpretation.svg" caption="Geometric interpretation of Ordinary Least-Squares (OLS)." >}}
 
 [comment]: <> ({{<svg src="/notes/images/OLS_geometric_interpretation.svg">}} )
 
