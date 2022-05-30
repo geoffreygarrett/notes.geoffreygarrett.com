@@ -38,7 +38,7 @@
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.ca9ae321a6058b919235b8695fe14f92.min.css" rel="stylesheet" />
+  <link href="https://notes.geoffreygarrett.com/styles.ca9ae321a6058b919235b8695fe14f92.css" rel="stylesheet" />
 
   
   <script src="https://notes.geoffreygarrett.com/js/darkmode.e4b8919134d78fd574b0727527f0306b.min.js"></script>
@@ -60,13 +60,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.b482c7dd353bf52639a92a2d315c2b32.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.b482c7dd353bf52639a92a2d315c2b32.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5a241ce2697e1007823fc6cd35e4df9f.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.095fee6555aad54861ab1f342064116c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -132,7 +132,7 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js" integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
 
-<script defer src="https://notes.geoffreygarrett.com/js/search.06935f6a9c1dd79aa33fe3a725067dbc.min.js"></script>
+<script defer src="https://notes.geoffreygarrett.com/js/search.06935f6a9c1dd79aa33fe3a725067dbc.js"></script>
 
 <div class="singlePage">
     
