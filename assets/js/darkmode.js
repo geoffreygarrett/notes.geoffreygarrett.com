@@ -19,7 +19,6 @@ const switchTheme = (e) => {
     } else {
         document.documentElement.setAttribute('saved-theme', 'light')
         localStorage.setItem('theme', 'light')
-        giscusThemeChange('light')
         sendMessage({ theme: 'light' })
     }
 }
