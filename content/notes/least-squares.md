@@ -8,14 +8,27 @@ The least-squares method was officially discovered and published by Adrien-Marie
 Legendre in their work _"Nouvelles methodes pour la determination des orbites
 des cometes"_, published in 1805 \[citation needed\].
 
-## Ordinary Least Squares (OLS)
+## Ordinary Least Squares
+
+Ordinary Least Squares (OLS)
+
+$$
+\begin{equation}
+    {\hat {\beta }}={\rm {arg}}\min _{\beta }\,\lVert y-X\beta \rVert,
+\end{equation}
+$$
+
+### Assumptions 
+
+- **Strict exogenity**: The errors in the regression are should have conditional 
+  mean zero. $\mathbb{E}[\bm{\epsilon}|\bm{A}] &= \bm{0}$
 
 {{< svg src="/notes/images/OLS-geometric-interpretation.svg" caption="Geometric interpretation of Ordinary Least Squares (OLS)." >}}
 
-## Weighted Least Squares (WLS)
+## Weighted Least Squares
 
-The Weighted Least Squares Estimation method is an application of the
-Generalized Least Squares (GLS) algorithm, which aims at
+The Weighted Least Squares (WLS) method is an application of the
+Generalised Least Squares (GLS) algorithm, which aims at
 estimating unknown parameters ($\bm{\beta}$) in a linear regression model, given a
 set of observations ($\bm{z}$), where there is a certain degree of correlation
 ($\bm{W}$) between the residuals ($\bm{\epsilon}$) in the regression model. It
