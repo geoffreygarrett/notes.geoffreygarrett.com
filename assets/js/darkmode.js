@@ -19,7 +19,7 @@ const switchTheme = (e) => {
                 setConfig: {
                     theme: 'https://giscus.app/themes/dark_dimmed.css'
                 }
-            }
+            }, 'https://giscus.app'
         )
     } else {
         document.documentElement.setAttribute('saved-theme', 'light')
@@ -28,7 +28,7 @@ const switchTheme = (e) => {
                 setConfig: {
                     theme: 'https://giscus.app/themes/light.css'
                 }
-            }
+            }, 'https://giscus.app'
         )
     }
 }
