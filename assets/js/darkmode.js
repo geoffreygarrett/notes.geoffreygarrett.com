@@ -29,7 +29,6 @@ function giscusTheme(theme) {
 
 if (currentTheme) {
     document.documentElement.setAttribute('saved-theme', currentTheme);
-    giscusTheme(currentTheme)
 }
 
 const switchTheme = (e) => {
@@ -49,7 +48,7 @@ function handleMessage(event) {
     if (!(typeof event.data === 'object' && event.data.giscus)) return;
     const giscusData = event.data.giscus;
     giscusTheme(currentTheme)
-    window.removeEventListener('message', handleMessage, true);
+    window.removeEventListener('message', handleMessage);
     // You'll need to make sure that `giscusData` contains the message you're
     // expecting, e.g. by using `if ('discussion' in giscusData)`.
 }
