@@ -21,7 +21,7 @@ $$
 ### Assumptions 
 
 - **Strict exogenity**: The errors in the regression are should have conditional 
-  mean zero. $\mathbb{E}[\bm{\epsilon}|\bm{A}] &= \bm{0}$
+  mean zero. $\mathbb{E}[\bm{\epsilon}|\bm{A}] = \bm{0}$
 
 {{< svg src="/notes/images/OLS-geometric-interpretation.svg" caption="Geometric interpretation of Ordinary Least Squares (OLS)." >}}
 
