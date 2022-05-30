@@ -46,11 +46,24 @@ const switchTheme = (e) => {
 }
 
 
+function handleMessage(event: MessageEvent) {
+  if (event.origin !== 'https://giscus.app') return;
+  if (!(typeof event.data === 'object' && event.data.giscus)) return;
+  const giscusData = event.data.giscus;
+  console.log(giscusData)
+  giscusTheme(currentTheme)
+
+  // You'll need to make sure that `giscusData` contains the message you're
+  // expecting, e.g. by using `if ('discussion' in giscusData)`.
+}
+
+window.addEventListener('message', handleMessage);
+
 window.addEventListener('DOMContentLoaded', () => {
     // Darkmode toggle
     const toggleSwitch = document.querySelector('#darkmode-toggle')
 
-    giscusTheme(currentTheme)
+
 
     // listen for toggle
     toggleSwitch.addEventListener('change', switchTheme, false)
