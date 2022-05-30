@@ -24,4 +24,6 @@ comments:
     mapping: "pathname" # How Utterances will match comment to page
     label: "comment" # Label applied to issue by utteranc.es bot
     reactions_enabled: "1"
-    data_theme: "https://giscus.app/themes/light.css"
+    theme:
+      dark: "https://giscus.app/themes/light.css"
+      light: "https://giscus.app/themes/dark_dimmed.css"

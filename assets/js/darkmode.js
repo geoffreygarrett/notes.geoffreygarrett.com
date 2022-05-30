@@ -14,8 +14,7 @@ const switchTheme = (e) => {
         localStorage.setItem('giscus-theme', 'https://giscus.app/themes/dark_dimmed.css')
         sendMessage({
             setConfig: {
-                theme: 
-                    "https://giscus.app/themes/dark_dimmed.css"
+                theme: {{ .Site.Data.config.comments.giscus.theme.dark }}
             }
         })
 
@@ -25,7 +24,7 @@ const switchTheme = (e) => {
         localStorage.setItem('giscus-theme', 'https://giscus.app/themes/light.css')
         sendMessage({
             setConfig: {
-                theme: 'https://giscus.app/themes/light.css'
+                theme: {{ .Site.Data.config.comments.giscus.theme.light }}
             }
         })
     }
