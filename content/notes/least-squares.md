@@ -63,11 +63,11 @@ $$
 \end{equation}
 $$
 
-## Generalised Least Squares (GLS)
+## Generalised Least Squares
 
 GLS was first described by Alexander Aitken in 1936. \[[1](https://en.wikipedia.org/wiki/Generalized_least_squares#cite_note-1)\]
 
-## Non-linear Least Squares (NLS)
+## Non-linear Least Squares
 
 The problem arises when considering the highly non-linear modelled measurements
 $\bm{h}(\bm{x}_0)$ cannot be described by the linear relation above. For this
