@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, thead {
 }
 
 .hanchor {
-  font-family: Inter;
+  font-family: var(--headerfontfamily);
   margin-left: -1em;
   opacity: 0.3;
   transition: opacity 0.3s ease;
@@ -46,7 +46,7 @@ p, ul, text {
 
 .mainTOC details summary {
   cursor: zoom-in;
-  font-family: Inter;
+  font-family: var(--headerfontfamily);
   color: var(--dark);
   font-weight: 700;
 }
@@ -159,7 +159,7 @@ td, th {
 .section {
   & h3 > a {
     font-weight: 700;
-    font-family: Inter;
+    font-family: var(--headerfontfamily);
     margin: 0;
   }
   & p {
@@ -237,7 +237,7 @@ sup > a {
 }
 
 a {
-  font-family: Inter, sans-serif;
+  font-family: var(--headerfontfamily);
   font-size: 1em;
   font-weight: 700;
   text-decoration: none;
