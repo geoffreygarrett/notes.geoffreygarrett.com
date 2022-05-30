@@ -3,8 +3,11 @@ const currentTheme = localStorage.getItem('theme') ?? userPref
 
 function sendMessage(message) {
     const iframe = document.querySelector('iframe.giscus-frame');
-    if (!iframe) return;
-    iframe.contentWindow.postMessage({giscus: message}, 'https://giscus.app');
+    if (!iframe) {
+        console.log('there is no god')
+    } else {
+         iframe.contentWindow.postMessage({giscus: message}, 'https://giscus.app');
+    }
 }
 
 function giscusTheme(theme) {
@@ -39,12 +42,15 @@ const switchTheme = (e) => {
         localStorage.setItem('theme', 'light')
         giscusTheme('light')
     }
+
 }
 
 
 window.addEventListener('DOMContentLoaded', () => {
     // Darkmode toggle
     const toggleSwitch = document.querySelector('#darkmode-toggle')
+
+    giscusTheme(currentTheme)
 
     // listen for toggle
     toggleSwitch.addEventListener('change', switchTheme, false)
