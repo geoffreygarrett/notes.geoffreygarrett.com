@@ -36,6 +36,11 @@
         },
         {
           "source": "/notes/estimation-theory",
+          "target": "/notes/kalman-filter",
+          "text": "Kalman filter"
+        },
+        {
+          "source": "/notes/estimation-theory",
           "target": "/notes/orbit-determination",
           "text": "Orbit determination"
         }
@@ -82,6 +87,13 @@
           "source": "/",
           "target": "/notes/information-theory",
           "text": "Information Theory MOC"
+        }
+      ],
+      "/notes/kalman-filter": [
+        {
+          "source": "/notes/estimation-theory",
+          "target": "/notes/kalman-filter",
+          "text": "Kalman filter"
         }
       ],
       "/notes/least-squares": [
@@ -151,6 +163,11 @@
       "source": "/notes/estimation-theory",
       "target": "/notes/least-squares",
       "text": "Least squares"
+    },
+    {
+      "source": "/notes/estimation-theory",
+      "target": "/notes/kalman-filter",
+      "text": "Kalman filter"
     },
     {
       "source": "/notes/estimation-theory",
