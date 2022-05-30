@@ -5,17 +5,17 @@ tags:
 ---
 
 The least-squares method was officially discovered and published by Adrien-Marie
-Legendre in a work titled _Nouvelles methodes pour la determination des orbites
-des cometes_, published in 1805 \[citation needed\].
+Legendre in their work _"Nouvelles methodes pour la determination des orbites
+des cometes"_, published in 1805 \[citation needed\].
 
 ## Ordinary Least Squares (OLS)
 
-{{< svg src="/notes/images/OLS_geometric_interpretation.svg" caption="Geometric interpretation of Ordinary Least-Squares (OLS)." >}}
+{{< svg src="/notes/images/OLS_geometric_interpretation.svg" caption="Geometric interpretation of Ordinary Least Squares (OLS)." >}}
 
 ## Weighted Least Squares (WLS)
 
-The Weighted Least-Squares Estimation method is an application of the
-Generalized Least-Squares (GLS) algorithm, which aims at
+The Weighted Least Squares Estimation method is an application of the
+Generalized Least Squares (GLS) algorithm, which aims at
 estimating unknown parameters ($\bm{\beta}$) in a linear regression model, given a
 set of observations ($\bm{z}$), where there is a certain degree of correlation
 ($\bm{W}$) between the residuals ($\bm{\epsilon}$) in the regression model. It
@@ -32,7 +32,7 @@ $$
 $$
 
 The residual vector is defined as $\rho=\bm{z}-\bm{A}\bm{\beta}$. The Weighted
-Least-Squares estimate ($\bm{\hat{\beta}}$) is unbiased, consistent and
+Least Squares estimate ($\bm{\hat{\beta}}$) is unbiased, consistent and
 efficient, and obtained through minimising $\bm{\rho}^T\bm{W}^{-1}\bm{\rho}$. The
 estimate is given, without derivation, by:
 
@@ -50,7 +50,6 @@ $$
 ## Generalised Least Squares (GLS)
 
 GLS was first described by Alexander Aitken in 1936. \[[1](https://en.wikipedia.org/wiki/Generalized_least_squares#cite_note-1)\]
-
 
 ## Non-linear Least Squares (NLS)
 
