@@ -12,6 +12,10 @@
   --svgfilter: invert(0%) hue-rotate(0deg);
 }
 
+.gsc-frame {
+  padding-top: 1rem;
+}
+
 figure {
   filter: var(--svgfilter)
 }
