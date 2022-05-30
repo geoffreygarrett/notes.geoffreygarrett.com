@@ -1,6 +1,10 @@
 const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
 const currentTheme = localStorage.getItem('theme') ?? userPref
 
+
+const giscusTheme = 'https://giscus.app/themes/light.css'
+'https://giscus.app/themes/dark_dimmed.css'
+
 function sendMessage(message) {
     const iframe = document.querySelector('iframe.giscus-frame');
     if (!iframe) return;
@@ -9,6 +13,21 @@ function sendMessage(message) {
 
 if (currentTheme) {
     document.documentElement.setAttribute('saved-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        sendMessage({
+                setConfig: {
+                    theme: 'https://giscus.app/themes/dark_dimmed.css'
+                }
+            }, 'https://giscus.app'
+        );
+    } else {
+        sendMessage({
+                setConfig: {
+                    theme: 'https://giscus.app/themes/dark_dimmed.css'
+                }
+            }, 'https://giscus.app'
+        );
+    }
 }
 
 const switchTheme = (e) => {
