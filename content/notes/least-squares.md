@@ -4,11 +4,15 @@ tags:
 - [estimation-theory]
 ---
 
-## Ordinary Least-Squares
+The least-squares method was officially discovered and published by Adrien-Marie
+Legendre in a work titled _Nouvelles methodes pour la determination des orbites
+des cometes_, published in 1805 \[citation needed\].
+
+## Ordinary Least Squares (OLS)
 
 {{< svg src="/notes/images/OLS_geometric_interpretation.svg" caption="Geometric interpretation of Ordinary Least-Squares (OLS)." >}}
 
-## Weighted Least-Squares
+## Weighted Least Squares (WLS)
 
 The Weighted Least-Squares Estimation method is an application of the
 Generalized Least-Squares (GLS) algorithm, which aims at
@@ -43,7 +47,12 @@ $$
 \end{equation}
 $$
 
-## Non-linear Weighted Least-Squares
+## Generalised Least Squares (GLS)
+
+GLS was first described by Alexander Aitken in 1936. \[[1](https://en.wikipedia.org/wiki/Generalized_least_squares#cite_note-1)\]
+
+
+## Non-linear Least Squares (NLS)
 
 The problem arises when considering the highly non-linear modelled measurements
 $\bm{h}(\bm{x}_0)$ cannot be described by the linear relation above. For this
