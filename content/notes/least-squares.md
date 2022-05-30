@@ -19,8 +19,6 @@ $$
 \end{equation}
 $$
 
-### Assumptions 
-
 - **Linearity in parameters**: The linear regression model is _linear in
   parameters_, that is, $\bm{z} = \bm{A}\bm{\beta}+\bm{\epsilon}$.
 - **Strict exogenity**: The errors in the regression are should have conditional mean
