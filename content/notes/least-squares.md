@@ -22,8 +22,8 @@ $$
 
 - **Linearity in parameters**: The linear regression model is _linear in
   parameters_, that is, $\bm{z} = \bm{A}\bm{\beta}+\bm{\epsilon}$ or $z =
-  \beta_0 + \beta_1A_1 + ... + \beta_N{}A_N +\epsilon_i$. - **Strict
-  exogenity**: The errors in the regression are should have conditional mean
+  \beta_0 + \beta_1A_1 + ... + \beta_N{}A_N +\epsilon$. 
+- **Strict exogenity**: The errors in the regression are should have conditional mean
   zero, that is, $\mathbb{E}[\bm{\epsilon}|\bm{A}] = \bm{0}$.
 
 {{< svg src="/notes/images/OLS-geometric-interpretation.svg" caption="Geometric interpretation of Ordinary Least Squares (OLS)." >}}
