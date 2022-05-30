@@ -11,19 +11,18 @@ const switchTheme = (e) => {
     if (e.target.checked) {
         document.documentElement.setAttribute('saved-theme', 'dark')
         localStorage.setItem('theme', 'dark')
-        // localStorage.setItem('giscus-theme', 'https://giscus.app/themes/dark_dimmed.css')
-
+        localStorage.setItem('giscus-theme', 'https://giscus.app/themes/dark_dimmed.css')
         sendMessage({
             setConfig: {
-                theme: "https://giscus.app/themes/dark_dimmed.css"
+                theme: 
+                    "https://giscus.app/themes/dark_dimmed.css"
             }
         })
 
     } else {
         document.documentElement.setAttribute('saved-theme', 'light')
         localStorage.setItem('theme', 'light')
-        // localStorage.setItem('giscus-theme', 'https://giscus.app/themes/light.css')
-
+        localStorage.setItem('giscus-theme', 'https://giscus.app/themes/light.css')
         sendMessage({
             setConfig: {
                 theme: 'https://giscus.app/themes/light.css'
@@ -43,5 +42,9 @@ window.addEventListener('DOMContentLoaded', () => {
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true
     }
-
+    sendMessage({
+        setConfig: {
+            theme: localStorage.getItem('giscus-theme')
+        }
+    })
 })
