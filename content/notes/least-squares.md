@@ -66,3 +66,7 @@ $$
     \end{aligned}
 \end{equation}
 $$
+
+{{% note %}}
+Here is a piece of information I would like to draw your **attention** to.
+{{% /note %}}
