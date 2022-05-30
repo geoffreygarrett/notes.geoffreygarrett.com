@@ -2,7 +2,7 @@ const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'l
 const currentTheme = localStorage.getItem('theme') ?? userPref
 
 function sendMessage(message) {
-    const iframe = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
+    const iframe = document.querySelector('iframe.giscus-frame');
     if (!iframe) return;
     iframe.contentWindow.postMessage({giscus: message}, 'https://giscus.app');
 }
