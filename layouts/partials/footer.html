@@ -8,6 +8,8 @@
     </div>
 </div>
 
+{{ if .Comments }}
 {{partial "comments/giscus.html" .}}
+{{ end }}
 
 {{partial "contact.html" .}}
