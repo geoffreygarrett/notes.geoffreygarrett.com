@@ -25,6 +25,7 @@ function giscusTheme(theme) {
 
 if (currentTheme) {
     document.documentElement.setAttribute('saved-theme', currentTheme);
+    giscusTheme(currentTheme)
 }
 
 const switchTheme = (e) => {
