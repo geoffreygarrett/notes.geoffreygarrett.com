@@ -1,12 +1,12 @@
-{{ if site.Params.comments.giscus }}
+{{ if .Site.Data.config.comments.giscus }}
 <script src="https://giscus.app/client.js"
-        data-repo="{{site.Params.comments.giscus.repo}}"
-        data-repo-id="{{site.Params.comments.giscus.repo_id}}"
-        data-category="{{site.Params.comments.giscus.category}}"
-        data-category-id="{{site.Params.comments.giscus.category_id}}"
-        data-mapping="{{site.Params.comments.giscus.mapping}}"
-        data-reactions-enabled="{{site.Params.comments.giscus.reactions_enabled}}"
-        data-theme="{{site.Params.comments.giscus.data_theme}}"
+        data-repo="{{.Site.Data.config.comments.giscus.repo}}"
+        data-repo-id="{{.Site.Data.config.comments.giscus.repo_id}}"
+        data-category="{{.Site.Data.config.comments.giscus.category}}"
+        data-category-id="{{.Site.Data.config.comments.giscus.category_id}}"
+        data-mapping="{{.Site.Data.config.comments.giscus.mapping}}"
+        data-reactions-enabled="{{.Site.Data.config.comments.giscus.reactions_enabled}}"
+        data-theme="{{.Site.Data.config.comments.giscus.data_theme}}"
         crossorigin="anonymous"
         async>
 </script>
