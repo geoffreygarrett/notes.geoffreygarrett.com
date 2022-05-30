@@ -46,7 +46,7 @@ const switchTheme = (e) => {
 }
 
 
-function handleMessage(event: MessageEvent) {
+function handleMessage(event) {
   if (event.origin !== 'https://giscus.app') return;
   if (!(typeof event.data === 'object' && event.data.giscus)) return;
   const giscusData = event.data.giscus;
