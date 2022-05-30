@@ -41,9 +41,4 @@ window.addEventListener('DOMContentLoaded', () => {
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true
     }
-    sendMessage({
-        setConfig: {
-            theme: localStorage.getItem('giscus-theme')
-        }
-    })
 })
