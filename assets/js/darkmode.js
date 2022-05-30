@@ -36,5 +36,5 @@ window.addEventListener('DOMContentLoaded', () => {
         setConfig: {
             theme: localStorage.getItem('giscus-theme')
         }
-    }, 'https://giscus.app')
+    })
 })
