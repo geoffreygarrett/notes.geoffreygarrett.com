@@ -15,11 +15,11 @@ const switchTheme = (e) => {
     if (e.target.checked) {
         document.documentElement.setAttribute('saved-theme', 'dark')
         localStorage.setItem('theme', 'dark')
-        sendMessage({ theme: 'dark' })
+        sendMessage({ theme: 'https://giscus.app/themes/dark.css' })
     } else {
         document.documentElement.setAttribute('saved-theme', 'light')
         localStorage.setItem('theme', 'light')
-        sendMessage({ theme: 'light' })
+        sendMessage({ theme: 'https://giscus.app/themes/light.css' })
     }
 }
 
