@@ -1,54 +1,22 @@
 const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
 const currentTheme = localStorage.getItem('theme') ?? userPref
 
-
-const giscusTheme = 'https://giscus.app/themes/light.css'
-'https://giscus.app/themes/dark_dimmed.css'
-
 function sendMessage(message) {
     const iframe = document.querySelector('iframe.giscus-frame');
     if (!iframe) return;
     iframe.contentWindow.postMessage({giscus: message}, 'https://giscus.app');
 }
 
-if (currentTheme) {
-    document.documentElement.setAttribute('saved-theme', currentTheme);
-    if (currentTheme === 'dark') {
-        sendMessage({
-                setConfig: {
-                    theme: 'https://giscus.app/themes/dark_dimmed.css'
-                }
-            }, 'https://giscus.app'
-        );
-    } else {
-        sendMessage({
-                setConfig: {
-                    theme: 'https://giscus.app/themes/dark_dimmed.css'
-                }
-            }, 'https://giscus.app'
-        );
-    }
-}
-
 const switchTheme = (e) => {
     if (e.target.checked) {
         document.documentElement.setAttribute('saved-theme', 'dark')
         localStorage.setItem('theme', 'dark')
-        sendMessage({
-                setConfig: {
-                    theme: 'https://giscus.app/themes/dark_dimmed.css'
-                }
-            }, 'https://giscus.app'
-        )
+        localStorage.setItem('giscus-theme', 'https://giscus.app/themes/dark_dimmed.css')
+
     } else {
         document.documentElement.setAttribute('saved-theme', 'light')
         localStorage.setItem('theme', 'light')
-        sendMessage({
-                setConfig: {
-                    theme: 'https://giscus.app/themes/light.css'
-                }
-            }, 'https://giscus.app'
-        )
+        localStorage.setItem('giscus-theme', 'https://giscus.app/themes/light.css')
     }
 }
 
@@ -63,4 +31,10 @@ window.addEventListener('DOMContentLoaded', () => {
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true
     }
+
+    sendMessage({
+        setConfig: {
+            theme: localStorage.getItem('giscus-theme')
+        }
+    }, 'https://giscus.app')
 })
