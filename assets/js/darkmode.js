@@ -2,9 +2,9 @@ const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'l
 const currentTheme = localStorage.getItem('theme') ?? userPref
 
 function sendMessage(message) {
-  const iframe = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
-  if (!iframe) return;
-  iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+    const iframe = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
+    if (!iframe) return;
+    iframe.contentWindow.postMessage({giscus: message}, 'https://giscus.app');
 }
 
 if (currentTheme) {
@@ -15,11 +15,21 @@ const switchTheme = (e) => {
     if (e.target.checked) {
         document.documentElement.setAttribute('saved-theme', 'dark')
         localStorage.setItem('theme', 'dark')
-        sendMessage({ theme: 'https://giscus.app/themes/dark.css' })
+        sendMessage({
+                setConfig: {
+                    theme: 'https://giscus.app/themes/dark_dimmed.css'
+                }
+            }
+        )
     } else {
         document.documentElement.setAttribute('saved-theme', 'light')
         localStorage.setItem('theme', 'light')
-        sendMessage({ theme: 'https://giscus.app/themes/light.css' })
+        sendMessage({
+                setConfig: {
+                    theme: 'https://giscus.app/themes/light.css'
+                }
+            }
+        )
     }
 }
 
