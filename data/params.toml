@@ -1,0 +1,20 @@
+############################
+## Comments
+############################
+[comments]
+  # Comment provider:
+  provider = "giscus"
+
+  # Which page types are commentable?
+  commentable = {page = true, post = true, docs = false, project = false, publication = true, talk = false}
+
+  # Configuration of giscus
+  [comments.giscus]
+    repo = "geoffreygarrett/notes.geoffreygarrett.com" # Repo where the comments will live
+    repo_id = "R_kgDOHAechg" # Repo where the comments will live
+    category = "General" # Repo where the comments will live
+    category_id = "DIC_kwDOHAechs4CPXtJ" # Repo where the comments will live
+    mapping = "pathname" # How Utterances will match comment to page
+    label = "comment" # Label applied to issue by utteranc.es bot
+    reactions_enabled = 1
+    data_theme="preferred_color_scheme"

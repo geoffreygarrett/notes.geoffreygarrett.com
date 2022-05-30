@@ -21,6 +21,23 @@ figcaption {
   opacity: 0.5;
 }
 
+.admonition-note {
+  font-size: .8rem;
+  margin: 2em 0 1rem;
+  border: 2px solid #92c1e9;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.admonition-note-title {
+  margin: 0 !important;
+  padding: .1rem 0 .1rem .5rem;
+  color: #fff;
+  border-bottom: 1px solid;
+  font-weight: 700;
+  background-color: #92c1e9;
+}
+
 img {
   width: unquote('max(70%, 300px)') !important;
   height: auto;

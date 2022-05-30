@@ -82,3 +82,5 @@ $$
     \end{aligned}
 \end{equation}
 $$
+
+{{ template "_internal/disqus.html" . }}
