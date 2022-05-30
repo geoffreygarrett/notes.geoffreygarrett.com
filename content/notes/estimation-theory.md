@@ -14,6 +14,7 @@ component.
 ## Estimators 
 
 - [Least squares](notes/least-squares.md)
+- [Kalman filter](notes/kalman-filter.md)
 
 ## Applications
 
