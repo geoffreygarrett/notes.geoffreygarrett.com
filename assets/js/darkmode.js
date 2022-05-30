@@ -1,12 +1,13 @@
 const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
 const currentTheme = localStorage.getItem('theme') ?? userPref
+const giscusLoaded = false
 
 function sendMessage(message) {
     const iframe = document.querySelector('iframe.giscus-frame');
     if (!iframe) {
         console.log('there is no god')
     } else {
-         iframe.contentWindow.postMessage({giscus: message}, 'https://giscus.app');
+        iframe.contentWindow.postMessage({giscus: message}, 'https://giscus.app');
     }
 }
 
@@ -36,25 +37,21 @@ const switchTheme = (e) => {
         document.documentElement.setAttribute('saved-theme', 'dark')
         localStorage.setItem('theme', 'dark')
         giscusTheme('dark')
-
     } else {
         document.documentElement.setAttribute('saved-theme', 'light')
         localStorage.setItem('theme', 'light')
         giscusTheme('light')
     }
-
 }
 
-
 function handleMessage(event) {
-  if (event.origin !== 'https://giscus.app') return;
-  if (!(typeof event.data === 'object' && event.data.giscus)) return;
-  const giscusData = event.data.giscus;
-  console.log(giscusData)
-  giscusTheme(currentTheme)
-
-  // You'll need to make sure that `giscusData` contains the message you're
-  // expecting, e.g. by using `if ('discussion' in giscusData)`.
+    if (event.origin !== 'https://giscus.app') return;
+    if (!(typeof event.data === 'object' && event.data.giscus)) return;
+    const giscusData = event.data.giscus;
+    giscusTheme(currentTheme)
+    window.removeEventListener('message', handleMessage, true);
+    // You'll need to make sure that `giscusData` contains the message you're
+    // expecting, e.g. by using `if ('discussion' in giscusData)`.
 }
 
 window.addEventListener('message', handleMessage);
@@ -62,7 +59,6 @@ window.addEventListener('message', handleMessage);
 window.addEventListener('DOMContentLoaded', () => {
     // Darkmode toggle
     const toggleSwitch = document.querySelector('#darkmode-toggle')
-
 
 
     // listen for toggle
