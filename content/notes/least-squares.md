@@ -10,7 +10,7 @@ des cometes"_, published in 1805 \[citation needed\].
 
 ## Ordinary Least Squares (OLS)
 
-{{< svg src="/notes/images/OLS_geometric_interpretation.svg" caption="Geometric interpretation of Ordinary Least Squares (OLS)." >}}
+{{< svg src="/notes/images/OLS-geometric-interpretation.svg" caption="Geometric interpretation of Ordinary Least Squares (OLS)." >}}
 
 ## Weighted Least Squares (WLS)
 
@@ -66,7 +66,3 @@ $$
     \end{aligned}
 \end{equation}
 $$
-
-{{% note %}}
-Here is a piece of information I would like to draw your **attention** to.
-{{% /note %}}
