@@ -11,20 +11,22 @@ const switchTheme = (e) => {
     if (e.target.checked) {
         document.documentElement.setAttribute('saved-theme', 'dark')
         localStorage.setItem('theme', 'dark')
-        localStorage.setItem('giscus-theme', 'https://giscus.app/themes/dark_dimmed.css')
+        // localStorage.setItem('giscus-theme', 'https://giscus.app/themes/dark_dimmed.css')
         sendMessage({
             setConfig: {
-                theme: {{ .Site.Data.config.comments.giscus.theme.dark }}
+                // theme: {{ .Site.Dta.config.comments.giscus.theme.dark }}
+                theme: 'https://giscus.app/themes/dark_dimmed.css'
             }
         })
 
     } else {
         document.documentElement.setAttribute('saved-theme', 'light')
         localStorage.setItem('theme', 'light')
-        localStorage.setItem('giscus-theme', 'https://giscus.app/themes/light.css')
+        // localStorage.setItem('giscus-theme', 'https://giscus.app/themes/light.css')
         sendMessage({
             setConfig: {
-                theme: {{ .Site.Data.config.comments.giscus.theme.light }}
+                // theme: {{ .Site.Data.config.comments.giscus.theme.light }}
+                theme: 'https://giscus.app/themes/light.css'
             }
         })
     }
@@ -37,7 +39,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // listen for toggle
     toggleSwitch.addEventListener('change', switchTheme, false)
-
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true
     }
