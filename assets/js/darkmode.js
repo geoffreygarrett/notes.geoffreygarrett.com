@@ -48,12 +48,13 @@ const switchTheme = (e) => {
 // message handler for giscus -> parent.
 function handleMessage(event) {
     if (event.origin !== 'https://giscus.app') return;
-    // if (!(typeof event.data === 'object' && event.data.giscus)) return;
-    // const giscusData = event.data.giscus;
+    console.log(event.data);
+    if (!(typeof event.data === 'object' && event.data.giscus)) return;
+    const giscusData = event.data.giscus;
     giscusChangeTheme(currentTheme)
 
     // remove listener after giscus theme changed (only used to set theme).
-    window.removeEventListener('message', handleMessage);
+    // window.removeEventListener('message', handleMessage);
 }
 
 // giscus event listener. This is used to set the theme of the giscus app when
