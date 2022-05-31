@@ -57,7 +57,7 @@ function handleMessage(event) {
     giscusChangeTheme(localStorage.getItem('theme') ?? currentTheme);
 
     // remove listener after giscus theme changed (only used to set theme).
-    // window.removeEventListener('message', handleMessage);
+    window.removeEventListener('message', handleMessage);
 }
 
 // giscus event listener. This is used to set the theme of the giscus app when
