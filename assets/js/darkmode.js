@@ -23,7 +23,7 @@ function giscusChangeTheme(theme) {
             }
         })
     } else {
-        const lightTheme = document.getElementsByClassName('giscus-wrapper')[0].getAttribute('data-giscus-light-theme');
+        const lightTheme = giscusWrapper[0].getAttribute('data-giscus-light-theme');
         sendMessage({
             setConfig: {
                 theme: (lightTheme ? lightTheme : 'https://giscus.app/themes/light.css')
