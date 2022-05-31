@@ -10,7 +10,7 @@
 
 {{ if .Params.Comments }}
 {{ if (isset .Site.Data.config.comments.disqus.) }}
-{{ partial "comments/giscus.html" . }}
+{{ partial "comments/giscus.html" .}}
 {{ end }}
 {{ end }}
 
