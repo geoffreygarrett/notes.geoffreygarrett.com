@@ -6,7 +6,7 @@
     <div>
         {{partial "graph.html" .}}
     </div>
-    {{ if and (isset .Site.Data.config.comments "gisqus") (.Params.Comments) }}
+    {{ if and (isset .Site.Data.config.comments "giscus") (.Params.Comments) }}
     {{ partial "comments/giscus.html" .}}
     {{ end }}
 </div>
