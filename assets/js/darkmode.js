@@ -16,7 +16,7 @@ function giscusChangeTheme(theme) {
     // console.log('giscusChangeTheme: ', theme);
     // console.log('currentTheme: ', currentTheme);
     const giscusWrapper = document.getElementsByClassName('giscus-wrapper');
-    if (!(typeof giscusWrapper === 'object' && giscusWrapper)) return;
+    if (giscusWrapper.length === 0) return;
     if (theme === 'dark') {
         // console.log('dark theme');
         const darkTheme = giscusWrapper[0].getAttribute('data-giscus-dark-theme');
@@ -52,7 +52,6 @@ const switchTheme = (e) => {
 // message handler for giscus -> parent.
 function handleMessage(event) {
     if (event.origin !== 'https://giscus.app') return;
-    console.log(event.data);
     if (!(typeof event.data === 'object' && event.data.giscus)) return;
     // const giscusData = event.data.giscus;
     giscusChangeTheme(localStorage.getItem('theme') ?? currentTheme);
