@@ -8,7 +8,7 @@
     </div>
 </div>
 
-{{ if and (isset .Site.Data.config.comments "disqus") (.Params.Comments) }}
+{{ if and (isset .Site.Data.config.comments "gisqus") (.Params.Comments) }}
 {{ partial "comments/giscus.html" .}}
 {{ end }}
 
