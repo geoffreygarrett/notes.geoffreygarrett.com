@@ -1,7 +1,7 @@
 {{ if .Site.Data.config.comments.giscus }}
 <div class='giscus-wrapper'
-     data-giscus-dark-theme="{{.Params.Comments.Disqus.Theme.Dark}}"
-     data-giscus-light-theme="{{.Params.Comments.Disqus.Theme.Light}}">
+     data-giscus-dark-theme="{{.Site.Data.config.comments.disqus.theme.dark}}"
+     data-giscus-light-theme="{{.Site.Data.config.comments.disqus.theme.light}}">
     <script src="https://giscus.app/client.js"
             data-repo="{{.Site.Data.config.comments.giscus.repo}}"
             data-repo-id="{{.Site.Data.config.comments.giscus.repo_id}}"
@@ -9,7 +9,7 @@
             data-category-id="{{.Site.Data.config.comments.giscus.category_id}}"
             data-mapping="{{.Site.Data.config.comments.giscus.mapping}}"
             data-reactions-enabled="{{.Site.Data.config.comments.giscus.reactions_enabled}}"
-            data-theme="{{.Site.Data.config.comments.disqus.theme.light}}"
+            data-theme="preferred_color_scheme"
             crossorigin="anonymous"
             async>
     </script>
