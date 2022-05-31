@@ -9,7 +9,9 @@
 </div>
 
 {{ if .Params.Comments }}
+{{ if .Params.Comments.Disqus}}
 {{partial "comments/giscus.html" .}}
+{{ end }}
 {{ end }}
 
 {{partial "contact.html" .}}
