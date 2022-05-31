@@ -2,7 +2,8 @@
 title: "Least Squares"
 comments: true
 tags:
-- [estimation-theory]
+- estimation-theory
+- linear-algebra
 ---
 
 The least-squares method was officially discovered and published by Adrien-Marie
@@ -19,11 +20,8 @@ $$
 \end{equation}
 $$
 
-### Assumptions 
-
 - **Linearity in parameters**: The linear regression model is _linear in
-  parameters_, that is, $\bm{z} = \bm{A}\bm{\beta}+\bm{\epsilon}$ or $z =
-  \beta_0 + \beta_1A_1 + ... + \beta_N{}A_N +\epsilon$. 
+  parameters_, that is, $\bm{z} = \bm{A}\bm{\beta}+\bm{\epsilon}$.
 - **Strict exogenity**: The errors in the regression are should have conditional mean
   zero, that is, $\mathbb{E}[\bm{\epsilon}|\bm{A}] = \bm{0}$.
 
@@ -57,18 +55,17 @@ $$
 \begin{equation}
     \begin{aligned}
         \bm{\hat{\beta}} &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}\bm{A}^T\bm{W}^{-1}\bm{z}, \\
-        \bm{\hat{\beta}} &= \text{argmin}(\bm{\rho}^T\bm{W}^{-1}\bm{\rho}), \\
         \mathbb{E}[\bm{\hat{\beta}}] &= \bm{\beta}, \\
         \text{Cov}[\bm{\hat{\beta}}|\bm{A}] &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}. \\
     \end{aligned}
 \end{equation}
 $$
 
-## Generalised Least Squares (GLS)
+## Generalised Least Squares
 
 GLS was first described by Alexander Aitken in 1936. \[[1](https://en.wikipedia.org/wiki/Generalized_least_squares#cite_note-1)\]
 
-## Non-linear Least Squares (NLS)
+## Non-linear Least Squares
 
 The problem arises when considering the highly non-linear modelled measurements
 $\bm{h}(\bm{x}_0)$ cannot be described by the linear relation above. For this

@@ -1,11 +1,11 @@
 ---
 title: "Estimation Theory"
 tags:
-- [estimation-theory]
+- estimation-theory
 ---
 
 **Estimation theory** is a branch of statistics that addresses the estimation of
-unknown parameters basic on empirical measurements, which contain a random
+unknown parameters based on empirical measurements, which contain a random
 component.
 
 - An **estimator** is an algorithm that attempts to approximate the unknown
@@ -14,6 +14,7 @@ component.
 ## Estimators 
 
 - [Least squares](notes/least-squares.md)
+- [Kalman filter](notes/kalman-filter.md)
 
 ## Applications
 
