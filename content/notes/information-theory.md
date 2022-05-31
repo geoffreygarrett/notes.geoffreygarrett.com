@@ -42,7 +42,7 @@ variable, the relative entropy integral is:
 
 $$
 \begin{equation}
-    D_{KL}(P||Q) = \int_{-\infty}^{\infty}p(x)\log(\frac{p(x)}{q(x)})dx.
+    D_{KL}(P||Q) = \int_{-\infty}^{\infty}p(x)\log\bigg(\frac{p(x)}{q(x)}\bigg)dx.
 \end{equation}
 $$
 
