@@ -13,12 +13,12 @@ if (currentTheme) {
 
 // handle the switching of giscus theme
 function giscusChangeTheme(theme) {
-    console.log('giscusChangeTheme: ', theme);
-    console.log('currentTheme: ', currentTheme);
-    const giscusWrapper = document.getElementsByClassName('giscus-wrapper') ?? false;
-    if (!giscusWrapper) return;
+    // console.log('giscusChangeTheme: ', theme);
+    // console.log('currentTheme: ', currentTheme);
+    const giscusWrapper = document.getElementsByClassName('giscus-wrapper');
+    if (!(typeof giscusWrapper === 'object' && giscusWrapper)) return;
     if (theme === 'dark') {
-        console.log('dark theme');
+        // console.log('dark theme');
         const darkTheme = giscusWrapper[0].getAttribute('data-giscus-dark-theme');
         sendMessage({
             setConfig: {
@@ -26,7 +26,7 @@ function giscusChangeTheme(theme) {
             }
         })
     } else {
-        console.log('light theme');
+        // console.log('light theme');
         const lightTheme = giscusWrapper[0].getAttribute('data-giscus-light-theme');
         sendMessage({
             setConfig: {
@@ -54,8 +54,8 @@ function handleMessage(event) {
     if (event.origin !== 'https://giscus.app') return;
     console.log(event.data);
     if (!(typeof event.data === 'object' && event.data.giscus)) return;
-    const giscusData = event.data.giscus;
-    giscusChangeTheme(currentTheme)
+    // const giscusData = event.data.giscus;
+    giscusChangeTheme(localStorage.getItem('theme') ?? currentTheme);
 
     // remove listener after giscus theme changed (only used to set theme).
     // window.removeEventListener('message', handleMessage);
