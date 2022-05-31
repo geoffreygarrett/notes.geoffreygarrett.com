@@ -13,9 +13,12 @@ if (currentTheme) {
 
 // handle the switching of giscus theme
 function giscusChangeTheme(theme) {
+    console.log('giscusChangeTheme: ', theme);
+    console.log('currentTheme: ', currentTheme);
     const giscusWrapper = document.getElementsByClassName('giscus-wrapper') ?? false;
     if (!giscusWrapper) return;
     if (theme === 'dark') {
+        console.log('dark theme');
         const darkTheme = giscusWrapper[0].getAttribute('data-giscus-dark-theme');
         sendMessage({
             setConfig: {
@@ -23,6 +26,7 @@ function giscusChangeTheme(theme) {
             }
         })
     } else {
+        console.log('light theme');
         const lightTheme = giscusWrapper[0].getAttribute('data-giscus-light-theme');
         sendMessage({
             setConfig: {
