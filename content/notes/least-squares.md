@@ -3,6 +3,7 @@ title: "Least Squares"
 comments: true
 tags:
 - estimation-theory
+- linear-algebra
 ---
 
 The least-squares method was officially discovered and published by Adrien-Marie
