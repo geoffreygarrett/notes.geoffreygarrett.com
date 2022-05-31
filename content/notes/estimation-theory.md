@@ -1,7 +1,7 @@
 ---
 title: "Estimation Theory"
 tags:
-- [estimation-theory]
+- estimation-theory
 ---
 
 **Estimation theory** is a branch of statistics that addresses the estimation of
