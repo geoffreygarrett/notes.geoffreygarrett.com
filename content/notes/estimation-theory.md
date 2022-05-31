@@ -5,7 +5,7 @@ tags:
 ---
 
 **Estimation theory** is a branch of statistics that addresses the estimation of
-unknown parameters basic on empirical measurements, which contain a random
+unknown parameters based on empirical measurements, which contain a random
 component.
 
 - An **estimator** is an algorithm that attempts to approximate the unknown
