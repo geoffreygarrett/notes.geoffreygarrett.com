@@ -5,7 +5,7 @@ tags:
 ---
 
 A dynamic collection of concept definitions which are either relevant to my work
-or of are of interest to me. These definitions may be referred to from other
+or are of interest to me. These definitions may be referred to from other
 parts of my notes. 
 
 ## _"A priori"_ and _"a posteriori"_
