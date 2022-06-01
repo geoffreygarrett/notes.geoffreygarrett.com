@@ -23,3 +23,8 @@ $$
     \end{aligned}
 \end{equation}
 $$
+
+## Inspiration for distillation
+
+- [How a Kalman filter works, in pictures](http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/)
+
