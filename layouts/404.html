@@ -6,7 +6,7 @@
 {{ $geometry := resources.Get "js/geometry.js" | resources.Fingerprint "md5" |
 resources.Minify }}
 <style>
-    iframe {
+    grid-icosahedron {
         z-index: -9999;
         position: absolute;
         top: 0;
@@ -17,15 +17,13 @@ resources.Minify }}
         padding: 0;
     }
 </style>
-<iframe src="{{$geometry.Permalink}}">
-    <div class="relative w-screen h-screen">
-        <div class="grid-icosahedron w-full h-full bg-black overflow-hidden"></div>
-    </div>
-</iframe>
-
-
-
+<div class="relative w-screen h-screen">
+    <div class="grid-icosahedron w-full h-full bg-black overflow-hidden"></div>
+</div>
 <script defer type="module" src="{{$geometry.Permalink}}"></script>
+
+
+
 
 
 <div class="singlePage">
