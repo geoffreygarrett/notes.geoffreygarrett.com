@@ -100,8 +100,8 @@ $\mathcal{X}_0$
 
 $$
 \begin{aligned}
-        W_0^{(m)}           &= \lambda(L-\lambda)                                        //
-        W_0^{(m)}           &= \lambda(L-\lambda) + (1-\alpha^2 + \beta)                 //
-        W_k^{(m)}           &= W_k^{(c)} = 1/\{2(L+\lambda)\}                            //
+        W_0^{(m)}           &= \lambda(L-\lambda)                                        \\
+        W_0^{(m)}           &= \lambda(L-\lambda) + (1-\alpha^2 + \beta)                 \\
+        W_k^{(m)}           &= W_k^{(c)} = 1/\{2(L+\lambda)\}                            \\
 \end{aligned}
 $$
