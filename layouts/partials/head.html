@@ -85,15 +85,15 @@
         {{$.Site.Data.config.enableLatex}}
       )
       {{end}}
-      {{if $.Site.Data.config.enableLatex}}
-      renderMathInElement(document.body, {
-        delimiters: [
-          {left: '$$', right: '$$', display: true},
-          {left: '$', right: '$', display: false},
-        ],
-        throwOnError : false
-      });
-      {{end}}
+      // {{if $.Site.Data.config.enableLatex}}
+      // renderMathInElement(document.body, {
+      //   delimiters: [
+      //     {left: '$$', right: '$$', display: true},
+      //     {left: '$', right: '$', display: false},
+      //   ],
+      //   throwOnError : false
+      // });
+      // {{end}}
     };
   </script>
   {{if $.Site.Data.config.enableSPA}}
@@ -102,6 +102,25 @@
   <script type="module">
     import { attachSPARouting } from '{{$router.Permalink}}';
     // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page.
+
+    {{if $.Site.Data.config.enableLatex}}
+
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+    });
+
+    {{end}}
 
     attachSPARouting(draw);
   </script>
