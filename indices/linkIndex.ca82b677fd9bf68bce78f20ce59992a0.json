@@ -50,6 +50,13 @@
           "text": "Orbit determination"
         }
       ],
+      "/notes/kalman-filter": [
+        {
+          "source": "/notes/kalman-filter",
+          "target": "/notes/markov-models.md",
+          "text": "Hidden Markov model"
+        }
+      ],
       "/notes/machine-learning": [
         {
           "source": "/notes/machine-learning",
@@ -122,6 +129,13 @@
           "text": "Machine Learning MOC"
         }
       ],
+      "/notes/markov-models.md": [
+        {
+          "source": "/notes/kalman-filter",
+          "target": "/notes/markov-models.md",
+          "text": "Hidden Markov model"
+        }
+      ],
       "/notes/orbit-determination": [
         {
           "source": "/notes/estimation-theory",
@@ -190,6 +204,11 @@
       "source": "/notes/estimation-theory",
       "target": "/notes/orbit-determination",
       "text": "Orbit determination"
+    },
+    {
+      "source": "/notes/kalman-filter",
+      "target": "/notes/markov-models.md",
+      "text": "Hidden Markov model"
     },
     {
       "source": "/notes/machine-learning",

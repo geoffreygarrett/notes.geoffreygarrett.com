@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="{{ }}
-Markov chains and processes  A Markov chain is a discrete-time process. A Markov process is a continuous-time process."
+    content=".tg {border-collapse:collapse;border-spacing:0;} .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px; overflow:hidden;padding:10px 5px;word-break:normal;} .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px; font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;} .tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top} .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}    Characterization Fully Observable Partially Observable     Autonomous Markov chain/ process Hidden Markov model   Controlled Markov decision process"
   />
   <title>
     Markov Models
@@ -72,13 +71,13 @@ Markov chains and processes  A Markov chain is a discrete-time process. A Markov
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.910e232291d69a15e8f114cb690b37bf.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.ca82b677fd9bf68bce78f20ce59992a0.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.e6c15893af52b2c64120d9d19bbbf44e.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.96706a30388f1148e4c9bc44f0b39eda.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -206,10 +205,41 @@ if (!doNotTrack) {
 
 
 
-<p>{{ <!-- raw HTML omitted --> }}</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr">Characterization</th>
+    <th class="tg-fymr">Fully Observable</th>
+    <th class="tg-fymr">Partially Observable</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-fymr">Autonomous</td>
+    <td class="tg-0pky">Markov chain/ process</td>
+    <td class="tg-0pky">Hidden Markov model</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">Controlled</td>
+    <td class="tg-0pky">Markov decision process<br></td>
+    <td class="tg-0pky">Partially observable Markov decision process</td>
+  </tr>
+</tbody>
+</table>
+
+
+<a href="#hidden-markov-model"><h2 id="hidden-markov-model"><span class="hanchor" ariaLabel="Anchor"># </span>Hidden Markov model</h2></a>
 <a href="#markov-chains-and-processes"><h3 id="markov-chains-and-processes"><span class="hanchor" ariaLabel="Anchor"># </span>Markov chains and processes</h3></a>
 <ul>
 <li>A Markov chain is a discrete-time process.</li>

@@ -48,7 +48,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/kalman-filter/</guid>
-      <description>Linearised Kalman Filter Extended Kalman Filter Unscented Kalman Filter $$ \begin{equation} \begin{aligned} L &amp;amp;= \text{dim}(\bm{x}) &amp;amp;&amp;amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;amp;= \bm{x}_i^- &amp;amp;&amp;amp; k=1,&amp;hellip;,L \ \mathcal{X}_k &amp;amp;= \bm{x}_i^- + \bigg(\sqrt{(L+\lambda)\bm{P}_i^-}\bigg)_k &amp;amp;&amp;amp; k=1,&amp;hellip;,L \ \mathcal{X}_k &amp;amp;= \bm{x}_i^- + \bigg(\sqrt{(L+\lambda)\bm{P}_i^-}\bigg) _{k-L} &amp;amp;&amp;amp; k=L+1,&amp;hellip;,2L \ W_0^{(m)} &amp;amp;= \lambda(L-\lambda) \ W_0^{(m)} &amp;amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta) \ W_k^{(m)} &amp;amp;= W_k^{(c)} = 1/{2(L+\lambda)} &amp;amp;&amp;amp; k=1,&amp;hellip;,2L \ \end{aligned} \end{equation} $$</description>
+      <description>Linearised Kalman Filter Extended Kalman Filter   Hidden Markov model  Unscented Kalman Filter $$ \begin{equation} \begin{aligned} L &amp;amp;= \text{dim}(\bm{x}) &amp;amp;&amp;amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;amp;= \bm{x}_i^- &amp;amp;&amp;amp; k=1,&amp;hellip;,L \ \mathcal{X}_k &amp;amp;= \bm{x}_i^- + \bigg(\sqrt{(L+\lambda)\bm{P}_i^-}\bigg)_k &amp;amp;&amp;amp; k=1,&amp;hellip;,L \ \mathcal{X}_k &amp;amp;= \bm{x}_i^- + \bigg(\sqrt{(L+\lambda)\bm{P}_i^-}\bigg) _{k-L} &amp;amp;&amp;amp; k=L+1,&amp;hellip;,2L \ W_0^{(m)} &amp;amp;= \lambda(L-\lambda) \ W_0^{(m)} &amp;amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta) \ W_k^{(m)} &amp;amp;= W_k^{(c)} = 1/{2(L+\lambda)} &amp;amp;&amp;amp; k=1,&amp;hellip;,2L \ \end{aligned} \end{equation} $$</description>
     </item>
     
     <item>
@@ -75,8 +75,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/markov-models/</guid>
-      <description>{{ }}
-Markov chains and processes  A Markov chain is a discrete-time process. A Markov process is a continuous-time process.</description>
+      <description>.tg {border-collapse:collapse;border-spacing:0;} .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px; overflow:hidden;padding:10px 5px;word-break:normal;} .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px; font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;} .tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top} .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}    Characterization Fully Observable Partially Observable     Autonomous Markov chain/ process Hidden Markov model   Controlled Markov decision process</description>
     </item>
     
     <item>

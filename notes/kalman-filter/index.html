@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Linearised Kalman Filter Extended Kalman Filter Unscented Kalman Filter $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\bm{x}) &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \bm{x}_i^- &amp;&amp; k=1,&hellip;,L \ \mathcal{X}_k &amp;= \bm{x}_i^- &#43; \bigg(\sqrt{(L&#43;\lambda)\bm{P}_i^-}\bigg)_k &amp;&amp; k=1,&hellip;,L \ \mathcal{X}_k &amp;= \bm{x}_i^- &#43; \bigg(\sqrt{(L&#43;\lambda)\bm{P}_i^-}\bigg) _{k-L} &amp;&amp; k=L&#43;1,&hellip;,2L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(m)} &amp;= \lambda(L-\lambda) &#43; (1-\alpha^2 &#43; \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L&#43;\lambda)} &amp;&amp; k=1,&hellip;,2L \ \end{aligned} \end{equation} $$"
+    content="Linearised Kalman Filter Extended Kalman Filter   Hidden Markov model  Unscented Kalman Filter $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\bm{x}) &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \bm{x}_i^- &amp;&amp; k=1,&hellip;,L \ \mathcal{X}_k &amp;= \bm{x}_i^- &#43; \bigg(\sqrt{(L&#43;\lambda)\bm{P}_i^-}\bigg)_k &amp;&amp; k=1,&hellip;,L \ \mathcal{X}_k &amp;= \bm{x}_i^- &#43; \bigg(\sqrt{(L&#43;\lambda)\bm{P}_i^-}\bigg) _{k-L} &amp;&amp; k=L&#43;1,&hellip;,2L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(m)} &amp;= \lambda(L-\lambda) &#43; (1-\alpha^2 &#43; \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L&#43;\lambda)} &amp;&amp; k=1,&hellip;,2L \ \end{aligned} \end{equation} $$"
   />
   <title>
     Kalman Filter
@@ -71,13 +71,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.910e232291d69a15e8f114cb690b37bf.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.ca82b677fd9bf68bce78f20ce59992a0.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.e6c15893af52b2c64120d9d19bbbf44e.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.96706a30388f1148e4c9bc44f0b39eda.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -210,6 +210,18 @@ if (!doNotTrack) {
 
 <a href="#linearised-kalman-filter"><h2 id="linearised-kalman-filter"><span class="hanchor" ariaLabel="Anchor"># </span>Linearised Kalman Filter</h2></a>
 <a href="#extended-kalman-filter"><h2 id="extended-kalman-filter"><span class="hanchor" ariaLabel="Anchor"># </span>Extended Kalman Filter</h2></a>
+<ul>
+<li>
+
+
+
+
+
+<a
+  href="/notes/markov-models/"
+  rel="noopener" class="internal-link"
+  data-src="/notes/markov-models/">Hidden Markov model</a></li>
+</ul>
 <a href="#unscented-kalman-filter"><h2 id="unscented-kalman-filter"><span class="hanchor" ariaLabel="Anchor"># </span>Unscented Kalman Filter</h2></a>
 <p>$$
 \begin{equation}
