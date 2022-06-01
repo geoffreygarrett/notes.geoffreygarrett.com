@@ -78,7 +78,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.c20d5d7ba56da750ddae56906fc8e306.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.68f311d153cc4e27a3b53a583bafeb06.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -147,7 +147,7 @@ if (!doNotTrack) {
 
 
 <style>
-    iframe {
+    grid-icosahedron {
         z-index: -9999;
         position: absolute;
         top: 0;
@@ -158,15 +158,13 @@ if (!doNotTrack) {
         padding: 0;
     }
 </style>
-<iframe src="https://notes.geoffreygarrett.com/js/geometry.fe0cdd25187e586601f74a936fe2bc37.min.js">
-    <div class="relative w-screen h-screen">
-        <div class="grid-icosahedron w-full h-full bg-black overflow-hidden"></div>
-    </div>
-</iframe>
-
-
-
+<div class="relative w-screen h-screen">
+    <div class="grid-icosahedron w-full h-full bg-black overflow-hidden"></div>
+</div>
 <script defer type="module" src="https://notes.geoffreygarrett.com/js/geometry.fe0cdd25187e586601f74a936fe2bc37.min.js"></script>
+
+
+
 
 
 <div class="singlePage">
