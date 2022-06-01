@@ -13,4 +13,5 @@ title: Geoffrey's Notes
 
 ## Useful 🛠️
 
+- [Concept Definitions](/notes/concept-definitions.md)
 - [All Notes](/notes)
