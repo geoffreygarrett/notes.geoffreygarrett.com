@@ -3,7 +3,7 @@
 {{ partial "head.html" . }}
 
 <body>
-{{ $geometry := resources.Get "js/router.js" | resources.Fingerprint "md5" | resources.Minify }}
+{{ $geometry := resources.Get "js/geometry.js" | resources.Fingerprint "md5" | resources.Minify }}
 <script defer type="module" src="{{$geometry.Permalink}}"></script>
 <div class="singlePage">
     {{partial "darkmode.html" .}}
