@@ -17,3 +17,5 @@ posteriori is knowable on the basis of experience. The distinction between a
 priori and a posteriori knowledge thus broadly corresponds to the distinction
 between empirical and nonempirical knowledge._ - [Internet Encyclopedia of
 Philosophy](https://iep.utm.edu/apriori/)
+
+- [Further reading](https://en.wikipedia.org/wiki/A_priori_and_a_posteriori)
