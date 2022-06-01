@@ -12,7 +12,14 @@
   --svgfilter: invert(0%) hue-rotate(0deg);
 }
 
-
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f7f7fd;
+}
 // table of class "general" should be limited to 600px
 // table of class "full" should be limited to 1200px
 // table of class "full-wide" should be limited to 1400px

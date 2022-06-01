@@ -2,11 +2,6 @@
 title: Geoffrey's Notes
 ---
 
-{{< rawhtml >}}
-<script defer type="module" src="{{ "/js/geometry.js" | urlize | relURL }}"></script>
-{{< /rawhtml >}}
-
-
 ## Vocational 💼
 
 - [Machine Learning MOC](notes/machine-learning.md)

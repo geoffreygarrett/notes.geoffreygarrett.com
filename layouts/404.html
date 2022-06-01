@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 {{ partial "head.html" . }}
-
 <body>
+<div class="relative w-screen h-screen">
+  <div class="grid-icosahedron w-full h-full bg-black overflow-hidden"></div>
+</div>
 {{ $geometry := resources.Get "js/geometry.js" | resources.Fingerprint "md5" | resources.Minify }}
 <script defer type="module" src="{{$geometry.Permalink}}"></script>
 <div class="singlePage">
