@@ -12,6 +12,17 @@
   --svgfilter: invert(0%) hue-rotate(0deg);
 }
 
+
+// table of class "general" should be limited to 600px
+// table of class "full" should be limited to 1200px
+// table of class "full-wide" should be limited to 1400px
+
+table {
+  .tg {
+    max-width: 600px !important;
+  }
+}
+
 // not the way...
 //.singlePage {
 //  max-width: 660px;
