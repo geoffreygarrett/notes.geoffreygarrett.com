@@ -1,6 +1,6 @@
 baseURL = "https://notes.geoffreygarrett.com/"
 languageCode = "en-us"
-googleAnalytics = ""
+googleAnalytics = "G-1RCSBZMTSN"
 pygmentsUseClasses = true
 relativeURLs = false
 disablePathToLower = true
