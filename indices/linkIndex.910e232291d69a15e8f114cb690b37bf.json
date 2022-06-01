@@ -24,6 +24,11 @@
         },
         {
           "source": "/",
+          "target": "/notes/concept-definitions",
+          "text": "Concept Definitions"
+        },
+        {
+          "source": "/",
           "target": "/notes",
           "text": "All Notes"
         }
@@ -66,6 +71,13 @@
           "source": "/",
           "target": "/notes",
           "text": "All Notes"
+        }
+      ],
+      "/notes/concept-definitions": [
+        {
+          "source": "/",
+          "target": "/notes/concept-definitions",
+          "text": "Concept Definitions"
         }
       ],
       "/notes/deep-learning": [
@@ -153,6 +165,11 @@
       "source": "/",
       "target": "/notes/software-engineering",
       "text": "Software Engineering MOC"
+    },
+    {
+      "source": "/",
+      "target": "/notes/concept-definitions",
+      "text": "Concept Definitions"
     },
     {
       "source": "/",
