@@ -5,7 +5,7 @@ tags:
 ---
 
 
-{{< figure src="/notes/content/images/large.png" >}}
+{{< figure src="/notes/images/large.png" >}}
 
 ## Sub-fields
 - [Deep Learning](notes/deep-learning.md)
