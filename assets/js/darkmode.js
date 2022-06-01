@@ -1,5 +1,5 @@
-const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
-const currentTheme = localStorage.getItem('theme') ?? userPref
+const userPreference = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+const currentTheme = localStorage.getItem('theme') ?? userPreference
 
 function sendMessage(message) {
     const iframe = document.querySelector('iframe.giscus-frame');

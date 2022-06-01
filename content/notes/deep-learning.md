@@ -1,7 +1,8 @@
 ---
 title: "Deep Learning"
 tags:
-- [machine-learning, deep-learning]
+- machine-learning 
+- deep-learning
 ---
 
 Deep Learning (DL) is a field of Machine Learning (ML) that is primarily
