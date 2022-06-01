@@ -25,9 +25,8 @@ table {
   border-collapse: collapse !important;
   border-spacing: 0 !important;
 }
-
 .tg td {
-  border-color: black !important;
+  border-color: var(--outlinegray) !important;
   border-style: solid !important;
   border-width: 1px !important;
   //font-family: Arial, sans-serif;
@@ -38,7 +37,7 @@ table {
 }
 
 .tg th {
-  border-color: black !important;
+  border-color: var(--outlinegray) !important;
   border-style: solid !important;
   border-width: 1px !important;
   //font-family: Arial, sans-serif;
