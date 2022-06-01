@@ -8,6 +8,8 @@ tags:
 
 ## Extended Kalman Filter
 
+- [Hidden Markov model](notes/markov-models.md#hidden-markov-model)
+
 ## Unscented Kalman Filter
 
 $$
