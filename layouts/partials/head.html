@@ -86,19 +86,12 @@
       )
       {{end}}
       {{if $.Site.Data.config.enableLatex}}
-      document.addEventListener("DOMContentLoaded", function() {
-          renderMathInElement(document.body, {
-            // customised options
-            // • auto-render specific keys, e.g.:
-            delimiters: [
-                {left: '$$', right: '$$', display: true},
-                {left: '$', right: '$', display: false},
-                // {left: '\\(', right: '\\)', display: false},
-                // {left: '\\[', right: '\\]', display: true}
-            ],
-            // • rendering keys, e.g.:
-            throwOnError : false
-          });
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        throwOnError : false
       });
       {{end}}
     };
@@ -111,10 +104,12 @@
     // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page.
 
     attachSPARouting(draw);
+    document.addEventListener("DOMContentLoaded", draw);
   </script>
   {{else}}
   <script>
     window.navigate = (url) => window.location.href = url;
+    document.addEventListener("DOMContentLoaded", draw);
     draw();
   </script>
   {{end}}
