@@ -70,6 +70,16 @@
     </item>
     
     <item>
+      <title>Markov Models</title>
+      <link>https://notes.geoffreygarrett.com/notes/markov-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/notes/markov-models/</guid>
+      <description>{{ }}
+Markov chains and processes  A Markov chain is a discrete-time process. A Markov process is a continuous-time process.</description>
+    </item>
+    
+    <item>
       <title>Orbit Determination and Parameter Estimation</title>
       <link>https://notes.geoffreygarrett.com/notes/orbit-determination/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
