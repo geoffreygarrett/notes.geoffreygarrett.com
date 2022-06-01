@@ -102,14 +102,11 @@
   <script type="module">
     import { attachSPARouting } from '{{$router.Permalink}}';
     // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page.
-
     attachSPARouting(draw);
-    document.addEventListener("DOMContentLoaded", draw);
   </script>
   {{else}}
   <script>
     window.navigate = (url) => window.location.href = url;
-    document.addEventListener("DOMContentLoaded", draw);
     draw();
   </script>
   {{end}}
