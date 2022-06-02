@@ -20,8 +20,11 @@ $$
 \end{equation}
 $$
 
-- **Linearity in parameters**: The linear regression model is _linear in
-  parameters_, that is, $\bm{z} = \bm{A}\bm{\beta}+\bm{\epsilon}$.
+- [[Linear Algebra|test]]
+- [[Linear Algebra]]
+
+- **Linearity in parameters**: The system model is _linear in
+  parameters_, that is, [[Linear Algebra#(System of) Linear Equation(s)|$\bm{z} = \bm{A}\bm{\beta}+\bm{\epsilon}$]].
 - **Strict exogenity**: The errors in the regression are should have conditional mean
   zero, that is, $\mathbb{E}[\bm{\epsilon}|\bm{A}] = \bm{0}$.
 
