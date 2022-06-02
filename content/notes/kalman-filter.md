@@ -29,7 +29,7 @@ $$
 \end{equation}
 $$
 
-{{< svg src="/notes/images/sigma-points-covariance.svg" caption="Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe's proposed method." >}}
+{{< svg src="/notes/images/sigma-points-wan.svg" caption="Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe's proposed method." >}}
 
 
 ## Discriminative Kalman filter
