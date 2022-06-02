@@ -4,13 +4,16 @@ tags:
 - [estimation-theory]
 ---
 
-## Linearised Kalman Filter
+## Linearised Kalman filter
 
-## Extended Kalman Filter
+## Extended Kalman filter
 
+- Non-linear filter
 - [Hidden Markov model](notes/markov-models.md#hidden-markov-model)
 
-## Unscented Kalman Filter
+## Unscented Kalman filter
+
+- Non-linear filter
 
 $$
 \begin{equation}
@@ -25,6 +28,13 @@ $$
     \end{aligned}
 \end{equation}
 $$
+
+{{< svg src="/notes/images/siga-points-covariance.svg" caption="Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe's proposed method." >}}
+
+
+## Discriminative Kalman filter
+
+- Non-linear filter
 
 ## Inspiration for distillation
 
