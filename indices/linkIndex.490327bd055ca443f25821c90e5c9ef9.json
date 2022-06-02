@@ -57,6 +57,18 @@
           "text": "Hidden Markov model"
         }
       ],
+      "/notes/least-squares": [
+        {
+          "source": "/notes/least-squares",
+          "target": "/Linear-Algebra",
+          "text": "test"
+        },
+        {
+          "source": "/notes/least-squares",
+          "target": "/Linear-Algebra",
+          "text": "Linear Algebra"
+        }
+      ],
       "/notes/machine-learning": [
         {
           "source": "/notes/machine-learning",
@@ -73,6 +85,18 @@
       ]
     },
     "backlinks": {
+      "/Linear-Algebra": [
+        {
+          "source": "/notes/least-squares",
+          "target": "/Linear-Algebra",
+          "text": "test"
+        },
+        {
+          "source": "/notes/least-squares",
+          "target": "/Linear-Algebra",
+          "text": "Linear Algebra"
+        }
+      ],
       "/notes": [
         {
           "source": "/",
@@ -209,6 +233,16 @@
       "source": "/notes/kalman-filter",
       "target": "/notes/markov-models.md",
       "text": "Hidden Markov model"
+    },
+    {
+      "source": "/notes/least-squares",
+      "target": "/Linear-Algebra",
+      "text": "test"
+    },
+    {
+      "source": "/notes/least-squares",
+      "target": "/Linear-Algebra",
+      "text": "Linear Algebra"
     },
     {
       "source": "/notes/machine-learning",

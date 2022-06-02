@@ -7,7 +7,7 @@
     name="description"
     content="A dynamic collection of concept definitions which are either relevant to my work or are of interest to me. These definitions may be referred to from other parts of my notes."
   />
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'><link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
     Concept Definitions
   </title>
@@ -72,13 +72,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.ca82b677fd9bf68bce78f20ce59992a0.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.490327bd055ca443f25821c90e5c9ef9.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.68f311d153cc4e27a3b53a583bafeb06.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.808819af3822e37f4d3876df364ad384.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

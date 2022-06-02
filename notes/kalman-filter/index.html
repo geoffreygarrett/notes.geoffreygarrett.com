@@ -7,7 +7,7 @@
     name="description"
     content="Linearised Kalman Filter Extended Kalman Filter   Hidden Markov model  Unscented Kalman Filter $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\bm{x}) &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \bm{x}_i^- &amp;&amp; k=1,&hellip;,L \ \mathcal{X}_k &amp;= \bm{x}_i^- &#43; \bigg(\sqrt{(L&#43;\lambda)\bm{P}_i^-}\bigg)_k &amp;&amp; k=1,&hellip;,L \ \mathcal{X}_k &amp;= \bm{x}_i^- &#43; \bigg(\sqrt{(L&#43;\lambda)\bm{P}_i^-}\bigg) _{k-L} &amp;&amp; k=L&#43;1,&hellip;,2L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(m)} &amp;= \lambda(L-\lambda) &#43; (1-\alpha^2 &#43; \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L&#43;\lambda)} &amp;&amp; k=1,&hellip;,2L \ \end{aligned} \end{equation} $$"
   />
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'><link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
     Kalman Filter
   </title>
@@ -72,13 +72,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.ca82b677fd9bf68bce78f20ce59992a0.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.490327bd055ca443f25821c90e5c9ef9.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.68f311d153cc4e27a3b53a583bafeb06.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.808819af3822e37f4d3876df364ad384.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

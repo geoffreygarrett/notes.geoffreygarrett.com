@@ -7,7 +7,7 @@
     name="description"
     content=""
   />
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'><link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
     Categories
   </title>
@@ -72,13 +72,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.ca82b677fd9bf68bce78f20ce59992a0.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.490327bd055ca443f25821c90e5c9ef9.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.68f311d153cc4e27a3b53a583bafeb06.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.808819af3822e37f4d3876df364ad384.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -190,22 +190,6 @@ if (!doNotTrack) {
             <ul class="section-ul"><li class="section-li">
         <div class="section">
             <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/estimation-theory/">Estimation Theory</a></h3>
-                <ul class="tags">
-                    
-                    <li><a href="https://notes.geoffreygarrett.com/tags/estimation-theory/">Estimation-Theory</a></li>
-                    
-                </ul>
-                <p>Estimation theory is a branch of statistics that addresses the estimation of unknown parameters based on empirical measurements, which contain a random component....</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated May 31, 2022
-            </p>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
                 <h3><a href="https://notes.geoffreygarrett.com/notes/least-squares/">Least Squares</a></h3>
                 <ul class="tags">
                     
@@ -217,7 +201,23 @@ if (!doNotTrack) {
                 <p>The least-squares method was officially discovered and published by Adrien-Marie Legendre in their work &ldquo;Nouvelles methodes pour la determination des orbites des cometes&rdquo;, published in 1805 [citation needed]....</p>
             </div>
             <p class="meta">
-                2 minute read. Last updated May 31, 2022
+                2 minute read. Last updated June 2, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/estimation-theory/">Estimation Theory</a></h3>
+                <ul class="tags">
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/estimation-theory/">Estimation-Theory</a></li>
+                    
+                </ul>
+                <p>Estimation theory is a branch of statistics that addresses the estimation of unknown parameters based on empirical measurements, which contain a random component....</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated May 31, 2022
             </p>
 
         </div>
@@ -296,7 +296,7 @@ if (!doNotTrack) {
                 <p>The least-squares method was officially discovered and published by Adrien-Marie Legendre in their work &ldquo;Nouvelles methodes pour la determination des orbites des cometes&rdquo;, published in 1805 [citation needed]....</p>
             </div>
             <p class="meta">
-                2 minute read. Last updated May 31, 2022
+                2 minute read. Last updated June 2, 2022
             </p>
 
         </div>

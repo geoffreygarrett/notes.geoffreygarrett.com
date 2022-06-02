@@ -7,7 +7,7 @@
     name="description"
     content="The least-squares method was officially discovered and published by Adrien-Marie Legendre in their work &ldquo;Nouvelles methodes pour la determination des orbites des cometes&rdquo;, published in 1805 [citation needed]."
   />
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'><link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
     Least Squares
   </title>
@@ -72,13 +72,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.ca82b677fd9bf68bce78f20ce59992a0.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.490327bd055ca443f25821c90e5c9ef9.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.68f311d153cc4e27a3b53a583bafeb06.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.808819af3822e37f4d3876df364ad384.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -181,7 +181,7 @@ if (!doNotTrack) {
   <article>
       <h1>Least Squares</h1>
       <p class="meta">
-          Last updated May 31, 2022
+          Last updated June 2, 2022
       </p>
       <ul class="tags">
           
@@ -232,6 +232,69 @@ if (!doNotTrack) {
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+
 
 
 
@@ -247,10 +310,20 @@ des cometes&rdquo;</em>, published in 1805 [citation needed].</p>
 \end{equation}
 $$</p>
 <ul>
-<li><strong>Linearity in parameters</strong>: The linear regression model is <em>linear in
-parameters</em>, that is, $\bm{z} = \bm{A}\bm{\beta}+\bm{\epsilon}$.</li>
-<li><strong>Strict exogenity</strong>: The errors in the regression are should have conditional mean
-zero, that is, $\mathbb{E}[\bm{\epsilon}|\bm{A}] = \bm{0}$.</li>
+<li>
+<p><a class="internal-link broken">test</a></p>
+</li>
+<li>
+<p><a class="internal-link broken">Linear Algebra</a></p>
+</li>
+<li>
+<p><strong>Linearity in parameters</strong>: The system model is <em>linear in
+parameters</em>, that is, <a class="internal-link broken">$\bm{z} = \bm{A}\bm{\beta}+\bm{\epsilon}$</a>.</p>
+</li>
+<li>
+<p><strong>Strict exogenity</strong>: The errors in the regression are should have conditional mean
+zero, that is, $\mathbb{E}[\bm{\epsilon}|\bm{A}] = \bm{0}$.</p>
+</li>
 </ul>
 <figure>
     <div style="text-align: center;">
