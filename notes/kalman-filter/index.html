@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Linearised Kalman Filter Extended Kalman Filter   Hidden Markov model  Unscented Kalman Filter $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\bm{x}) &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \bm{x}_i^- &amp;&amp; k=1,&hellip;,L \ \mathcal{X}_k &amp;= \bm{x}_i^- &#43; \bigg(\sqrt{(L&#43;\lambda)\bm{P}_i^-}\bigg)_k &amp;&amp; k=1,&hellip;,L \ \mathcal{X}_k &amp;= \bm{x}_i^- &#43; \bigg(\sqrt{(L&#43;\lambda)\bm{P}_i^-}\bigg) _{k-L} &amp;&amp; k=L&#43;1,&hellip;,2L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(m)} &amp;= \lambda(L-\lambda) &#43; (1-\alpha^2 &#43; \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L&#43;\lambda)} &amp;&amp; k=1,&hellip;,2L \ \end{aligned} \end{equation} $$"
+    content="Linearised Kalman filter Extended Kalman filter  Non-linear filter  Hidden Markov model  Unscented Kalman filter  Non-linear filter  $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\bm{x}) &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \bm{x}_i^- &amp;&amp; k=1,&hellip;,L \ \mathcal{X}_k &amp;= \bm{x}_i^- &#43; \bigg(\sqrt{(L&#43;\lambda)\bm{P}_i^-}\bigg)_k &amp;&amp; k=1,&hellip;,L \ \mathcal{X}_k &amp;= \bm{x}_i^- &#43; \bigg(\sqrt{(L&#43;\lambda)\bm{P}_i^-}\bigg) _{k-L} &amp;&amp; k=L&#43;1,&hellip;,2L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(m)} &amp;= \lambda(L-\lambda) &#43; (1-\alpha^2 &#43; \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L&#43;\lambda)} &amp;&amp; k=1,&hellip;,2L \ \end{aligned} \end{equation} $$"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
@@ -78,7 +78,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.808819af3822e37f4d3876df364ad384.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.986f6b413677f439d11e1af83e92c428.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -181,7 +181,7 @@ if (!doNotTrack) {
   <article>
       <h1>Kalman Filter</h1>
       <p class="meta">
-          Last updated June 1, 2022
+          Last updated June 2, 2022
       </p>
       <ul class="tags">
           
@@ -209,9 +209,10 @@ if (!doNotTrack) {
 
 
 
-<a href="#linearised-kalman-filter"><h2 id="linearised-kalman-filter"><span class="hanchor" ariaLabel="Anchor"># </span>Linearised Kalman Filter</h2></a>
-<a href="#extended-kalman-filter"><h2 id="extended-kalman-filter"><span class="hanchor" ariaLabel="Anchor"># </span>Extended Kalman Filter</h2></a>
+<a href="#linearised-kalman-filter"><h2 id="linearised-kalman-filter"><span class="hanchor" ariaLabel="Anchor"># </span>Linearised Kalman filter</h2></a>
+<a href="#extended-kalman-filter"><h2 id="extended-kalman-filter"><span class="hanchor" ariaLabel="Anchor"># </span>Extended Kalman filter</h2></a>
 <ul>
+<li>Non-linear filter</li>
 <li>
 
 
@@ -223,13 +224,35 @@ if (!doNotTrack) {
   rel="noopener" class="internal-link"
   data-src="/notes/markov-models/">Hidden Markov model</a></li>
 </ul>
-<a href="#unscented-kalman-filter"><h2 id="unscented-kalman-filter"><span class="hanchor" ariaLabel="Anchor"># </span>Unscented Kalman Filter</h2></a>
+<a href="#unscented-kalman-filter"><h2 id="unscented-kalman-filter"><span class="hanchor" ariaLabel="Anchor"># </span>Unscented Kalman filter</h2></a>
+<ul>
+<li>Non-linear filter</li>
+</ul>
 <p>$$
 \begin{equation}
 \begin{aligned}
 L                   &amp;= \text{dim}(\bm{x})                                              &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \\\mathcal{X}_0       &amp;= \bm{x}_i^-                                                      &amp;&amp; k=1,&hellip;,L                 \\\mathcal{X}_k       &amp;= \bm{x}_i^- + \bigg(\sqrt{(L+\lambda)\bm{P}_i^-}\bigg)_k         &amp;&amp; k=1,&hellip;,L                 \\\mathcal{X}_k       &amp;= \bm{x}_i^- + \bigg(\sqrt{(L+\lambda)\bm{P}_i^-}\bigg) _{k-L}    &amp;&amp; k=L+1,&hellip;,2L              \\W_0^{(m)}           &amp;= \lambda(L-\lambda)                                                                           \\W_0^{(m)}           &amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta)                                                    \\W_k^{(m)}           &amp;= W_k^{(c)} = 1/{2(L+\lambda)}                                  &amp;&amp; k=1,&hellip;,2L                \\\end{aligned}
 \end{equation}
 $$</p>
+<figure>
+    <div style="text-align: center;">
+        <img src="/notes/images/sigma-points-covariance.svg" alt="">
+        
+        <figcaption>Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe&#39;s proposed method.</figcaption>
+        
+    </div>
+</figure>
+
+
+
+
+
+
+
+<a href="#discriminative-kalman-filter"><h2 id="discriminative-kalman-filter"><span class="hanchor" ariaLabel="Anchor"># </span>Discriminative Kalman filter</h2></a>
+<ul>
+<li>Non-linear filter</li>
+</ul>
 <a href="#inspiration-for-distillation"><h2 id="inspiration-for-distillation"><span class="hanchor" ariaLabel="Anchor"># </span>Inspiration for distillation</h2></a>
 <ul>
 <li>
