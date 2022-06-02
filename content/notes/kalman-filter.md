@@ -30,7 +30,8 @@ $$
 $$
 
 {{< svg src="/notes/images/sigma-points-wan.svg" caption="Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe's proposed method." >}}
-{{< figure src="/notes/images/sigma-points-wan.svg" caption="Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe's proposed method." >}}
+
+[comment]: <> ({{< figure src="/notes/images/sigma-points-wan.svg" caption="Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe's proposed method." >}})
 
 
 ## Discriminative Kalman filter
