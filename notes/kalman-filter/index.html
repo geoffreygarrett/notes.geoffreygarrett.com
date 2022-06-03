@@ -78,7 +78,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.eb0324d80054c23adfcdeff86a2063fd.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.02b38f70b833a0ba4a3168d2db214bba.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -181,7 +181,7 @@ if (!doNotTrack) {
   <article>
       <h1>Kalman Filter</h1>
       <p class="meta">
-          Last updated June 2, 2022
+          Last updated June 3, 2022
       </p>
       <ul class="tags">
           
@@ -238,7 +238,7 @@ $$</p>
     <div style="text-align: center;">
         <img src="/notes/images/sigma-points-wan.svg" alt="">
         
-        <figcaption>Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe&#39;s proposed method.</figcaption>
+        <figcaption>Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe&#39;s proposed parametrisation. $\kappa=0$, $\alpha=1$</figcaption>
         
     </div>
 </figure>
