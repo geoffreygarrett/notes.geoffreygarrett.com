@@ -18,15 +18,25 @@ tags:
 $$
 \begin{equation}
     \begin{aligned}
-        L                   &= \text{dim}(\bm{x})                                              && \bm{x}\in{\mathbb{R}}^{L} \\
-        \mathcal{X}_0       &= \bm{x}_i^-                                                      && k=1,...,L                 \\
-        \mathcal{X}_k       &= \bm{x}_i^- + \bigg(\sqrt{(L+\lambda)\bm{P}_i^-}\bigg)_k         && k=1,...,L                 \\
-        \mathcal{X}_k       &= \bm{x}_i^- + \bigg(\sqrt{(L+\lambda)\bm{P}_i^-}\bigg) _{k-L}    && k=L+1,...,2L              \\
-        W_0^{(m)}           &= \lambda(L-\lambda)                                                                           \\
-        W_0^{(m)}           &= \lambda(L-\lambda) + (1-\alpha^2 + \beta)                                                    \\
-        W_k^{(m)}           &= W_k^{(c)} = 1/\{2(L+\lambda)\}                                  && k=1,...,2L                \\
+        L                   &= \text{dim}(\hat{\bm{x}})                                                      && \bm{x}\in{\mathbb{R}}^{L} \\
+        \mathcal{X}_0       &= \hat{\bm{x}} _{i-1}^{+}                                                                                     \\
+        \mathcal{X}_j       &= \hat{\bm{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \bm{A}_j                         && j=1,...,L                 \\
+        \mathcal{X} _{L+j}  &= \hat{\bm{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \bm{A}_j                         && j=1,...,L                 \\
+        W_0^{(m)}           &= \lambda(L-\lambda)                                                                                         \\
+        W_0^{(m)}           &= \lambda(L-\lambda) + (1-\alpha^2 + \beta)                                                                  \\
+        W_k^{(m)}           &= W_k^{(c)} = 1/\{2(L+\lambda)\}                                                && j=1,...,2L                \\
     \end{aligned}
 \end{equation}
+$$
+
+$$
+\begin{aligned}
+\text{where  }
+    \lambda &= \alpha^2(L+\kappa)-L,\text{ a scaling parameter,} \\
+    \alpha  &= \text{parameter determining spread of sigma points about }\hat{\bm{x}}\text{,} \\
+    \kappa  &= \text{secondary scaling parameter, usually set to }0, \\
+    \beta   &= \text{ parameter for incorporation of prior knowledge of }p(\hat{\bm{x}}).\\
+\end{aligned}
 $$
 
 {{< svg src="/notes/images/sigma-points-wan.svg" caption="Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe's proposed parametrisation. $\kappa=0$, $\alpha=1$" >}}
