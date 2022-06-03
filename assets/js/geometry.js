@@ -462,6 +462,8 @@ void main(){
     gl_FragColor=color;
 }
 `;
+let artifactCanvas = document.getElementById('artifactCanvas');
+
 class Base {
     constructor(sel, debug = false) {
         this.debug = debug;
@@ -482,7 +484,8 @@ class Base {
             outputEncoding: THREE.LinearEncoding,
             config: {
                 alpha: true,
-                antialias: true
+                antialias: true,
+                canvcas: artifactCanvas,
             }
         };
         this.mousePos = new THREE.Vector2(0, 0);
