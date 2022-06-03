@@ -23,7 +23,7 @@ $$
         \mathcal{X}_j       &= \hat{\bm{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \bm{A}_j                         && j=1,...,L                 \\
         \mathcal{X} _{L+j}  &= \hat{\bm{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \bm{A}_j                         && j=1,...,L                 \\
         W_0^{(m)}           &= \lambda(L-\lambda)                                                                                         \\
-        W_0^{(m)}           &= \lambda(L-\lambda) + (1-\alpha^2 + \beta)                                                                  \\
+        W_0^{(c)}           &= \lambda(L-\lambda) + (1-\alpha^2 + \beta)                                                                  \\
         W_k^{(m)}           &= W_k^{(c)} = 1/\{2(L+\lambda)\}                                                && j=1,...,2L                \\
     \end{aligned}
 \end{equation}
