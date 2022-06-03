@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Linearised Kalman filter Extended Kalman filter  Non-linear filter  Hidden Markov model  Unscented Kalman filter  Non-linear filter  $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\hat{\bm{x}}) &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \hat{\bm{x}} _{i-1}^{&#43;} \ \mathcal{X}_j &amp;= \hat{\bm{x}} _{i-1}^{&#43;} &#43; \sqrt{(L&#43;\lambda)} \bm{A}_j &amp;&amp; j=1,&hellip;,L \ \mathcal{X} _{L&#43;j} &amp;= \hat{\bm{x}} _{i-1}^{&#43;} - \sqrt{(L&#43;\lambda)} \bm{A}_j &amp;&amp; j=1,&hellip;,L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(m)} &amp;= \lambda(L-\lambda) &#43; (1-\alpha^2 &#43; \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L&#43;\lambda)} &amp;&amp; j=1,&hellip;,2L \ \end{aligned} \end{equation} $$"
+    content="Linearised Kalman filter Extended Kalman filter  Non-linear filter  Hidden Markov model  Unscented Kalman filter  Non-linear filter  $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\hat{\bm{x}}) &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \hat{\bm{x}} _{i-1}^{&#43;} \ \mathcal{X}_j &amp;= \hat{\bm{x}} _{i-1}^{&#43;} &#43; \sqrt{(L&#43;\lambda)} \bm{A}_j &amp;&amp; j=1,&hellip;,L \ \mathcal{X} _{L&#43;j} &amp;= \hat{\bm{x}} _{i-1}^{&#43;} - \sqrt{(L&#43;\lambda)} \bm{A}_j &amp;&amp; j=1,&hellip;,L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(c)} &amp;= \lambda(L-\lambda) &#43; (1-\alpha^2 &#43; \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L&#43;\lambda)} &amp;&amp; j=1,&hellip;,2L \ \end{aligned} \end{equation} $$"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
@@ -78,7 +78,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.960f3de9ff0d0d655507fcd972062a62.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.1b0021563af60e340d81d95e1534c8fb.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -234,7 +234,7 @@ if (!doNotTrack) {
 <p>$$
 \begin{equation}
 \begin{aligned}
-L                   &amp;= \text{dim}(\hat{\bm{x}})                                                      &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \\\mathcal{X}_0       &amp;= \hat{\bm{x}} _{i-1}^{+}                                                                                     \\\mathcal{X}_j       &amp;= \hat{\bm{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \bm{A}_j                         &amp;&amp; j=1,&hellip;,L                 \\\mathcal{X} _{L+j}  &amp;= \hat{\bm{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \bm{A}_j                         &amp;&amp; j=1,&hellip;,L                 \\W_0^{(m)}           &amp;= \lambda(L-\lambda)                                                                                         \\W_0^{(m)}           &amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta)                                                                  \\W_k^{(m)}           &amp;= W_k^{(c)} = 1/{2(L+\lambda)}                                                &amp;&amp; j=1,&hellip;,2L                \\\end{aligned}
+L                   &amp;= \text{dim}(\hat{\bm{x}})                                                      &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \\\mathcal{X}_0       &amp;= \hat{\bm{x}} _{i-1}^{+}                                                                                     \\\mathcal{X}_j       &amp;= \hat{\bm{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \bm{A}_j                         &amp;&amp; j=1,&hellip;,L                 \\\mathcal{X} _{L+j}  &amp;= \hat{\bm{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \bm{A}_j                         &amp;&amp; j=1,&hellip;,L                 \\W_0^{(m)}           &amp;= \lambda(L-\lambda)                                                                                         \\W_0^{(c)}           &amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta)                                                                  \\W_k^{(m)}           &amp;= W_k^{(c)} = 1/{2(L+\lambda)}                                                &amp;&amp; j=1,&hellip;,2L                \\\end{aligned}
 \end{equation}
 $$</p>
 <p>$$
