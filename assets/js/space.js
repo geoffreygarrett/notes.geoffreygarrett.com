@@ -8,7 +8,8 @@ import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js'
 const scene = new THREE.Scene();
 
 // 2. Create a camera
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
+camera.layers.enable(1);
 
 // 3. Create a render
 let artifactCanvas = document.getElementById('artifactCanvas');
@@ -24,171 +25,199 @@ document.body.appendChild(renderer.domElement);
 const light = new THREE.PointLight(0xffffff, 1, 0);
 light.position.set(0, 0, 10.0)
 scene.add(light)
-// change brightness
 light.intensity = 2.5;
 
-
-// const ambientLight = new THREE.AmbientLight()
-// scene.add(ambientLight)
-
 /////////////////////////////////////////////////////
-// add fancy rendering
-/////////////////////////////////////////////////////
-
-
-/////////////////////////////////////////////////////
-// Basic cube
-/////////////////////////////////////////////////////
-// const geometry = new THREE.BoxGeometry(1, 1, 1);
-// const material = new THREE.MeshBasicMaterial({color: 0x00ff00});
-// const cube = new THREE.Mesh(geometry, material);
-// scene.add(cube);
-// camera.position.z = 5;
-
-/////////////////////////////////////////////////////
-// Basic cube
+// Import GLTF
 /////////////////////////////////////////////////////
 import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader.js";
 import {DRACOLoader} from "three/examples/jsm/loaders/DRACOLoader.js";
-// load a gltf model
+
 const loader = new GLTFLoader();
 const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath('/examples/js/libs/draco/');
 loader.setDRACOLoader(dracoLoader);
-
 let model;
-// Load a glTF resource
-loader.setPath('./assets/');
-loader.load('Voyager.glb', function (gltf) {
-    // size
+loader.setPath('../models/');
+loader.load('New_Horizons.glb', function (gltf) {
     model = gltf.scene;
     model.scale.set(1, 1, 1) // scale here
-    // let axesHelper2 = new THREE.AxesHelper(5);
-    // model.add(axesHelper2);
-    // rotate
     model.rotation.x = Math.PI / 2;
-
+    model.layers.enable(0);
     scene.add(model);
 });
 
-// model.material.specular = new THREE.Color(0xffffff);
-// model.material.shininess =  100;
+////////////////////////////////////////////////////
+// Create the Sun
+////////////////////////////////////////////////////
+const sphereGeometry = new THREE.SphereGeometry(0.2, 32, 32);
+const sphereMaterial = new THREE.MeshBasicMaterial({color: 0xffff00});
+const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+sphere.position.set(0, 0, 50);
+sphere.layers.enable(1);
+scene.add(sphere);
 
-// set model light interaction specular
-// model.traverse(function (child) {
-//     if (child.isMesh) {
-//         child.castShadow = true;
-//         child.receiveShadow = true;
-//
-//
-//         child.material.shininess = 100;
-//
-//         child.material.needsUpdate = true;
-//
-//
-// }
-// point camera to model
+////////////////////////////////////////////////////
+// post
+////////////////////////////////////////////////////
+import {EffectComposer} from "three/examples/jsm/postprocessing/EffectComposer.js";
+import {RenderPass} from "three/examples/jsm/postprocessing/RenderPass.js";
+import {UnrealBloomPass} from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
+import {FXAAShader} from 'three/examples/jsm/shaders/FXAAShader.js';
+import {ShaderPass} from 'three/examples/jsm/postprocessing/ShaderPass.js';
 
-camera.lookAt(0,0,0);
+const effectFXAA = new ShaderPass(FXAAShader)
+effectFXAA.uniforms.resolution.value.set( 1 / window.innerWidth, 1 / window.innerHeight )
 
-// scene.add(model);
-camera.position.z = 10;
-camera.position.y = 0;
-camera.position.x = 5;
+//bloom renderer
+const renderScene = new RenderPass(scene, camera);
+const bloomPass = new UnrealBloomPass(
+    new THREE.Vector2(window.innerWidth, window.innerHeight),
+    1.5,
+    0.4,
+    0.85
+);
+// bloomPass.threshold = 0.2;
+// bloomPass.strength = 9; //intensity of glow
+// bloomPass.radius =1;
+bloomPass.exposure =8;
+bloomPass.threshold = 0.3
+bloomPass.strength = 9
+bloomPass.radius = 1
+bloomPass.renderToScreen = true;
+
+const composer = new EffectComposer(renderer);
+composer.setSize(window.innerWidth, window.innerHeight);
+// composer.renderToScreen = true;
+
+
+composer.addPass(renderScene);
+composer.addPass(bloomPass);
+composer.addPass(effectFXAA);
+
+renderer.gammaInput = true
+renderer.gammaOutput = true
+renderer.toneMappingExposure = Math.pow(0.9, 4.0)
+/////////////////////////////////////////////////////////////////
+// post
+
+// bloomComposer.addPass(renderScene2);
+
+
+// camera.lookAt(0, 0, 0);
+
+// set camera position to fixed 5.09, 0.5, -5.22
+camera.position.set(5.09, 0.5, -5.22);
+
+
+// set camera angles to -3.03, 0.5, 3.02
+// camera.ro
+
+
+// display current camera positions and angles on screen
+function displayCameraInfo() {
+    const info = document.getElementById('info');
+    info.innerHTML = `
+        <p>Camera position: ${camera.position.x.toFixed(2)}, ${camera.position.y.toFixed(2)}, ${camera.position.z.toFixed(2)}</p>
+        <p>Camera rotation: ${camera.rotation.x.toFixed(2)}, ${camera.rotation.y.toFixed(2)}, ${camera.rotation.z.toFixed(2)}</p>
+        <p>Camera fov: ${camera.fov.toFixed(2)}</p>
+        <p>Camera aspect: ${camera.aspect.toFixed(2)}</p>
+        <p>Camera near: ${camera.near.toFixed(2)}</p>
+    `
+}
+
+
+// const skyGeo = new THREE.SphereGeometry(100000, 25, 25);
+// const loaderSky  = new THREE.TextureLoader(), texture = loaderSky.load( "assets/skymap.jpg" );
+//
+// const material = new THREE.MeshPhongMaterial({
+//     map: texture,
+// });
+// const sky = new THREE.Mesh(skyGeo, material);
+// sky.scale.set(-1, 1, 1);
+// sky.eulerOrder = 'XZY';
+// sky.renderDepth = 1000.0;
+// sky.material.side = THREE.BackSide;
+// scene.add(sky);
+
+
+// scene.background = new THREE.Color(0xffffff);
+// scene.background =sky;
 
 // load skybox from assets/back.png, front.png, left.png, right.png, top.png, bottom.png
 const loader2 = new THREE.CubeTextureLoader();
 const texture = loader2.load([
     // positive x
-    './assets/right.png',
+    '../images/right.png',
     // negative x
-    './assets/left.png',
+    '../images/left.png',
     // positive y
-    './assets/top.png',
+    '../images/top.png',
     // negative y
-    './assets/bottom.png',
+    '../images/bottom.png',
     // positive z
-    './assets/front.png',
+    '../images/front.png',
     // negative z
-    './assets/back.png'
+    '../images/back.png'
 
 ]);
-scene.background = texture;
+// add skybox to scene
+const skybox = new THREE.Mesh(
+    new THREE.SphereGeometry(100000, 20, 20),
+    new THREE.MeshBasicMaterial({
+        envMap: texture,
+        side: THREE.BackSide
+    })
+);
+skybox.layers.enable(1);
+skybox.layers.disable(0);
+// texture.layers.disable(0);
+// texture.layers.enable(1);
+// scene.background = texture;
+scene.add(skybox);
 
-// make background darker
-renderer.setClearColor(0x000000, 1);
+    // }
 
-// add a burning ball for the sun
-const sphereGeometry = new THREE.SphereGeometry(0.2, 32, 32);
-const sphereMaterial = new THREE.MeshBasicMaterial({color: 0xffff00});
-const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-sphere.position.set(0, 0, 100);
-scene.add(sphere);
 
-// add shader to glow around sun to make it radial gradient
-// const glowMaterial = new THREE.ShaderMaterial({
-//     uniforms: {
-//         color: {value: new THREE.Color(0xffff00)},
-//         contrast: {value: 0.5},
-//         intensity: {value: 0.5}
-//     },
-//     // vertexShader: document.getElementById('vertexShader').textContent,
-//     // fragmentShader: document.getElementById('fragmentShader').textContent,
-//     side: THREE.BackSide
-// });
-// const glow = new THREE.Mesh(glowGeometry, glowMaterial);
-// glow.position.set(0, 0, 100);
-// scene.add(glow);
 
-// animate();
+// galaxy geometry
+// const starGeometry = new THREE.SphereGeometry(80, 64, 64);
 //
-//     }
-// }
-// const glowMaterial = new THREE.MeshBasicMaterial({
-//     color: 0xffff00,
-//     transparent: true,
-//     opacity: 0.5,
+// // galaxy material
+// const starMaterial = new THREE.MeshBasicMaterial({
+//     map: THREE.ImageUtils.loadTexture("assets/background.png"),
 //     side: THREE.BackSide,
-//     blending: THREE.AdditiveBlending
+//     transparent: true,
 // });
-// const glow = new THREE.Mesh(glowGeometry, glowMaterial);
-// glow.position.set(0, 0, 100);
-// scene.add(glow);
-
-let N = 20;
-for (let i = 0; i < 20; i++) {
-    const glowMaterial = new THREE.MeshBasicMaterial({
-        color: 0xffff00,
-        transparent: true,
-        opacity: 0.01 * (N-i),
-        side: THREE.BackSide,
-        blending: THREE.AdditiveBlending
-    });
-    const glowGeometry = new THREE.SphereGeometry(0.2 * i, 32, 32);
-
-    const glow = new THREE.Mesh(glowGeometry, glowMaterial);
-    glow.position.set(0, 0, 100);
-    // sphere.position.set(0, 0, 100);
-    scene.add(glow);
-}
+//
+// // galaxy mesh
+// const starMesh = new THREE.Mesh(starGeometry, starMaterial);
+// starMesh.layers.set(1);
+// scene.add(starMesh);
+// scene.add(starMaterial);
 
 
 ////////////////////////////////////////////////////
 // Rendering the scene
 ////////////////////////////////////////////////////
+// renderer.setAnimationLoop( function () { renderer.render( scene, camera ); } );
 function animate() {
     requestAnimationFrame(animate);
+
+    renderer.autoClear = false;
+    renderer.clear();
+
+    camera.layers.set(1);
+    composer.render();
+
+    renderer.clearDepth();
+    camera.layers.set(0);
     renderer.render(scene, camera);
-    // cube.rotation.x += 0.01;
-    // cube.rotation.y += 0.01;
 
-    // rotate the object
-    // objects[0].rotation.y += 0.01;
-    // objects[0].rotation.z += 0.01;
+    // displayCameraInfo();
+
     if (model) {
-        model.rotation.y += 0.002;
-        // model.rotateOnAxis(new THREE.Vector3(0, 1, 0), Math.PI * 0.001);
-
+        model.rotation.y += 0.0009;
     }
 
 }
@@ -262,24 +291,10 @@ window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+
+    // bloom
+    composer.setSize(window.innerWidth, window.innerHeight);
 });
-
-// add sun on skybox
-// const sun = new THREE.Mesh(
-//     new THREE.SphereGeometry(0.5),
-//     new THREE.MeshBasicMaterial({color: 0xffff00})
-// );
-// sun.position.set(0, 0, 0);
-// scene.add(sun);
-
-// make sun bright and glaring
-// const sunLight = new THREE.PointLight();
-// sunLight.position.copy(sun.position);
-// scene.add(sunLight);
-
-
-// make stars visible
-// stars.visible = false;
 
 
 ////////////////////////////////////////////////////
@@ -290,6 +305,7 @@ window.addEventListener('resize', () => {
 ////////////////////////////////////////////////////
 // const axesHelper = new THREE.AxesHelper(5);
 // scene.add(axesHelper);
+
 
 ////////////////////////////////////////////////////
 // Draw axes on object[0]
@@ -306,7 +322,8 @@ window.addEventListener('resize', () => {
 ////////////////////////////////////////////////////
 // OrbitControls for object[0]
 ////////////////////////////////////////////////////
-// const controls2 = new OrbitControls(camera, renderer.domElement);
-// controls2.update();
-    
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.update();
+controls.enabled = false;
+
  
