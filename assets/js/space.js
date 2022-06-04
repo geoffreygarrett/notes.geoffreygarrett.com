@@ -44,6 +44,7 @@ loader.load('New_Horizons.glb', function (gltf) {
     model.scale.set(1, 1, 1) // scale here
     model.rotation.x = Math.PI / 2;
     model.layers.enable(0);
+    model.layers.enable(1);
     scene.add(model);
 });
 
@@ -107,7 +108,10 @@ renderer.toneMappingExposure = Math.pow(0.9, 4.0)
 // camera.lookAt(0, 0, 0);
 
 // set camera position to fixed 5.09, 0.5, -5.22
-camera.position.set(5.09, 0.5, -5.22);
+camera.position.set(5.52, 0.1, 4.78);
+// camera.rotation.rotateOnAxis(new THREE.Vector3(0, 1, 0) ,1);
+// camera.rotation.set(-3.03, 0.5, 3.02);
+// camera.rotateZ(Math.PI/2);
 
 
 // set camera angles to -3.03, 0.5, 3.02
@@ -324,6 +328,6 @@ window.addEventListener('resize', () => {
 ////////////////////////////////////////////////////
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.update();
-controls.enabled = false;
+// controls.enabled = false;
 
  
