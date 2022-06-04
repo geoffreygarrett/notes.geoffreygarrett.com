@@ -20,7 +20,8 @@ canvas {
     width: 100vw;
     height: 100vh;
     display: block;
-    position: fixed;
+    position: absolute;
+    overflow: hidden;
     top: 0;
     left: 0;
     z-index: -9999;
