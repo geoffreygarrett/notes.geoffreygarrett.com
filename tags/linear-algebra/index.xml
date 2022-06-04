@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://notes.geoffreygarrett.com/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cholesky Decomposition</title>
+      <link>https://notes.geoffreygarrett.com/notes/cholesky-decomposition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/notes/cholesky-decomposition/</guid>
+      <description>Cholesky Decomposition (a.k.a. Cholesky factorisation) is a method of decomposing a positive semidefinite matrix into a lower triangular matrix.</description>
+    </item>
+    
+    <item>
       <title>Least Squares</title>
       <link>https://notes.geoffreygarrett.com/notes/least-squares/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

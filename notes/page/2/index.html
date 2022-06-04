@@ -72,13 +72,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.490327bd055ca443f25821c90e5c9ef9.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.a14d918100a04df44c9c95d70ca25299.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.f60379023c439e4c3131ff766a212a10.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.72d7ce22489385ed50d3a044e639db4c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -183,6 +183,34 @@ if (!doNotTrack) {
         <ul class="section-ul"><li class="section-li">
         <div class="section">
             <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/machine-learning/">Machine Learning</a></h3>
+                <ul class="tags">
+                    
+                </ul>
+                <p> Sub-fields   Deep Learning  </p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 1, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/markov-models/">Markov Models</a></h3>
+                <ul class="tags">
+                    
+                </ul>
+                <p>Characterization Fully Observable Partially Observable     Autonomous Markov chain/ process Hidden Markov model   Controlled Markov decision process...</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 1, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
                 <h3><a href="https://notes.geoffreygarrett.com/notes/solid-principles/">SOLID Principles</a></h3>
                 <ul class="tags">
                     
@@ -191,6 +219,34 @@ if (!doNotTrack) {
             </div>
             <p class="meta">
                 1 minute read. Last updated May 30, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/software-engineering/">Software Engineering</a></h3>
+                <ul class="tags">
+                    
+                </ul>
+                <p>  SOLID Principles  </p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated May 30, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/orbit-determination/">Orbit Determination and Parameter Estimation</a></h3>
+                <ul class="tags">
+                    
+                </ul>
+                <p>Predicting the state ($\bm{x}_t$) of a spacecraft given an initial condition ($\bm{x}_0$), and models which form the equations of motion of the satellite, ($\dot{\bm{x}}=f(t,\bm{x})$), is a straightforward task involving the solution of an initial value problem (IVP) in the form of an ordinary differential equation (ODE)....</p>
+            </div>
+            <p class="meta">
+                2 minute read. Last updated May 29, 2022
             </p>
 
         </div>

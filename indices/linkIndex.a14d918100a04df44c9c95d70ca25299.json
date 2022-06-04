@@ -4,8 +4,8 @@
       "/": [
         {
           "source": "/",
-          "target": "/notes/machine-learning",
-          "text": "Machine Learning MOC"
+          "target": "/notes/linear-algebra",
+          "text": "Linear Algebra MOC"
         },
         {
           "source": "/",
@@ -21,6 +21,11 @@
           "source": "/",
           "target": "/notes/software-engineering",
           "text": "Software Engineering MOC"
+        },
+        {
+          "source": "/",
+          "target": "/notes/machine-learning",
+          "text": "Machine Learning MOC"
         },
         {
           "source": "/",
@@ -69,6 +74,18 @@
           "text": "Linear Algebra"
         }
       ],
+      "/notes/linear-algebra": [
+        {
+          "source": "/notes/linear-algebra",
+          "target": "/notes/cholesky-decomposition",
+          "text": "Cholesky Decomposition"
+        },
+        {
+          "source": "/notes/linear-algebra",
+          "target": "/notes/singular-value-decomposition",
+          "text": "Singular Value Decomposition"
+        }
+      ],
       "/notes/machine-learning": [
         {
           "source": "/notes/machine-learning",
@@ -102,6 +119,13 @@
           "source": "/",
           "target": "/notes",
           "text": "All Notes"
+        }
+      ],
+      "/notes/cholesky-decomposition": [
+        {
+          "source": "/notes/linear-algebra",
+          "target": "/notes/cholesky-decomposition",
+          "text": "Cholesky Decomposition"
         }
       ],
       "/notes/concept-definitions": [
@@ -146,6 +170,13 @@
           "text": "Least squares"
         }
       ],
+      "/notes/linear-algebra": [
+        {
+          "source": "/",
+          "target": "/notes/linear-algebra",
+          "text": "Linear Algebra MOC"
+        }
+      ],
       "/notes/machine-learning": [
         {
           "source": "/",
@@ -167,6 +198,13 @@
           "text": "Orbit determination"
         }
       ],
+      "/notes/singular-value-decomposition": [
+        {
+          "source": "/notes/linear-algebra",
+          "target": "/notes/singular-value-decomposition",
+          "text": "Singular Value Decomposition"
+        }
+      ],
       "/notes/software-engineering": [
         {
           "source": "/",
@@ -186,8 +224,8 @@
   "links": [
     {
       "source": "/",
-      "target": "/notes/machine-learning",
-      "text": "Machine Learning MOC"
+      "target": "/notes/linear-algebra",
+      "text": "Linear Algebra MOC"
     },
     {
       "source": "/",
@@ -203,6 +241,11 @@
       "source": "/",
       "target": "/notes/software-engineering",
       "text": "Software Engineering MOC"
+    },
+    {
+      "source": "/",
+      "target": "/notes/machine-learning",
+      "text": "Machine Learning MOC"
     },
     {
       "source": "/",
@@ -243,6 +286,16 @@
       "source": "/notes/least-squares",
       "target": "/Linear-Algebra",
       "text": "Linear Algebra"
+    },
+    {
+      "source": "/notes/linear-algebra",
+      "target": "/notes/cholesky-decomposition",
+      "text": "Cholesky Decomposition"
+    },
+    {
+      "source": "/notes/linear-algebra",
+      "target": "/notes/singular-value-decomposition",
+      "text": "Singular Value Decomposition"
     },
     {
       "source": "/notes/machine-learning",

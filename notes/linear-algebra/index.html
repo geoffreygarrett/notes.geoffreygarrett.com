@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content=""
+    content="Definitions (System of) Linear Equation(s) A system of linear equations may be represented as the matrix equation:
+$$ \bm{A}\bm{x} = \bm{b}, $$"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
-    deep-learning
+    Linear Algebra
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link
@@ -160,9 +161,9 @@ if (!doNotTrack) {
     
     <header>
         <h1 id="page-title"><a href="https://notes.geoffreygarrett.com/">Geoffrey&#39;s Notes</a></h1>
-        <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
-        <div class="spacer"></div>
-        <div class='darkmode'>
+      <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+      <div class="spacer"></div>
+      <div class='darkmode'>
     <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
     <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
@@ -177,32 +178,155 @@ if (!doNotTrack) {
         </svg>
     </label>
 </div>
-    </header>
-    <article>
-        <h1>Tag: Deep learning</h1>
-        <ul class="section-ul"><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/deep-learning/">Deep Learning</a></h3>
-                <ul class="tags">
-                    
-                    <li><a href="https://notes.geoffreygarrett.com/tags/machine-learning/">Machine-Learning</a></li>
-                    
-                    <li><a href="https://notes.geoffreygarrett.com/tags/deep-learning/">Deep-Learning</a></li>
-                    
-                </ul>
-                <p>Deep Learning (DL) is a field of Machine Learning (ML) that is primarily concerned with the learning of representations of data....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated June 1, 2022
-            </p>
+  </header>
+  <article>
+      <h1>Linear Algebra</h1>
+      <p class="meta">
+          Last updated June 4, 2022
+      </p>
+      <ul class="tags">
+          
+          <li><a href="https://notes.geoffreygarrett.com/tags/mathematics/">Mathematics</a></li>
+          
+      </ul>
+      
 
-        </div>
-    </li></ul>
+      
 
-        
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="#definitions"><h2 id="definitions"><span class="hanchor" ariaLabel="Anchor"># </span>Definitions</h2></a>
+<a href="#system-of-linear-equations"><h3 id="system-of-linear-equations"><span class="hanchor" ariaLabel="Anchor"># </span>(System of) Linear Equation(s)</h3></a>
+<p>A system of linear equations may be represented as the matrix equation:</p>
+<p>$$
+\bm{A}\bm{x} = \bm{b},
+$$</p>
+<p>and is equivalent to the following systems of linear equations:</p>
+<p>$$
+\begin{aligned}
+a_{1,1}x_{1} + a_{1,2}x_{2} + &amp;\cdots + a_{1,n}x_{n} = b_{1} \\&amp;\\\\\vdots                    \\a_{m,1}x_{1} + a_{m,2}x_{2} + &amp;\cdots + a_{m,n}x_{n} = b_{m}
+\end{aligned}
+$$</p>
+<a href="#matrix-decomposition"><h2 id="matrix-decomposition"><span class="hanchor" ariaLabel="Anchor"># </span>Matrix Decomposition</h2></a>
+<ul>
+<li>
+
+
+
+
+
+<a
+  href="/notes/cholesky-decomposition/"
+  rel="noopener" class="internal-link"
+  data-src="/notes/cholesky-decomposition/">Cholesky Decomposition</a></li>
+<li>
+
+
+
+
+
+<a
+  href="/notes/singular-value-decomposition/"
+  rel="noopener" class="internal-link"
+  data-src="/notes/singular-value-decomposition/">Singular Value Decomposition</a></li>
+</ul>
+<a href="#definitions-1"><h2 id="definitions-1"><span class="hanchor" ariaLabel="Anchor"># </span>Definitions</h2></a>
+<ul>
+<li>A symmetric matrix $\bm{A}\n\mathbb{R}^{n\times{n}}$ is positive semidefinite if:</li>
+</ul>
+<p>$$
+\bm{x}^T\bm{A}\bm{x}\geq 0 \forall,\bm{x} \in\mathbb{R}^n.
+$$</p>
+<ul>
+<li>A symmetric matrix $\bm{A}\n\mathbb{R}^{n\times{n}}$ is positive definite if:</li>
+</ul>
+<p>$$
+\bm{x}^T\bm{A}\bm{x}&gt; 0 \forall,\bm{x}\neq 0 \in\mathbb{R}^n.
+$$</p>
+
+
     </article>
+    <hr/>
+<div class="page-end">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
     
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/" data-ctx="Linear Algebra MOC" data-src="/" class="internal-link">Geoffrey&#39;s Notes</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://notes.geoffreygarrett.com/js/graph.0eb0c81d58a703569f31b6053242af38.js"></script>
+
+    </div>
+</div>
+
+
+
+
 <div id="contact_buttons">
     <footer>
         <p>Made by Geoffrey Garrett using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>

@@ -72,13 +72,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.490327bd055ca443f25821c90e5c9ef9.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.a14d918100a04df44c9c95d70ca25299.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.f60379023c439e4c3131ff766a212a10.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.72d7ce22489385ed50d3a044e639db4c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -156,7 +156,7 @@ if (!doNotTrack) {
     }
   }
 </script>
-<script defer type="module" src="https://notes.geoffreygarrett.com/js/space.eca025b8e48982583a45aad781b1b707.min.js"></script>
+<script defer type="module" src="https://notes.geoffreygarrett.com/js/space.9c3ff9e71a004b8488709deb5a0bd667.min.js"></script>
 
 
 

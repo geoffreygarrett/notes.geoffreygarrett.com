@@ -72,13 +72,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.490327bd055ca443f25821c90e5c9ef9.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.a14d918100a04df44c9c95d70ca25299.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.f60379023c439e4c3131ff766a212a10.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.72d7ce22489385ed50d3a044e639db4c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -183,6 +183,69 @@ if (!doNotTrack) {
         <ul class="section-ul"><li class="section-li">
         <div class="section">
             <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/linear-algebra/">Linear Algebra</a></h3>
+                <ul class="tags">
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/mathematics/">Mathematics</a></li>
+                    
+                </ul>
+                <p>Definitions (System of) Linear Equation(s) A system of linear equations may be represented as the matrix equation:
+$$ \bm{A}\bm{x} = \bm{b}, $$...</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 4, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/cholesky-decomposition/">Cholesky Decomposition</a></h3>
+                <ul class="tags">
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/mathematics/">Mathematics</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/linear-algebra/">Linear-Algebra</a></li>
+                    
+                </ul>
+                <p>Cholesky Decomposition (a.k.a. Cholesky factorisation) is a method of decomposing a positive semidefinite matrix into a lower triangular matrix.</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 4, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/threejs-basics/"></a></h3>
+                <ul class="tags">
+                    
+                </ul>
+                <p>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;My first three....</p>
+            </div>
+            <p class="meta">
+                2 minute read. Last updated June 4, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/singular-value-decomposition/"></a></h3>
+                <ul class="tags">
+                    
+                </ul>
+                <p></p>
+            </div>
+            <p class="meta">
+                0 minute read. Last updated June 4, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
                 <h3><a href="https://notes.geoffreygarrett.com/notes/kalman-filter/">Kalman Filter</a></h3>
                 <ul class="tags">
                     
@@ -209,34 +272,6 @@ if (!doNotTrack) {
             </div>
             <p class="meta">
                 2 minute read. Last updated June 2, 2022
-            </p>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/machine-learning/">Machine Learning</a></h3>
-                <ul class="tags">
-                    
-                </ul>
-                <p> Sub-fields   Deep Learning  </p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated June 1, 2022
-            </p>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/markov-models/">Markov Models</a></h3>
-                <ul class="tags">
-                    
-                </ul>
-                <p>Characterization Fully Observable Partially Observable     Autonomous Markov chain/ process Hidden Markov model   Controlled Markov decision process...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated June 1, 2022
             </p>
 
         </div>
@@ -301,34 +336,6 @@ if (!doNotTrack) {
             </div>
             <p class="meta">
                 1 minute read. Last updated May 31, 2022
-            </p>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/software-engineering/">Software Engineering</a></h3>
-                <ul class="tags">
-                    
-                </ul>
-                <p>  SOLID Principles  </p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated May 30, 2022
-            </p>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/orbit-determination/">Orbit Determination and Parameter Estimation</a></h3>
-                <ul class="tags">
-                    
-                </ul>
-                <p>Predicting the state ($\bm{x}_t$) of a spacecraft given an initial condition ($\bm{x}_0$), and models which form the equations of motion of the satellite, ($\dot{\bm{x}}=f(t,\bm{x})$), is a straightforward task involving the solution of an initial value problem (IVP) in the form of an ordinary differential equation (ODE)....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated May 29, 2022
             </p>
 
         </div>
