@@ -39,7 +39,7 @@ dracoLoader.setDecoderPath('/examples/js/libs/draco/');
 loader.setDRACOLoader(dracoLoader);
 let model;
 loader.setPath('../models/');
-loader.load('New_Horizons.glb', function (gltf) {
+loader.load('Voyager.glb', function (gltf) {
     model = gltf.scene;
     model.scale.set(1, 1, 1) // scale here
     model.rotation.x = Math.PI / 2;
