@@ -44,7 +44,6 @@ loader.load('New_Horizons.glb', function (gltf) {
     model.scale.set(1, 1, 1) // scale here
     model.rotation.x = Math.PI / 2;
     model.layers.enable(0);
-    model.layers.enable(1);
     scene.add(model);
 });
 
@@ -328,6 +327,5 @@ window.addEventListener('resize', () => {
 ////////////////////////////////////////////////////
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.update();
-// controls.enabled = false;
 
  
