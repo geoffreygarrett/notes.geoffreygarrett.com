@@ -324,6 +324,5 @@ window.addEventListener('resize', () => {
 ////////////////////////////////////////////////////
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.update();
-controls.enabled = false;
 
  
