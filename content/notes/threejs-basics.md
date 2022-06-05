@@ -1,3 +1,10 @@
+---
+title: "three.js basics"
+comments: false
+tags:
+- computer-science
+---
+
 ````html
 <!DOCTYPE html>
 <html>
