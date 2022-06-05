@@ -9,7 +9,6 @@ const scene = new THREE.Scene();
 
 // 2. Create a camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
-camera.layers.enable(1);
 
 // 3. Create a render
 let artifactCanvas = document.getElementById('artifactCanvas');
@@ -54,68 +53,9 @@ const sphereGeometry = new THREE.SphereGeometry(0.2, 32, 32);
 const sphereMaterial = new THREE.MeshBasicMaterial({color: 0xffff00});
 const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
 sphere.position.set(0, 0, 50);
-sphere.layers.enable(1);
 scene.add(sphere);
-
-////////////////////////////////////////////////////
-// post
-////////////////////////////////////////////////////
-import {EffectComposer} from "three/examples/jsm/postprocessing/EffectComposer.js";
-import {RenderPass} from "three/examples/jsm/postprocessing/RenderPass.js";
-import {UnrealBloomPass} from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
-import {FXAAShader} from 'three/examples/jsm/shaders/FXAAShader.js';
-import {ShaderPass} from 'three/examples/jsm/postprocessing/ShaderPass.js';
-
-const effectFXAA = new ShaderPass(FXAAShader)
-effectFXAA.uniforms.resolution.value.set( 1 / window.innerWidth, 1 / window.innerHeight )
-
-//bloom renderer
-const renderScene = new RenderPass(scene, camera);
-const bloomPass = new UnrealBloomPass(
-    new THREE.Vector2(window.innerWidth, window.innerHeight),
-    1.5,
-    0.4,
-    0.85
-);
-// bloomPass.threshold = 0.2;
-// bloomPass.strength = 9; //intensity of glow
-// bloomPass.radius =1;
-bloomPass.exposure =8;
-bloomPass.threshold = 0.3
-bloomPass.strength = 9
-bloomPass.radius = 1
-bloomPass.renderToScreen = true;
-
-const composer = new EffectComposer(renderer);
-composer.setSize(window.innerWidth, window.innerHeight);
-// composer.renderToScreen = true;
-
-
-composer.addPass(renderScene);
-composer.addPass(bloomPass);
-composer.addPass(effectFXAA);
-
-renderer.gammaInput = true
-renderer.gammaOutput = true
-renderer.toneMappingExposure = Math.pow(0.9, 4.0)
-/////////////////////////////////////////////////////////////////
-// post
-
-// bloomComposer.addPass(renderScene2);
-
-
-// camera.lookAt(0, 0, 0);
-
-// set camera position to fixed 5.09, 0.5, -5.22
+render.renderToScreen = true;
 camera.position.set(5.52, 0.1, 4.78);
-// camera.rotation.rotateOnAxis(new THREE.Vector3(0, 1, 0) ,1);
-// camera.rotation.set(-3.03, 0.5, 3.02);
-// camera.rotateZ(Math.PI/2);
-
-
-// set camera angles to -3.03, 0.5, 3.02
-// camera.ro
-
 
 // display current camera positions and angles on screen
 function displayCameraInfo() {
@@ -128,24 +68,6 @@ function displayCameraInfo() {
         <p>Camera near: ${camera.near.toFixed(2)}</p>
     `
 }
-
-
-// const skyGeo = new THREE.SphereGeometry(100000, 25, 25);
-// const loaderSky  = new THREE.TextureLoader(), texture = loaderSky.load( "assets/skymap.jpg" );
-//
-// const material = new THREE.MeshPhongMaterial({
-//     map: texture,
-// });
-// const sky = new THREE.Mesh(skyGeo, material);
-// sky.scale.set(-1, 1, 1);
-// sky.eulerOrder = 'XZY';
-// sky.renderDepth = 1000.0;
-// sky.material.side = THREE.BackSide;
-// scene.add(sky);
-
-
-// scene.background = new THREE.Color(0xffffff);
-// scene.background =sky;
 
 // load skybox from assets/back.png, front.png, left.png, right.png, top.png, bottom.png
 const loader2 = new THREE.CubeTextureLoader();
@@ -172,33 +94,8 @@ const skybox = new THREE.Mesh(
         side: THREE.BackSide
     })
 );
-skybox.layers.enable(1);
-skybox.layers.disable(0);
-// texture.layers.disable(0);
-// texture.layers.enable(1);
-// scene.background = texture;
+
 scene.add(skybox);
-
-    // }
-
-
-
-// galaxy geometry
-// const starGeometry = new THREE.SphereGeometry(80, 64, 64);
-//
-// // galaxy material
-// const starMaterial = new THREE.MeshBasicMaterial({
-//     map: THREE.ImageUtils.loadTexture("assets/background.png"),
-//     side: THREE.BackSide,
-//     transparent: true,
-// });
-//
-// // galaxy mesh
-// const starMesh = new THREE.Mesh(starGeometry, starMaterial);
-// starMesh.layers.set(1);
-// scene.add(starMesh);
-// scene.add(starMaterial);
-
 
 ////////////////////////////////////////////////////
 // Rendering the scene
@@ -206,23 +103,10 @@ scene.add(skybox);
 // renderer.setAnimationLoop( function () { renderer.render( scene, camera ); } );
 function animate() {
     requestAnimationFrame(animate);
-
-    renderer.autoClear = false;
-    renderer.clear();
-
-    camera.layers.set(1);
-    composer.render();
-
-    renderer.clearDepth();
-    camera.layers.set(0);
     renderer.render(scene, camera);
-
-    // displayCameraInfo();
-
     if (model) {
         model.rotation.y += 0.0009;
     }
-
 }
 
 animate();
@@ -294,9 +178,6 @@ window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
-
-    // bloom
-    composer.setSize(window.innerWidth, window.innerHeight);
 });
 
 
