@@ -16,15 +16,6 @@
     </item>
     
     <item>
-      <title></title>
-      <link>https://notes.geoffreygarrett.com/notes/threejs-basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://notes.geoffreygarrett.com/notes/threejs-basics/</guid>
-      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;My first three.</description>
-    </item>
-    
-    <item>
       <title>Cholesky Decomposition</title>
       <link>https://notes.geoffreygarrett.com/notes/cholesky-decomposition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -40,6 +31,15 @@
       
       <guid>https://notes.geoffreygarrett.com/notes/concept-definitions/</guid>
       <description>A dynamic collection of concept definitions which are either relevant to my work or are of interest to me. These definitions may be referred to from other parts of my notes.</description>
+    </item>
+    
+    <item>
+      <title>Data Sampling Methods</title>
+      <link>https://notes.geoffreygarrett.com/notes/data-sampling-methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/notes/data-sampling-methods/</guid>
+      <description>Stochastic Methods Deterministic Methods Low discrepancy Experimental design methods Geometric Methods Uniform grid Latin hypercube Centroidal Voronoi Tesellation Opposite methods Hybrid methods Sampling non-uniform distributions Importance sampling Bibliography {{ }}</description>
     </item>
     
     <item>
@@ -103,7 +103,7 @@ $$ \bm{A}\bm{x} = \bm{b}, $$</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/machine-learning/</guid>
-      <description> Sub-fields   Deep Learning  </description>
+      <description> Sub-fields   Deep Learning  Useful Topics   Data Sampling Methods  </description>
     </item>
     
     <item>
@@ -140,6 +140,15 @@ $$ \bm{A}\bm{x} = \bm{b}, $$</description>
       
       <guid>https://notes.geoffreygarrett.com/notes/solid-principles/</guid>
       <description>In software engineering, SOLID is a mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable.</description>
+    </item>
+    
+    <item>
+      <title>three.js basics</title>
+      <link>https://notes.geoffreygarrett.com/notes/threejs-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/notes/threejs-basics/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;My first three.</description>
     </item>
     
   </channel>

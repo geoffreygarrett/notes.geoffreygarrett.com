@@ -72,13 +72,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.a14d918100a04df44c9c95d70ca25299.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.985d48fcfe60934626e440c4b5ec6a93.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.209b289c62204dc6181f4961cc2b28f5.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.6c88b60c7062b79996e71c9d18b23aef.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -187,10 +187,26 @@ if (!doNotTrack) {
                 <ul class="tags">
                     
                 </ul>
-                <p> Sub-fields   Deep Learning  </p>
+                <p> Sub-fields   Deep Learning  Useful Topics   Data Sampling Methods  </p>
             </div>
             <p class="meta">
-                1 minute read. Last updated June 1, 2022
+                1 minute read. Last updated June 6, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/threejs-basics/">three.js basics</a></h3>
+                <ul class="tags">
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/computer-science/">Computer-Science</a></li>
+                    
+                </ul>
+                <p>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;My first three....</p>
+            </div>
+            <p class="meta">
+                2 minute read. Last updated June 5, 2022
             </p>
 
         </div>

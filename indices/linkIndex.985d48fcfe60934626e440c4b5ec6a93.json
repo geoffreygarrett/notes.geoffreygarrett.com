@@ -91,6 +91,11 @@
           "source": "/notes/machine-learning",
           "target": "/notes/deep-learning",
           "text": "Deep Learning"
+        },
+        {
+          "source": "/notes/machine-learning",
+          "target": "/notes/data-sampling-methods",
+          "text": "Data Sampling Methods"
         }
       ],
       "/notes/software-engineering": [
@@ -133,6 +138,13 @@
           "source": "/",
           "target": "/notes/concept-definitions",
           "text": "Concept Definitions"
+        }
+      ],
+      "/notes/data-sampling-methods": [
+        {
+          "source": "/notes/machine-learning",
+          "target": "/notes/data-sampling-methods",
+          "text": "Data Sampling Methods"
         }
       ],
       "/notes/deep-learning": [
@@ -301,6 +313,11 @@
       "source": "/notes/machine-learning",
       "target": "/notes/deep-learning",
       "text": "Deep Learning"
+    },
+    {
+      "source": "/notes/machine-learning",
+      "target": "/notes/data-sampling-methods",
+      "text": "Data Sampling Methods"
     },
     {
       "source": "/notes/software-engineering",

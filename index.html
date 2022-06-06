@@ -73,13 +73,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.a14d918100a04df44c9c95d70ca25299.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.985d48fcfe60934626e440c4b5ec6a93.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.209b289c62204dc6181f4961cc2b28f5.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.6c88b60c7062b79996e71c9d18b23aef.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -222,9 +222,6 @@ if (!doNotTrack) {
   href="/notes/estimation-theory/"
   rel="noopener" class="internal-link"
   data-src="/notes/estimation-theory/">Estimation Theory MOC</a></li>
-</ul>
-<a href="#computer-science"><h3 id="computer-science"><span class="hanchor" ariaLabel="Anchor"># </span>Computer Science</h3></a>
-<ul>
 <li>
 
 
@@ -304,20 +301,6 @@ if (!doNotTrack) {
     </li><li class="section-li">
         <div class="section">
             <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/threejs-basics/"></a></h3>
-                <ul class="tags">
-                    
-                </ul>
-                <p>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;My first three....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated June 4, 2022
-            </p>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
                 <h3><a href="https://notes.geoffreygarrett.com/notes/cholesky-decomposition/">Cholesky Decomposition</a></h3>
                 <ul class="tags">
                     
@@ -330,6 +313,22 @@ if (!doNotTrack) {
             </div>
             <p class="meta">
                 1 minute read. Last updated June 4, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/concept-definitions/">Concept Definitions</a></h3>
+                <ul class="tags">
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/front-matter/">Front-Matter</a></li>
+                    
+                </ul>
+                <p>A dynamic collection of concept definitions which are either relevant to my work or are of interest to me. These definitions may be referred to from other parts of my notes....</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 1, 2022
             </p>
 
         </div>
