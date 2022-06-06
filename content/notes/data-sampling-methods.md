@@ -43,3 +43,6 @@ very large high dimensional data. (2016). <i>Neural Networks</i>, <i>78</i>,
 </ul> 
 
 {{ </rawhtml> }}
+
+- [How to evenly distribute points on a sphere more effectively than the canonical Fibonacci Lattice](http://extremelearning.com.au/how-to-evenly-distribute-points-on-a-sphere-more-effectively-than-the-canonical-fibonacci-lattice/)
+- [How to generate uniformly random points on n-spheres and in n-balls](http://extremelearning.com.au/how-to-generate-uniformly-random-points-on-n-spheres-and-n-balls/)
