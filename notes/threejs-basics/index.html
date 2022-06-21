@@ -84,7 +84,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.465d82041c6c7b8beba225fa374d6bf4.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5fbf64466484b9224163f24b64ab2c1f.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -202,7 +202,15 @@ if (!doNotTrack) {
 <aside class="mainTOC">
     <details >
         <summary>Table of Contents</summary>
-        <nav id="TableOfContents"></nav>
+        <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#resources">Resources</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
     </details>
 </aside>
 
@@ -306,6 +314,12 @@ each other. To avoid this, we simply move the camera out a bit.</p>
 wouldn&rsquo;t be able to see anything. This is because we&rsquo;re not actually rendering
 anything yet. For that, we need what&rsquo;s called a render or animate loop.</p>
 </blockquote>
+<a href="#resources"><h3 id="resources"><span class="hanchor" ariaLabel="Anchor"># </span>Resources</h3></a>
+<ul>
+<li>
+
+<a href="https://www.elegantthemes.com/blog/design/using-three-js-to-add-3d-elements-to-your-websites" rel="noopener">Using Three.js to Add 3D Elements to your Websites</a></li>
+</ul>
 
 
     </article>
