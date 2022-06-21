@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Self-information (information content) The self-information (a.k.a. information content, surprisal, or Shannon information) is a quantity used in information theory which is derived from the probability of a certain event occurring from a random variable."
+    content="Self-information The self-information (a.k.a. information content, surprisal, or Shannon information) is a quantity used in information theory which is derived from the probability of a certain event occurring from a random variable."
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
@@ -39,7 +39,7 @@
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.105cdea733f154284b003ccf0fccba84.css" rel="stylesheet" />
+  <link href="https://notes.geoffreygarrett.com/styles.14f7340a422dad820f800a1666ee9a31.css" rel="stylesheet" />
 
   
   <script src="https://notes.geoffreygarrett.com/js/darkmode.d2f0ee97155fcdb9fc2b573dfd2ba98d.min.js"></script>
@@ -72,13 +72,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.985d48fcfe60934626e440c4b5ec6a93.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.ee8a9afb1470a8ec8c7bad2a3cfb4272.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.6b8157251f6e0351bdb36fa242dd3a6c.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.b4757de6c117c68cf3170f0ecc4f07b3.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -181,7 +181,7 @@ if (!doNotTrack) {
   <article>
       <h1>Information Theory</h1>
       <p class="meta">
-          Last updated May 31, 2022
+          Last updated June 21, 2022
       </p>
       <ul class="tags">
           
@@ -192,10 +192,10 @@ if (!doNotTrack) {
         <summary>Table of Contents</summary>
         <nav id="TableOfContents">
   <ol>
-    <li><a href="#self-information-information-content">Self-information (information content)</a></li>
-    <li><a href="#entropy-average-information">Entropy (average information)</a></li>
-    <li><a href="#kullback-leibler-divergence-information-gain">Kullback-Leibler divergence (information gain)</a></li>
-    <li><a href="#jensen-shannon-divergence-information-radius">Jensen-Shannon divergence (information radius)</a></li>
+    <li><a href="#self-information">Self-information</a></li>
+    <li><a href="#entropy">Entropy</a></li>
+    <li><a href="#kullback-leibler-divergence">Kullback-Leibler divergence</a></li>
+    <li><a href="#jensen-shannon-divergence">Jensen-Shannon divergence</a></li>
   </ol>
 </nav>
     </details>
@@ -238,7 +238,7 @@ if (!doNotTrack) {
 
 
 
-<a href="#self-information-information-content"><h2 id="self-information-information-content"><span class="hanchor" ariaLabel="Anchor"># </span>Self-information (information content)</h2></a>
+<a href="#self-information"><h2 id="self-information"><span class="hanchor" ariaLabel="Anchor"># </span>Self-information</h2></a>
 <p>The self-information (a.k.a. <em>information content</em>, <em>surprisal</em>,
 or <em>Shannon information</em>) is a quantity used in information theory which
 is derived from the probability of a certain event occurring from a random
@@ -257,15 +257,15 @@ sum of their respective self-information.</li>
 I(x):=-\log_b(p(x))
 \end{equation}
 $$</p>
-<a href="#entropy-average-information"><h2 id="entropy-average-information"><span class="hanchor" ariaLabel="Anchor"># </span>Entropy (average information)</h2></a>
+<a href="#entropy"><h2 id="entropy"><span class="hanchor" ariaLabel="Anchor"># </span>Entropy</h2></a>
 <p>$$
 \begin{equation}
 H(x)=\mathbb{E}[I(x)]
 \end{equation}
 $$</p>
-<a href="#kullback-leibler-divergence-information-gain"><h2 id="kullback-leibler-divergence-information-gain"><span class="hanchor" ariaLabel="Anchor"># </span>Kullback-Leibler divergence (information gain)</h2></a>
-<p>The Kullback-Leibler divergence (a.k.a. <em>relative entropy</em> and
-<em>I-divergence</em>) a measure of how one probability distribution $P$ differs
+<a href="#kullback-leibler-divergence"><h2 id="kullback-leibler-divergence"><span class="hanchor" ariaLabel="Anchor"># </span>Kullback-Leibler divergence</h2></a>
+<p>The Kullback-Leibler divergence (a.k.a. <em>information gain</em>, <em>relative entropy</em>
+and <em>I-divergence</em>) is a measure of how one probability distribution $P$ differs
 from another, $Q$. For the distributions $P$ and $Q$ for a continuous random
 variable, the relative entropy integral is:</p>
 <p>$$
@@ -292,7 +292,7 @@ squared-errors. This may at first present KL-divergence as a suboptimal choice
 as a general metric, however when considering the relation between the posterior
 and the priori, the relative information gain when travelling from one to the
 other <strong>is</strong> inherently asymmetric by their very nature.</p>
-<a href="#jensen-shannon-divergence-information-radius"><h2 id="jensen-shannon-divergence-information-radius"><span class="hanchor" ariaLabel="Anchor"># </span>Jensen-Shannon divergence (information radius)</h2></a>
+<a href="#jensen-shannon-divergence"><h2 id="jensen-shannon-divergence"><span class="hanchor" ariaLabel="Anchor"># </span>Jensen-Shannon divergence</h2></a>
 <p>The Jensen-Shannon divergence (a.k.a. <em>information radius</em> and <em>total divergence
 to the average</em>) is based on the KL-divergence, however it has been extended
 with the differences that it is symmetric, and always has a finite value.</p>

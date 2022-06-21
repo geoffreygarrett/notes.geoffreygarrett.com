@@ -103,6 +103,11 @@
           "source": "/notes/software-engineering",
           "target": "/notes/solid-principles",
           "text": "SOLID Principles"
+        },
+        {
+          "source": "/notes/software-engineering",
+          "target": "/notes/css-notes",
+          "text": "CSS Tips"
         }
       ]
     },
@@ -138,6 +143,13 @@
           "source": "/",
           "target": "/notes/concept-definitions",
           "text": "Concept Definitions"
+        }
+      ],
+      "/notes/css-notes": [
+        {
+          "source": "/notes/software-engineering",
+          "target": "/notes/css-notes",
+          "text": "CSS Tips"
         }
       ],
       "/notes/data-sampling-methods": [
@@ -323,6 +335,11 @@
       "source": "/notes/software-engineering",
       "target": "/notes/solid-principles",
       "text": "SOLID Principles"
+    },
+    {
+      "source": "/notes/software-engineering",
+      "target": "/notes/css-notes",
+      "text": "CSS Tips"
     }
   ]
 }

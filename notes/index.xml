@@ -66,7 +66,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/information-theory/</guid>
-      <description>Self-information (information content) The self-information (a.k.a. information content, surprisal, or Shannon information) is a quantity used in information theory which is derived from the probability of a certain event occurring from a random variable.</description>
+      <description>Self-information The self-information (a.k.a. information content, surprisal, or Shannon information) is a quantity used in information theory which is derived from the probability of a certain event occurring from a random variable.</description>
     </item>
     
     <item>
@@ -126,11 +126,20 @@ $$ \bm{A}\bm{x} = \bm{b}, $$</description>
     
     <item>
       <title>Software Engineering</title>
+      <link>https://notes.geoffreygarrett.com/notes/css-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/notes/css-notes/</guid>
+      <description>  min(), max(), and clamp(): three logical CSS functions to use today  </description>
+    </item>
+    
+    <item>
+      <title>Software Engineering</title>
       <link>https://notes.geoffreygarrett.com/notes/software-engineering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/software-engineering/</guid>
-      <description>  SOLID Principles  </description>
+      <description>  SOLID Principles  CSS Tips  </description>
     </item>
     
     <item>
