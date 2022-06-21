@@ -1,16 +1,40 @@
+//.extended-content-container {
+//
+//    width: 500%;
+//
+//    margin-left: -200%;
+//
+//    background-color:#aaa;
+//
+//    padding: 20px;
+//
+//}
+body, html {
+  width: 100%;
+}
 pre.chroma {
-  width:100%;
-  margin-right: auto;
-  margin-left: 0;
+  //width: 124%;
+  margin-right: 0;
+  //margin-left:-12%;
+  //margin-left:-10vw;
+  //margin-left: -10%;
+  //width: 140%;
+  position:static;
+  alignment: center;
+  //width: 100vw;
+  max-width: 120%;
+
+  //background-color: #f5f5f5;
+  overflow: hidden; /*Add this */
+  box-sizing: border-box;
   //margin-top: -28px !important;
   //padding-top: 1.6ch !important;
   //padding-bottom: 12px !important;
 }
 
 
-
 div.highlight pre {
-    overflow-x: scroll;
+  overflow-x: scroll;
 }
 
 .mainTOC {
