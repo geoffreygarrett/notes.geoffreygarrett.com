@@ -1,0 +1,18 @@
+.chroma {
+  //margin-top: -28px !important;
+  padding-top: 1.6ch !important;
+  //padding-bottom: 12px !important;
+}
+
+.code-name {
+  display: inline-block;
+  position: absolute;
+  float: right !important;
+  font-family: monospace;
+  padding: 4px 8px;
+  background-color: rgba(68, 74, 90, 0.53);
+  color: rgba(238, 130, 238, 0.87);
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 400;
+}
