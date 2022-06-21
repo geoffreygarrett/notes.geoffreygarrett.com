@@ -7,7 +7,7 @@ tags:
 - library
 ---
 
-````html {linenostart=1, title="index.html"}
+````html {linenostart=1, linenos=false, title="index.html"}
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +28,7 @@ tags:
 The main components of any `three.js` app are the scene, the camera, and the
 renderer. These are setup as demonstrated in the following code:
 
-````javascript {title="main.js"}
+````javascript {title="main.js", linenos=false}
 // 1. Create a scene
 var scene = new THREE.Scene();
 
@@ -67,7 +67,7 @@ window.innerHeight/2, false)` will render your app at half resolution, given
 that your `<canvas>` has 100% width and height.
 
 Let's add a cube to our scene.
-````js
+````js {linenos=false}
 const geometry = new THREE.BoxGeometry(1, 1, 1);
 const material = new THREE.MeshBasicMaterial({color: 0x00ff00});
 const cube = new THREE.Mesh(geometry, material);
