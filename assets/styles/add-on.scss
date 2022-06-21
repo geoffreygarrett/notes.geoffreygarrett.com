@@ -19,12 +19,12 @@ pre.chroma {
   width:100%;
   overflow: clip;
   @media (max-width: 600px){
-    margin-left: -8%;
-    width:116%;
-  @media (max-width: 380px) {
     margin-left: -5%;
     width:110%;
-  }
+  //@media (max-width: 380px) {
+  //  margin-left: -5%;
+  //  width:110%;
+  //}
 
   }
   //margin-right: 0;
