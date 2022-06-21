@@ -1,11 +1,13 @@
 ---
-title: "three.js basics"
+title: three.js Library
 comments: false
 tags:
-- computer-science
+- front-end
+- javascript
+- library
 ---
 
-````html
+````html {linenostart=1, title="index.html"}
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +28,7 @@ tags:
 The main components of any `three.js` app are the scene, the camera, and the
 renderer. These are setup as demonstrated in the following code:
 
-````js
+````javascript {title="main.js"}
 // 1. Create a scene
 var scene = new THREE.Scene();
 
