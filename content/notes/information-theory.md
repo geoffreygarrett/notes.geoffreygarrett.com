@@ -4,7 +4,7 @@ tags:
 - [information-theory]
 ---
 
-## Self-information (information content)
+## Self-information
 
 The self-information (a.k.a. _information content_, _surprisal_,
 or _Shannon information_) is a quantity used in information theory which
@@ -25,7 +25,7 @@ $$
 \end{equation}
 $$
 
-## Entropy (average information)
+## Entropy
 
 $$
 \begin{equation}
@@ -33,10 +33,9 @@ $$
 \end{equation}
 $$
 
-## Kullback-Leibler divergence (information gain)
-
-The Kullback-Leibler divergence (a.k.a. _relative entropy_ and
-_I-divergence_) a measure of how one probability distribution $P$ differs
+## Kullback-Leibler divergence
+The Kullback-Leibler divergence (a.k.a. _information gain_, _relative entropy_
+and _I-divergence_) is a measure of how one probability distribution $P$ differs
 from another, $Q$. For the distributions $P$ and $Q$ for a continuous random
 variable, the relative entropy integral is:
 
@@ -68,7 +67,7 @@ as a general metric, however when considering the relation between the posterior
 and the priori, the relative information gain when travelling from one to the
 other **is** inherently asymmetric by their very nature. 
 
-## Jensen-Shannon divergence (information radius)
+## Jensen-Shannon divergence
 
 The Jensen-Shannon divergence (a.k.a. _information radius_ and _total divergence
 to the average_) is based on the KL-divergence, however it has been extended

@@ -308,13 +308,26 @@ hr {
   background-color: var(--dark);
 }
 
-.singlePage {
-  padding: 4em 30vw;
-
-  @media all and (max-width: 1200px) {
-    padding: 25px 5vw;
-  }
+.singlePage{
+  width: clamp(45ch, 50%, 75ch) !important;
+  ////padding: 4em 30vw !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  //max-width: 660pt;
 }
+
+//.singlePage {
+//  //padding: 4em 30vw;
+//  //width: clamp(45ch, 50%, 75ch) !important;
+//
+//  //@media all and (max-width: 1200px) {
+//  //  padding: 25px 5vw;
+//  //}
+//}
+//
+//.p {
+//  width: clamp(45ch, 50%, 75ch) !important;
+//}
 
 .page-end {
   display: flex;
