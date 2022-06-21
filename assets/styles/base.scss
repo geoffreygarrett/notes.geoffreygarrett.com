@@ -309,7 +309,10 @@ hr {
 }
 
 .singlePage{
-  width: clamp(45ch, 50%, 75ch) !important;
+  width: clamp(42ch, 50%, 75ch) !important;
+  padding: 4em 6vw !important;
+  //padding-right: 16px !important;
+  //padding-left: 16px !important;
   ////padding: 4em 30vw !important;
   margin-left: auto !important;
   margin-right: auto !important;
