@@ -310,7 +310,9 @@ hr {
 
 .singlePage{
   width: clamp(40ch, 80%, 63ch) !important;
-  padding: 4em 6vw !important;
+  //padding: 4em 6vw !important;
+  padding-top: 6vw !important;
+  padding-bottom: 6vw !important;
   margin-left: auto !important;
   margin-right: auto !important;
   //max-width: 660pt;

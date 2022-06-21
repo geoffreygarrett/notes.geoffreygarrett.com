@@ -1,0 +1,12 @@
+name: pyten
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10   # personal preference, I like the switch-case feature.
+  - codecov
+  - m2w64-gcc
+  - go=1.18
+#variables:
+#  VAR1: valueA
+#  VAR2: valueB

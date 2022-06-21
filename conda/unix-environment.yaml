@@ -1,0 +1,18 @@
+name: pyten
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10   # personal preference, I like the switch-case feature.
+  - codecov
+  - go=1.18
+variables:
+  GOPATH: %USERPROFILE%/go
+#  VAR1: valueA
+#  VAR2: valueB
+
+#export GOPATH=$HOME/go
+#export GOPATH=%USERPROFILE%/go
+#export GOPATH=%USERPROFILE%/go
+#set GOPATH=%USERPROFILE%\go
+#set PATH=%PATH%;%GOROOT%\bin;%GOPATH%\bin
