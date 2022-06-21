@@ -31,6 +31,9 @@
   {{$finalCss := $css | resources.Concat "styles.css" | resources.Fingerprint "md5"  }}
   <link href="{{$finalCss.Permalink}}" rel="stylesheet" />
 
+  {{$addOn := resources.Get "js/add-on.js" | resources.Fingerprint "md5"  }}
+  <script defer src="{{$addOn.Permalink}}"></script>
+
   {{ $darkMode := resources.Get "js/darkmode.js" | resources.Fingerprint "md5" |
   resources.Minify }}
   <script src="{{$darkMode.Permalink}}"></script>
