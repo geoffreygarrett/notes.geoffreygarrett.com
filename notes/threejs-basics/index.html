@@ -9,7 +9,7 @@
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
-    three.js basics
+    three.js Library
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link
@@ -75,13 +75,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.ee8a9afb1470a8ec8c7bad2a3cfb4272.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.392856816f3077d9c3102f5c753d7bcf.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.1987ff601aadcfb907772aca241874a2.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.08b0d474590ee78e680127ece160ddf7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -182,13 +182,17 @@ if (!doNotTrack) {
 </div>
   </header>
   <article>
-      <h1>three.js basics</h1>
+      <h1>three.js Library</h1>
       <p class="meta">
-          Last updated June 5, 2022
+          Last updated June 21, 2022
       </p>
       <ul class="tags">
           
-          <li><a href="https://notes.geoffreygarrett.com/tags/computer-science/">Computer science</a></li>
+          <li><a href="https://notes.geoffreygarrett.com/tags/front-end/">Front end</a></li>
+          
+          <li><a href="https://notes.geoffreygarrett.com/tags/javascript/">Javascript</a></li>
+          
+          <li><a href="https://notes.geoffreygarrett.com/tags/library/">Library</a></li>
           
       </ul>
       
@@ -218,7 +222,7 @@ if (!doNotTrack) {
 
 
 
-<div class="highlight"><div class="chroma">
+<div class="highlight" title="index.html"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -256,7 +260,7 @@ if (!doNotTrack) {
 </div>
 </div><p>The main components of any <code>three.js</code> app are the scene, the camera, and the
 renderer. These are setup as demonstrated in the following code:</p>
-<div class="highlight"><div class="chroma">
+<div class="highlight" title="main.js"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -271,7 +275,7 @@ renderer. These are setup as demonstrated in the following code:</p>
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// 1. Create a scene
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// 1. Create a scene
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">scene</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Scene</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// 2. Create a camera
@@ -363,10 +367,20 @@ anything yet. For that, we need what&rsquo;s called a render or animate loop.</p
     
     
     
-    <li>
-        No backlinks found
-    </li>
     
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/notes/software-engineering/" data-ctx="three.js basics" data-src="/notes/software-engineering" class="internal-link">Software Engineering</a>
+      </li>
+      
+      
+      
 </ul>
 
     </div>

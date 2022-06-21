@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="  SOLID Principles  CSS Tips  "
+    content="Object Oriented   SOLID Principles  Frontend   CSS Tips  three.js basics  Personalised Development   Windows Development  "
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
@@ -75,13 +75,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.ee8a9afb1470a8ec8c7bad2a3cfb4272.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.392856816f3077d9c3102f5c753d7bcf.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.1987ff601aadcfb907772aca241874a2.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.08b0d474590ee78e680127ece160ddf7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -209,6 +209,7 @@ if (!doNotTrack) {
 
 
 
+<a href="#object-oriented"><h2 id="object-oriented"><span class="hanchor" ariaLabel="Anchor"># </span>Object Oriented</h2></a>
 <ul>
 <li>
 
@@ -220,6 +221,9 @@ if (!doNotTrack) {
   href="/notes/solid-principles/"
   rel="noopener" class="internal-link"
   data-src="/notes/solid-principles/">SOLID Principles</a></li>
+</ul>
+<a href="#frontend"><h2 id="frontend"><span class="hanchor" ariaLabel="Anchor"># </span>Frontend</h2></a>
+<ul>
 <li>
 
 
@@ -230,6 +234,29 @@ if (!doNotTrack) {
   href="/notes/css-notes/"
   rel="noopener" class="internal-link"
   data-src="/notes/css-notes/">CSS Tips</a></li>
+<li>
+
+
+
+
+
+<a
+  href="/notes/threejs-basics/"
+  rel="noopener" class="internal-link"
+  data-src="/notes/threejs-basics/">three.js basics</a></li>
+</ul>
+<a href="#personalised-development"><h2 id="personalised-development"><span class="hanchor" ariaLabel="Anchor"># </span>Personalised Development</h2></a>
+<ul>
+<li>
+
+
+
+
+
+<a
+  href="/notes/windows-development/"
+  rel="noopener" class="internal-link"
+  data-src="/notes/windows-development/">Windows Development</a></li>
 </ul>
 
 

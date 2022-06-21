@@ -125,6 +125,15 @@ $$ \bm{A}\bm{x} = \bm{b}, $$</description>
     </item>
     
     <item>
+      <title>Quartz, Obsidian, and Hugo</title>
+      <link>https://notes.geoffreygarrett.com/notes/notes-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/notes/notes-website/</guid>
+      <description>Test 1 2 3 4 5  mkdir %USERPROFILE%/src cd %USERPROFILE%/src git clone https://github.com/gohugoio/hugo.git cd hugo go install --tags extended -v -x   </description>
+    </item>
+    
+    <item>
       <title>Software Engineering</title>
       <link>https://notes.geoffreygarrett.com/notes/css-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -139,7 +148,7 @@ $$ \bm{A}\bm{x} = \bm{b}, $$</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/software-engineering/</guid>
-      <description>  SOLID Principles  CSS Tips  </description>
+      <description>Object Oriented   SOLID Principles  Frontend   CSS Tips  three.js basics  Personalised Development   Windows Development  </description>
     </item>
     
     <item>
@@ -152,12 +161,21 @@ $$ \bm{A}\bm{x} = \bm{b}, $$</description>
     </item>
     
     <item>
-      <title>three.js basics</title>
+      <title>three.js Library</title>
       <link>https://notes.geoffreygarrett.com/notes/threejs-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/threejs-basics/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;My first three.</description>
+    </item>
+    
+    <item>
+      <title>Windows Development</title>
+      <link>https://notes.geoffreygarrett.com/notes/windows-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/notes/windows-development/</guid>
+      <description>  Setting up Windows Terminal, WSL and Oh-my-Zsh  </description>
     </item>
     
   </channel>

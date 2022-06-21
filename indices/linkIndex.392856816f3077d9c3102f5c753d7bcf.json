@@ -108,6 +108,16 @@
           "source": "/notes/software-engineering",
           "target": "/notes/css-notes",
           "text": "CSS Tips"
+        },
+        {
+          "source": "/notes/software-engineering",
+          "target": "/notes/threejs-basics",
+          "text": "three.js basics"
+        },
+        {
+          "source": "/notes/software-engineering",
+          "target": "/notes/windows-development",
+          "text": "Windows Development"
         }
       ]
     },
@@ -242,6 +252,20 @@
           "target": "/notes/solid-principles",
           "text": "SOLID Principles"
         }
+      ],
+      "/notes/threejs-basics": [
+        {
+          "source": "/notes/software-engineering",
+          "target": "/notes/threejs-basics",
+          "text": "three.js basics"
+        }
+      ],
+      "/notes/windows-development": [
+        {
+          "source": "/notes/software-engineering",
+          "target": "/notes/windows-development",
+          "text": "Windows Development"
+        }
       ]
     }
   },
@@ -340,6 +364,16 @@
       "source": "/notes/software-engineering",
       "target": "/notes/css-notes",
       "text": "CSS Tips"
+    },
+    {
+      "source": "/notes/software-engineering",
+      "target": "/notes/threejs-basics",
+      "text": "three.js basics"
+    },
+    {
+      "source": "/notes/software-engineering",
+      "target": "/notes/windows-development",
+      "text": "Windows Development"
     }
   ]
 }

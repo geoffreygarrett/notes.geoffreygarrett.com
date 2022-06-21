@@ -7,15 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://notes.geoffreygarrett.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>computer-science</title>
-      <link>https://notes.geoffreygarrett.com/tags/computer-science/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://notes.geoffreygarrett.com/tags/computer-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>deep-learning</title>
       <link>https://notes.geoffreygarrett.com/tags/deep-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -34,11 +25,38 @@
     </item>
     
     <item>
+      <title>front-end</title>
+      <link>https://notes.geoffreygarrett.com/tags/front-end/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/tags/front-end/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>front-matter</title>
       <link>https://notes.geoffreygarrett.com/tags/front-matter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/tags/front-matter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://notes.geoffreygarrett.com/tags/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>library</title>
+      <link>https://notes.geoffreygarrett.com/tags/library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/tags/library/</guid>
       <description></description>
     </item>
     

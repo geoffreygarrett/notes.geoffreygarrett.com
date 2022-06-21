@@ -75,13 +75,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.ee8a9afb1470a8ec8c7bad2a3cfb4272.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.392856816f3077d9c3102f5c753d7bcf.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.1987ff601aadcfb907772aca241874a2.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.08b0d474590ee78e680127ece160ddf7.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -186,11 +186,59 @@ if (!doNotTrack) {
         <ul class="section-ul"><li class="section-li">
         <div class="section">
             <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/windows-development/">Windows Development</a></h3>
+                <ul class="tags">
+                    
+                </ul>
+                <p>  Setting up Windows Terminal, WSL and Oh-my-Zsh  </p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 21, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/threejs-basics/">three.js Library</a></h3>
+                <ul class="tags">
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/front-end/">Front-End</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/javascript/">Javascript</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/library/">Library</a></li>
+                    
+                </ul>
+                <p>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;My first three....</p>
+            </div>
+            <p class="meta">
+                2 minute read. Last updated June 21, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
                 <h3><a href="https://notes.geoffreygarrett.com/notes/software-engineering/">Software Engineering</a></h3>
                 <ul class="tags">
                     
                 </ul>
-                <p>  SOLID Principles  CSS Tips  </p>
+                <p>Object Oriented   SOLID Principles  Frontend   CSS Tips  three.js basics  Personalised Development   Windows Development  </p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 21, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/notes-website/">Quartz, Obsidian, and Hugo</a></h3>
+                <ul class="tags">
+                    
+                </ul>
+                <p>Test 1 2 3 4 5  mkdir %USERPROFILE%/src cd %USERPROFILE%/src git clone https://github.com/gohugoio/hugo.git cd hugo go install --tags extended -v -x   </p>
             </div>
             <p class="meta">
                 1 minute read. Last updated June 21, 2022
@@ -222,22 +270,6 @@ if (!doNotTrack) {
             </div>
             <p class="meta">
                 1 minute read. Last updated June 6, 2022
-            </p>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/threejs-basics/">three.js basics</a></h3>
-                <ul class="tags">
-                    
-                    <li><a href="https://notes.geoffreygarrett.com/tags/computer-science/">Computer-Science</a></li>
-                    
-                </ul>
-                <p>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;title&gt;My first three....</p>
-            </div>
-            <p class="meta">
-                2 minute read. Last updated June 5, 2022
             </p>
 
         </div>
