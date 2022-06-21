@@ -2,7 +2,7 @@
 title: three.js Library
 comments: false
 tags:
-- front-end
+- frontend
 - javascript
 - library
 ---
