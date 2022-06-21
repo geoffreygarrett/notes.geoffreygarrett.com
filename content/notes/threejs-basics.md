@@ -84,3 +84,7 @@ each other. To avoid this, we simply move the camera out a bit.
 > If you copied the code from above into the HTML file we created earlier, you
 wouldn't be able to see anything. This is because we're not actually rendering
 anything yet. For that, we need what's called a render or animate loop.
+
+### Resources
+
+- [Using Three.js to Add 3D Elements to your Websites](https://www.elegantthemes.com/blog/design/using-three-js-to-add-3d-elements-to-your-websites)
