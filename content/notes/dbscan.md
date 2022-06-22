@@ -3,7 +3,7 @@ title: "DBSCAN"
 tags:
 - algorithm
 - machine-learning
-- 🌰
+- "🌰"
 ---
 
 Density-based spacial clustering of applications with noise (DBSCAN) is a

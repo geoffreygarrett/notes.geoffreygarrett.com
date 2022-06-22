@@ -9,7 +9,7 @@ They won't disappear, they might just be reshuffled and organised under new maps
 that I deem necessary to add at a later time. For example, I currently have the
 maps of [software engineering](notes/software-engineering.md) and [machine
 learning](notes/machine-learning.md) present, with some [machine learning
-algorithms](notes/dbscane.md) in [software
+algorithms](notes/dbscan.md) in [software
 engineering](notes/software-engineering.md), both of which _might_ later be
 found under **computer science**. Feel free to peruse, some notes may have
 comments enabled if I feel that a note is well-developed enough.
