@@ -43,11 +43,14 @@ const renderCube = function (event) {
 
     camera.position.z = 2;
 
+
     // RESIZE LISTENER
     window.addEventListener('resize', () => {
         camera.aspect = element.clientWidth / element.clientHeight;
         camera.updateProjectionMatrix();
-        renderer.setSize(w, h);
+        renderer.setPixelRatio(element.clientWidth / element.clientHeight);
+        controls.handleResize();
+        renderer.setSize(element.clientWidth, element.clientHeight);
     });
 
 
