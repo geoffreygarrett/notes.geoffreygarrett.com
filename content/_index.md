@@ -41,6 +41,6 @@ consistent categorisation described by the following:
 - 🌱 A **Seedling** is more established and ready to continue growing. It has 
   some weak parts, but it's getting there with time. Ideally it won't stay 
   a seedling for much longer, it just needs a bit of tending, water and sunshine.
-- 🌲 **Evergreen** has finished growing. It could do with some pruning once in a 
-  while throughout seasons, but it's mature and isn't expected to disappear 
+- 🌲 An **Evergreen** has finished growing. It could do with some pruning once
+  in a while throughout seasons, but it's mature and isn't expected to disappear
   in our lifetime.
