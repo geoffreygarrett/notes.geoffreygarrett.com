@@ -4,6 +4,7 @@ tags:
 - computer-science
 - data-clustering
 - algorithm
+- seed
 ---
 
 Density-based spacial clustering of applications with noise (DBSCAN) is a
