@@ -34,6 +34,16 @@
     </item>
     
     <item>
+      <title>CSS</title>
+      <link>https://notes.geoffreygarrett.com/notes/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/notes/css/</guid>
+      <description>Cascading style sheets (CSS)
+Loose Links   min(), max(), and clamp(): three logical CSS functions to use today  </description>
+    </item>
+    
+    <item>
       <title>Data Sampling Methods</title>
       <link>https://notes.geoffreygarrett.com/notes/data-sampling-methods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -144,20 +154,11 @@ $$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$</description>
     
     <item>
       <title>Software Engineering</title>
-      <link>https://notes.geoffreygarrett.com/notes/css-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://notes.geoffreygarrett.com/notes/css-notes/</guid>
-      <description>  min(), max(), and clamp(): three logical CSS functions to use today  </description>
-    </item>
-    
-    <item>
-      <title>Software Engineering</title>
       <link>https://notes.geoffreygarrett.com/notes/software-engineering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/software-engineering/</guid>
-      <description>Algorithms   Density-based spacial clustering of applications with noise (DBSCAN)  Object Oriented   SOLID Principles  Frontend   CSS Tips  three.</description>
+      <description>Algorithms   Density-based spacial clustering of applications with noise (DBSCAN)  Object Oriented   SOLID Principles  Frontend   Cascading Style Sheets (CSS)  Three.</description>
     </item>
     
     <item>

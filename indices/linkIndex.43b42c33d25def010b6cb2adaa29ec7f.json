@@ -119,13 +119,13 @@
         },
         {
           "source": "/notes/software-engineering",
-          "target": "/notes/css-notes",
-          "text": "CSS Tips"
+          "target": "/notes/css",
+          "text": "Cascading Style Sheets (CSS)"
         },
         {
           "source": "/notes/software-engineering",
           "target": "/notes/threejs-basics",
-          "text": "three.js basics"
+          "text": "Three.js"
         },
         {
           "source": "/notes/software-engineering",
@@ -156,11 +156,11 @@
           "text": "Concept Definitions"
         }
       ],
-      "/notes/css-notes": [
+      "/notes/css": [
         {
           "source": "/notes/software-engineering",
-          "target": "/notes/css-notes",
-          "text": "CSS Tips"
+          "target": "/notes/css",
+          "text": "Cascading Style Sheets (CSS)"
         }
       ],
       "/notes/data-sampling-methods": [
@@ -285,7 +285,7 @@
         {
           "source": "/notes/software-engineering",
           "target": "/notes/threejs-basics",
-          "text": "three.js basics"
+          "text": "Three.js"
         }
       ],
       "/notes/windows-development": [
@@ -405,13 +405,13 @@
     },
     {
       "source": "/notes/software-engineering",
-      "target": "/notes/css-notes",
-      "text": "CSS Tips"
+      "target": "/notes/css",
+      "text": "Cascading Style Sheets (CSS)"
     },
     {
       "source": "/notes/software-engineering",
       "target": "/notes/threejs-basics",
-      "text": "three.js basics"
+      "text": "Three.js"
     },
     {
       "source": "/notes/software-engineering",

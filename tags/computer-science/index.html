@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Stochastic Methods Deterministic Methods Low discrepancy Experimental design methods Geometric Methods Uniform grid Latin hypercube Centroidal Voronoi Tesellation Opposite methods Hybrid methods Sampling non-uniform distributions Importance sampling Bibliography   Smart sampling and incremental function learning for very large high dimensional data."
+    content=""
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
-    Data Sampling Methods
+    computer-science
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link
@@ -182,9 +182,9 @@ if (!doNotTrack) {
     
     <header>
         <h1 id="page-title"><a href="https://notes.geoffreygarrett.com/">Geoffrey&#39;s Notes</a></h1>
-      <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
-      <div class="spacer"></div>
-      <div class='darkmode'>
+        <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+        <div class="spacer"></div>
+        <div class='darkmode'>
     <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
     <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
@@ -199,128 +199,32 @@ if (!doNotTrack) {
         </svg>
     </label>
 </div>
-  </header>
-  <article>
-      <h1>Data Sampling Methods</h1>
-      <p class="meta">
-          Last updated June 6, 2022
-      </p>
-      <ul class="tags">
-          
-          <li><a href="https://notes.geoffreygarrett.com/tags/machine-learning/">Machine learning</a></li>
-          
-      </ul>
-      
+    </header>
+    <article>
+        <h1>Tag: Computer science</h1>
+        <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/software-engineering/">Software Engineering</a></h3>
+                <ul class="tags">
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/computer-science/">Computer-Science</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/sapling/">Sapling</a></li>
+                    
+                </ul>
+                <p>Algorithms   Density-based spacial clustering of applications with noise (DBSCAN)  Object Oriented   SOLID Principles  Frontend   Cascading Style Sheets (CSS)  Three....</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 22, 2022
+            </p>
 
-      
+        </div>
+    </li></ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="#stochastic-methods"><h2 id="stochastic-methods"><span class="hanchor" ariaLabel="Anchor"># </span>Stochastic Methods</h2></a>
-<a href="#deterministic-methods"><h2 id="deterministic-methods"><span class="hanchor" ariaLabel="Anchor"># </span>Deterministic Methods</h2></a>
-<a href="#low-discrepancy"><h3 id="low-discrepancy"><span class="hanchor" ariaLabel="Anchor"># </span>Low discrepancy</h3></a>
-<a href="#experimental-design-methods"><h3 id="experimental-design-methods"><span class="hanchor" ariaLabel="Anchor"># </span>Experimental design methods</h3></a>
-<a href="#geometric-methods"><h2 id="geometric-methods"><span class="hanchor" ariaLabel="Anchor"># </span>Geometric Methods</h2></a>
-<a href="#uniform-grid"><h3 id="uniform-grid"><span class="hanchor" ariaLabel="Anchor"># </span>Uniform grid</h3></a>
-<a href="#latin-hypercube"><h3 id="latin-hypercube"><span class="hanchor" ariaLabel="Anchor"># </span>Latin hypercube</h3></a>
-<a href="#centroidal-voronoi-tesellation"><h3 id="centroidal-voronoi-tesellation"><span class="hanchor" ariaLabel="Anchor"># </span>Centroidal Voronoi Tesellation</h3></a>
-<a href="#opposite-methods"><h3 id="opposite-methods"><span class="hanchor" ariaLabel="Anchor"># </span>Opposite methods</h3></a>
-<a href="#hybrid-methods"><h2 id="hybrid-methods"><span class="hanchor" ariaLabel="Anchor"># </span>Hybrid methods</h2></a>
-<a href="#sampling-non-uniform-distributions"><h2 id="sampling-non-uniform-distributions"><span class="hanchor" ariaLabel="Anchor"># </span>Sampling non-uniform distributions</h2></a>
-<a href="#importance-sampling"><h2 id="importance-sampling"><span class="hanchor" ariaLabel="Anchor"># </span>Importance sampling</h2></a>
-<a href="#bibliography"><h2 id="bibliography"><span class="hanchor" ariaLabel="Anchor"># </span>Bibliography</h2></a>
-
-
- <ul>
-  <li>
-<a href="https://www.sciencedirect.com/science/article/pii/S0893608015001768">
-<div class="csl-entry"> Smart sampling and incremental function learning for
-very large high dimensional data. (2016). <i>Neural Networks</i>, <i>78</i>,
-75–87. </div> </a>
-  </li>
-</ul>
-
-
-<ul>
-<li>
-
-<a href="http://extremelearning.com.au/how-to-evenly-distribute-points-on-a-sphere-more-effectively-than-the-canonical-fibonacci-lattice/" rel="noopener">How to evenly distribute points on a sphere more effectively than the canonical Fibonacci Lattice</a></li>
-<li>
-
-<a href="http://extremelearning.com.au/how-to-generate-uniformly-random-points-on-n-spheres-and-n-balls/" rel="noopener">How to generate uniformly random points on n-spheres and in n-balls</a></li>
-</ul>
-
-
+        
     </article>
-    <hr/>
-<div class="page-end">
-    <div class="backlinks-container">
-        <h3>Backlinks</h3>
-<ul class="backlinks">
     
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-      
-    
-      
-      
-      <li>
-        <a href="/notes/machine-learning/" data-ctx="Data Sampling Methods" data-src="/notes/machine-learning" class="internal-link">Machine Learning</a>
-      </li>
-      
-      
-      
-</ul>
-
-    </div>
-    <div>
-        <script
-  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
-  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
-  crossorigin="anonymous"
-></script>
-<h3>Interactive Graph</h3>
-<div id="graph-container"></div>
-<style>
-  :root {
-    --g-node: var(--secondary);
-    --g-node-active: var(--primary);
-    --g-node-inactive: var(--visited);
-    --g-link: var(--outlinegray);
-    --g-link-active: #5a7282;
-  }
-</style>
-
-<script src="https://notes.geoffreygarrett.com/js/graph.0eb0c81d58a703569f31b6053242af38.js"></script>
-
-    </div>
-</div>
-
-
-
-
 <div id="contact_buttons">
     <footer>
         <p>Made by Geoffrey Garrett using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
