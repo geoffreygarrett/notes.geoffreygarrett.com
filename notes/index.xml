@@ -175,7 +175,7 @@ $$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/threejs-basics/</guid>
-      <description>three.js is a cross-browser Javascript API which allows for the creation and display of 3D computer graphics in a web browser using WebGL (a lower level Javascript API allowing for GPU-accelerated physics and image processing locally, as part of the web page canvas).</description>
+      <description>Three.js is a cross-browser Javascript API which allows for the creation and display of 3D computer graphics in a web browser using WebGL (a lower level Javascript API allowing for GPU-accelerated physics and image processing locally, as part of the web page canvas).</description>
     </item>
     
     <item>

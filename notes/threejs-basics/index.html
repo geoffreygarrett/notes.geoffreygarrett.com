@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="three.js is a cross-browser Javascript API which allows for the creation and display of 3D computer graphics in a web browser using WebGL (a lower level Javascript API allowing for GPU-accelerated physics and image processing locally, as part of the web page canvas)."
+    content="Three.js is a cross-browser Javascript API which allows for the creation and display of 3D computer graphics in a web browser using WebGL (a lower level Javascript API allowing for GPU-accelerated physics and image processing locally, as part of the web page canvas)."
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
@@ -17,7 +17,7 @@
     type="image/png"
     href="https://notes.geoffreygarrett.com//icon.png"
   />
-
+  <script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.min.js"></script>
   
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap"
@@ -45,10 +45,13 @@
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.b2a1c999a7ef81486a56f19357545d5e.css" rel="stylesheet" />
+  
+  
+  
+  <link href="https://notes.geoffreygarrett.com/styles.79f60074b860b938c6fe6841e487345b.css" rel="stylesheet" />
 
   
-  <script defer src="https://notes.geoffreygarrett.com/js/add-on.6d45d3a41113c6dec27c0b366d667f3b.js"></script>
+  <script src="https://notes.geoffreygarrett.com/js/add-on.30b7374f74460007ac305eba442edaf1.js"></script>
 
   
   <script src="https://notes.geoffreygarrett.com/js/darkmode.d2f0ee97155fcdb9fc2b573dfd2ba98d.min.js"></script>
@@ -87,7 +90,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5f251a281f2188ad0e74a7ae6f822857.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.85de6e1f85b12ba98f856bc81398e91c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -131,11 +134,56 @@
     };
   </script>
   
-  
-  <script type="module">
-    import { attachSPARouting } from 'https:\/\/notes.geoffreygarrett.com\/js\/router.88d6def7f687fe498bfc6de6c16d554b.min.js';
-    
-    attachSPARouting(draw);
+  <script>
+    window.navigate = (url) => window.location.href = url;
+    var fn = function(event) {
+var canvas = document.getElementById('ad');
+
+var w = canvas.clientWidth;  // offsetWidth is with border included
+var h = canvas.clientHeight; // offsetHeight is with border included
+
+// 1. Create a scene
+var scene = new THREE.Scene();
+
+// 2. Create a camera
+var camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
+
+// 3. Create a render
+var renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+
+// 4. Set the size of the render
+renderer.setSize(w, h);
+
+canvas.appendChild(renderer.domElement);
+
+var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+// const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+var material = new THREE.MeshNormalMaterial( {  } );
+var cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+
+camera.position.z = 2;
+
+// RESIZE LISTENER
+window.addEventListener('resize', () => {
+let w = canvas.clientWidth;  // offsetWidth is with border included
+let h = canvas.clientHeight; // offsetHeight is with border included
+camera.aspect = w / h;
+camera.updateProjectionMatrix();
+renderer.setSize(w, h);
+});
+
+
+function animate() {
+requestAnimationFrame( animate );
+cube.rotation.x += 0.002;
+cube.rotation.y += 0.002;
+renderer.render( scene, camera );
+}
+animate();
+}
+window.addEventListener("DOMContentLoaded", fn);
+draw();
   </script>
   
 </head>
@@ -238,7 +286,7 @@ if (!doNotTrack) {
 
 
 
-<p><code>three.js</code> is a cross-browser Javascript API
+<p>Three.js is a cross-browser Javascript API
 which allows for the creation and display of
 3D computer graphics in a web browser using
 
@@ -259,72 +307,9 @@ see when
 <a href="https://github.com/home" rel="noopener">signing into GitHub</a>.</p>
 
 
-  <style>
-  #canvas {
-    
-    
-    position: relative;
-    width: 100%;
-    /*height: 0;*/
-    padding-bottom: 50%;
-    border-color: var(--lightgray);
-    border-radius: 20px;
-    border-style: solid;
-    border-width: medium;
-    margin: 1em auto;
-    box-sizing: border-box;
-  }
-  </style>
-  <div class="canvas" id="canvas">
-    
+
+  <div class="canvas" id="ad">
   </div>
-<script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.min.js"></script>
-<script defer>
-  let canvas = document.getElementById('canvas');
-  let w = canvas.clientWidth;  // offsetWidth is with border included
-  let h = canvas.clientHeight; // offsetHeight is with border included
-
-  // 1. Create a scene
-  let scene = new THREE.Scene();
-
-  // 2. Create a camera
-  let camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
-
-  // 3. Create a render
-  let renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
-
-  // 4. Set the size of the render
-  renderer.setSize(w, h);
-
-  canvas.appendChild(renderer.domElement);
-
-  const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-  // const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-  const material = new THREE.MeshNormalMaterial( {  } );
-  const cube = new THREE.Mesh( geometry, material );
-  scene.add( cube );
-
-  camera.position.z = 2;
-
-  // RESIZE LISTENER
-  window.addEventListener('resize', () => {
-    let w = canvas.clientWidth;  // offsetWidth is with border included
-    let h = canvas.clientHeight; // offsetHeight is with border included
-    camera.aspect = w / h;
-    camera.updateProjectionMatrix();
-    renderer.setSize(w, h);
-  });
-
-
-  function animate() {
-    requestAnimationFrame( animate );
-    cube.rotation.x += 0.002;
-    cube.rotation.y += 0.002;
-    renderer.render( scene, camera );
-  }
-  animate();
-
-</script>
 
 
 <div class="highlight" title="index.html"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>

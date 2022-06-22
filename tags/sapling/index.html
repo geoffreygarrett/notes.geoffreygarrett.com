@@ -17,7 +17,7 @@
     type="image/png"
     href="https://notes.geoffreygarrett.com//icon.png"
   />
-
+  <script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.min.js"></script>
   
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap"
@@ -45,10 +45,13 @@
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.b2a1c999a7ef81486a56f19357545d5e.css" rel="stylesheet" />
+  
+  
+  
+  <link href="https://notes.geoffreygarrett.com/styles.79f60074b860b938c6fe6841e487345b.css" rel="stylesheet" />
 
   
-  <script defer src="https://notes.geoffreygarrett.com/js/add-on.6d45d3a41113c6dec27c0b366d667f3b.js"></script>
+  <script src="https://notes.geoffreygarrett.com/js/add-on.30b7374f74460007ac305eba442edaf1.js"></script>
 
   
   <script src="https://notes.geoffreygarrett.com/js/darkmode.d2f0ee97155fcdb9fc2b573dfd2ba98d.min.js"></script>
@@ -87,7 +90,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5f251a281f2188ad0e74a7ae6f822857.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.85de6e1f85b12ba98f856bc81398e91c.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -131,11 +134,9 @@
     };
   </script>
   
-  
-  <script type="module">
-    import { attachSPARouting } from 'https:\/\/notes.geoffreygarrett.com\/js\/router.88d6def7f687fe498bfc6de6c16d554b.min.js';
-    
-    attachSPARouting(draw);
+  <script>
+    window.navigate = (url) => window.location.href = url;
+    draw();
   </script>
   
 </head>
@@ -204,10 +205,10 @@ if (!doNotTrack) {
                     <li><a href="https://notes.geoffreygarrett.com/tags/sapling/">Sapling</a></li>
                     
                 </ul>
-                <p>three.js is a cross-browser Javascript API which allows for the creation and display of 3D computer graphics in a web browser using WebGL (a lower level Javascript API allowing for GPU-accelerated physics and image processing locally, as part of the web page canvas)....</p>
+                <p>Three.js is a cross-browser Javascript API which allows for the creation and display of 3D computer graphics in a web browser using WebGL (a lower level Javascript API allowing for GPU-accelerated physics and image processing locally, as part of the web page canvas)....</p>
             </div>
             <p class="meta">
-                3 minute read. Last updated June 22, 2022
+                2 minute read. Last updated June 22, 2022
             </p>
 
         </div>
