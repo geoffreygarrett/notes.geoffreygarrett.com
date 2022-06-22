@@ -3,7 +3,8 @@ title: "Software Engineering"
 tags:
 - [software-engineering]
 ---
-
+## Algorithms
+- [Algorithms](notes/dbscan.md)
 
 ## Object Oriented
 - [SOLID Principles](notes/solid-principles.md)
