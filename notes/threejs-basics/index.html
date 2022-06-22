@@ -17,7 +17,6 @@
     type="image/png"
     href="https://notes.geoffreygarrett.com//icon.png"
   />
-  <script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.min.js"></script>
   
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap"
@@ -63,7 +62,7 @@
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.daebccefe1ccb17bcc2b4ff34713ca08.css" rel="stylesheet" />
+  <link href="https://notes.geoffreygarrett.com/styles.11c141d504b8f57815e6d6396fb7fe58.css" rel="stylesheet" />
 
   
   <script src="https://notes.geoffreygarrett.com/js/add-on.30b7374f74460007ac305eba442edaf1.js"></script>
@@ -105,7 +104,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.111227509205d847851db1b4a0d139c1.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.4f289b8d49fd0c8bf345347e17c8e2f6.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -149,56 +148,11 @@
     };
   </script>
   
+  <script src="/js/cube-basic.js" type="module"></script>
+  
   <script>
     window.navigate = (url) => window.location.href = url;
-    var fn = function(event) {
-var canvas = document.getElementById('ad');
-
-var w = canvas.clientWidth;  // offsetWidth is with border included
-var h = canvas.clientHeight; // offsetHeight is with border included
-
-// 1. Create a scene
-var scene = new THREE.Scene();
-
-// 2. Create a camera
-var camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
-
-// 3. Create a render
-var renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
-
-// 4. Set the size of the render
-renderer.setSize(w, h);
-
-canvas.appendChild(renderer.domElement);
-
-var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-// const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-var material = new THREE.MeshNormalMaterial( {  } );
-var cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
-
-camera.position.z = 2;
-
-// RESIZE LISTENER
-window.addEventListener('resize', () => {
-let w = canvas.clientWidth;  // offsetWidth is with border included
-let h = canvas.clientHeight; // offsetHeight is with border included
-camera.aspect = w / h;
-camera.updateProjectionMatrix();
-renderer.setSize(w, h);
-});
-
-
-function animate() {
-requestAnimationFrame( animate );
-cube.rotation.x += 0.002;
-cube.rotation.y += 0.002;
-renderer.render( scene, camera );
-}
-animate();
-}
-window.addEventListener("DOMContentLoaded", fn);
-draw();
+    draw();
   </script>
   
 </head>
@@ -317,9 +271,8 @@ projects, one of which I often see when
 GitHub</a>.</p>
 
 
-
-  <div class="canvas" id="ad">
-  </div>
+<div class="canvas" id="threejs">
+</div>
 
 
 <div class="highlight" title="/index.html"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
