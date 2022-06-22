@@ -41,7 +41,6 @@
   {{ $popover := resources.Get "js/popover.js" | resources.Fingerprint "md5" |
   resources.Minify }}
   <script src="{{$popover.Permalink}}"></script>
-
   <!--  Preload page vars  -->
   {{$linkIndex := resources.Get "indices/linkIndex.json" | resources.Fingerprint
   "md5" | }} {{$contentIndex := resources.Get
@@ -103,21 +102,19 @@
   {{ $router := resources.Get "js/router.js" | resources.Fingerprint "md5" |
   resources.Minify }}
   <script type="module">
+
     import { attachSPARouting } from '{{$router.Permalink}}';
-    {{ .Params.custom_js | safeJS -}}
+
     // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page.
     attachSPARouting(draw);
   </script>
-  {{if .Params.custom_js_path -}}
-  <script src="{{.Params.custom_js_path}}" type="module"></script>
-  {{end}}
+
   {{else}}
   {{if .Params.custom_js_path -}}
   <script src="{{ .Params.custom_js_path }}" type="module"></script>
   {{end}}
   <script>
     window.navigate = (url) => window.location.href = url;
-    {{ .Params.custom_js | safeJS -}}
     draw();
   </script>
   {{end}}
