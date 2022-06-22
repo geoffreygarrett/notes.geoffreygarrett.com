@@ -5,12 +5,14 @@ title: Geoffrey's Notes
 ## Maps of Content 🗺️
 
 Here are the current maps to my notes. What you see here will change overtime.
-They won't disappear, they might just be reshuffled and organised under new
-maps that I deem necessary to add at a later time. For example, currently I 
-have `software engineering` and `machine learning`, with some `machine learning`
-algorithms in `software engineering`, both of might later be found under
-`computer science`. Feel free to peruse, some notes may have comments enabled
-if I feel that a note is well-developed enough.
+They won't disappear, they might just be reshuffled and organised under new maps
+that I deem necessary to add at a later time. For example, I currently have the
+maps of [software engineering](notes/software-engineering.md) and [machine
+learning](notes/machine-learning.md) present, with some [machine learning
+algorithms](notes/dbscane.md) in [software
+engineering](notes/software-engineering.md), both of which _might_ later be
+found under **computer science**. Feel free to peruse, some notes may have
+comments enabled if I feel that a note is well-developed enough.
 
 - [Linear Algebra MOC](notes/linear-algebra.md)
 - [Estimation Theory MOC](notes/estimation-theory.md)
