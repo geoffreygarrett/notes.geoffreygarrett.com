@@ -21,11 +21,13 @@ pre.chroma {
   @media (max-width: 600px){
     margin-left: -5%;
     width:110%;
-  //@media (max-width: 380px) {
-  //  margin-left: -5%;
-  //  width:110%;
-  //}
-
+  @media (max-width: 380px) {
+    margin-left: -3%;
+    width:106%;
+  }
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   }
   //margin-right: 0;
   //margin-left:-12%;
@@ -73,12 +75,10 @@ div.highlight pre {
   border-top-right-radius: 5px;
   font-size: 13px;
   font-weight: 400;
-    @media (max-width: 600px){
+  @media (max-width: 600px){
     margin-left: -5%;
-  //@media (max-width: 380px) {
-  //  margin-left: -5%;
-  //  width:110%;
-  //}
-
+  @media (max-width: 380px) {
+    margin-left: -3%;
+  }
   }
 }
