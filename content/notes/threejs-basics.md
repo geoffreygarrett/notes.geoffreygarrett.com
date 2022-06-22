@@ -13,7 +13,12 @@ which allows for the creation and display of
 WebGL - a lower level Javascript API allowing
 for GPU-accelerated physics, image 
 processing snd effects locally, as part of 
-the web page canvas.
+the web page canvas. There exists a 
+[plethora of examples](https://threejs.org/)
+which can be used as starting points in your
+projects, one of which I often come
+in contact with when
+[signing into GitHub](https://github.com/home).
 
 ````html {linenostart=1, linenos=false, title="index.html"}
 <!DOCTYPE html>
