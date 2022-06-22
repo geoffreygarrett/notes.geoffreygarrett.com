@@ -1,12 +1,12 @@
 ---
-title: three.js Library
+title: Three.js Fundamentals
 comments: false
 tags:
 - frontend
 - javascript
 - library
+- sapling
 ---
-
 `three.js` is a cross-browser Javascript API
 which allows for the creation and display of
 3D computer graphics in a web browser using 
@@ -20,6 +20,76 @@ which can be used as starting points in your
 projects, one of which I often come
 see when
 [signing into GitHub](https://github.com/home).
+
+{{< rawhtml >}}
+  <style>
+  #canvas {
+    
+    
+    position: relative;
+    width: 100%;
+    /*height: 0;*/
+    padding-bottom: 50%;
+    border-color: var(--lightgray);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: medium;
+    margin: 1em auto;
+    box-sizing: border-box;
+  }
+  </style>
+  <div class="canvas" id="canvas">
+    
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.min.js"></script>
+<script defer>
+  let canvas = document.getElementById('canvas');
+  let w = canvas.clientWidth;  // offsetWidth is with border included
+  let h = canvas.clientHeight; // offsetHeight is with border included
+
+  // 1. Create a scene
+  let scene = new THREE.Scene();
+
+  // 2. Create a camera
+  let camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
+
+  // 3. Create a render
+  let renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+
+  // 4. Set the size of the render
+  renderer.setSize(w, h);
+
+  canvas.appendChild(renderer.domElement);
+
+  const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+  // const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+  const material = new THREE.MeshNormalMaterial( {  } );
+  const cube = new THREE.Mesh( geometry, material );
+  scene.add( cube );
+
+  camera.position.z = 2;
+
+  // RESIZE LISTENER
+  window.addEventListener('resize', () => {
+    let w = canvas.clientWidth;  // offsetWidth is with border included
+    let h = canvas.clientHeight; // offsetHeight is with border included
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(w, h);
+  });
+
+
+  function animate() {
+    requestAnimationFrame( animate );
+    cube.rotation.x += 0.002;
+    cube.rotation.y += 0.002;
+    renderer.render( scene, camera );
+  }
+  animate();
+
+</script>
+{{< /rawhtml >}}
+
 
 ````html {linenostart=1, linenos=false, title="index.html"}
 <!DOCTYPE html>

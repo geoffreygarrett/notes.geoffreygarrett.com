@@ -37,46 +37,45 @@ $$
 \end{equation}
 $$
 
-- [[Linear Algebra|test]]
-- [[Linear Algebra]]
-
 - **Linearity in parameters**: The system model is _linear in
-  parameters_, that is, [[Linear Algebra#(System of) Linear Equation(s)|$\bm{z} = \bm{A}\bm{\beta}+\bm{\epsilon}$]].
+  parameters_, that is, $\mathbf{z} = \mathbf{A}\mathbf{\beta}+\mathbf{\epsilon}$.
 - **Strict exogenity**: The errors in the regression are should have conditional mean
-  zero, that is, $\mathbb{E}[\bm{\epsilon}|\bm{A}] = \bm{0}$.
+  zero, that is, $\mathbb{E}[\mathbf{\epsilon}|\mathbf{A}] = \mathbf{0}$.
 
 {{< svg src="/notes/images/OLS-geometric-interpretation.svg" caption="Geometric interpretation of Ordinary Least Squares (OLS)." >}}
+
+![[/notes/images/OLS-geometric-interpretation.svg]]
 
 ## Weighted Least Squares
 
 The Weighted Least Squares (WLS) method is an application of the
 Generalised Least Squares (GLS) algorithm, which aims at
-estimating unknown parameters ($\bm{\beta}$) in a linear regression model, given a
-set of observations ($\bm{z}$), where there is a certain degree of correlation
-($\bm{W}$) between the residuals ($\bm{\epsilon}$) in the regression model. It
+estimating unknown parameters ($\mathbf{\beta}$) in a linear regression model, given a
+set of observations ($\mathbf{z}$), where there is a certain degree of correlation
+($\mathbf{W}$) between the residuals ($\mathbf{\epsilon}$) in the regression model. It
 is usually written as:
 
 $$
 \begin{equation}
     \begin{aligned}
-        \bm{z} &= \bm{A}\bm{\beta}+\bm{\epsilon}, \\
-        \mathbb{E}[\bm{\epsilon}|\bm{A}] &= \bm{0}, \\
-        \text{Cov}(\bm{\epsilon}|\bm{A}) &= \bm{W}. \\
+        \mathbf{z} &= \mathbf{A}\mathbf{\beta}+\mathbf{\epsilon}, \\
+        \mathbb{E}[\mathbf{\epsilon}|\mathbf{A}] &= \mathbf{0}, \\
+        \text{Cov}(\mathbf{\epsilon}|\mathbf{A}) &= \mathbf{W}. \\
     \end{aligned}
 \end{equation}
 $$
 
-The residual vector is defined as $\rho=\bm{z}-\bm{A}\bm{\beta}$. The Weighted
-Least Squares estimate ($\bm{\hat{\beta}}$) is unbiased, consistent and
-efficient, and obtained through minimising $\bm{\rho}^T\bm{W}^{-1}\bm{\rho}$. The
+The residual vector is defined as $\rho=\mathbf{z}-\mathbf{A}\mathbf{\beta}$. The Weighted
+Least Squares estimate ($\mathbf{\hat{\beta}}$) is unbiased, consistent and
+efficient, and obtained through minimising $\mathbf{\rho}^T\mathbf{W}^{-1}\mathbf{\rho}$. The
 estimate is given, without derivation, by:
 
 $$
 \begin{equation}
     \begin{aligned}
-        \bm{\hat{\beta}} &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}\bm{A}^T\bm{W}^{-1}\bm{z}, \\
-        \mathbb{E}[\bm{\hat{\beta}}] &= \bm{\beta}, \\
-        \text{Cov}[\bm{\hat{\beta}}|\bm{A}] &= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}. \\
+        \mathbf{\hat{\beta}} &= (\mathbf{A}^T\mathbf{W}^{-1}\mathbf{A})^{-1}\mathbf{A}^T\mathbf{W}^{-1}\mathbf{z}, \\
+        \mathbb{E}[\mathbf{\hat{\beta}}] &= \mathbf{\beta}, \\
+        \text{Cov}[\mathbf{\hat{\beta}}|\mathbf{A}] &= (\mathbf{A}^T\mathbf{W}^{-1}\mathbf{A})^{-1}. \\
     \end{aligned}
 \end{equation}
 $$
@@ -88,15 +87,15 @@ GLS was first described by Alexander Aitken in 1936. \[[1](https://en.wikipedia.
 ## Non-linear Least Squares
 
 The problem arises when considering the highly non-linear modelled measurements
-$\bm{h}(\bm{x}_0)$ cannot be described by the linear relation above. For this
+$\mathbf{h}(\mathbf{x}_0)$ cannot be described by the linear relation above. For this
 reason, the model is linearized by approximation to a first-order Taylor
-polynomial expansion about $\bm{x}_0^k$, where $k$ is an iteration number:
+polynomial expansion about $\mathbf{x}_0^k$, where $k$ is an iteration number:
 
 $$
 \begin{equation}
     \begin{aligned}
-        \bm{z}                              &=        \bm{f}(\bm{\beta}) + \bm{\epsilon}                                                              \\
-        \bm{f}(\bm{\beta}+\Delta\bm{\beta}) &\approx  \bm{f}(\bm{\beta}) + \frac{\partial{\bm{f}(\bm{\beta})}}{\partial{\bm{\beta}}}\Delta\bm{\beta}  \\
+        \mathbf{z}                              &=        \mathbf{f}(\mathbf{\beta}) + \mathbf{\epsilon}                                                              \\
+        \mathbf{f}(\mathbf{\beta}+\Delta\mathbf{\beta}) &\approx  \mathbf{f}(\mathbf{\beta}) + \frac{\partial{\mathbf{f}(\mathbf{\beta})}}{\partial{\mathbf{\beta}}}\Delta\mathbf{\beta}  \\
     \end{aligned}
 \end{equation}
 $$

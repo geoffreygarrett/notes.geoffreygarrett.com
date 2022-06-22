@@ -11,7 +11,7 @@ tags:
 A system of linear equations may be represented as the matrix equation:
 
 $$
-\bm{A}\bm{x} = \bm{b},
+\mathbf{A}\mathbf{x} = \mathbf{b},
 $$
 
 and is equivalent to the following systems of linear equations:
@@ -31,14 +31,14 @@ $$
 
 ## Definitions
 
-- A symmetric matrix $\bm{A}\n\mathbb{R}^{n\times{n}}$ is positive semidefinite if:
+- A symmetric matrix $\mathbf{A}\n\mathbb{R}^{n\times{n}}$ is positive semidefinite if:
 
 $$
-\bm{x}^T\bm{A}\bm{x}\geq 0 \forall\,\bm{x} \in\mathbb{R}^n.
+\mathbf{x}^T\mathbf{A}\mathbf{x}\geq 0 \forall\,\mathbf{x} \in\mathbb{R}^n.
 $$
 
-- A symmetric matrix $\bm{A}\n\mathbb{R}^{n\times{n}}$ is positive definite if:
+- A symmetric matrix $\mathbf{A}\n\mathbb{R}^{n\times{n}}$ is positive definite if:
 
 $$
-\bm{x}^T\bm{A}\bm{x}> 0 \forall\,\bm{x}\neq 0 \in\mathbb{R}^n.
+\mathbf{x}^T\mathbf{A}\mathbf{x}> 0 \forall\,\mathbf{x}\neq 0 \in\mathbb{R}^n.
 $$

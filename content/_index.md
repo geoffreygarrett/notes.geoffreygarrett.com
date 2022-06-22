@@ -42,5 +42,5 @@ consistent categorisation described by the following:
   some weak parts, but it's getting there with time. Ideally it won't stay 
   a seedling for much longer, it just needs a bit of tending, water and sunshine.
 - 🌲 An **Evergreen** has finished growing. It could do with some pruning once
-  in a while throughout the s`easons, but it's mature and isn't expected to
-  disappear in our lifetime.`
+  in a while throughout the seasons, but it's mature and isn't expected to
+  disappear in our lifetime.

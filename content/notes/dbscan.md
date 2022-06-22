@@ -3,12 +3,10 @@ title: "DBSCAN"
 tags:
 - algorithm
 - machine-learning
-- Seed🌰
+- 🌰
 ---
 
-Density-based spacial clustering of applications with noise (DBSCAN) is a
-[clustering algorithm](https://en.wikipedia.org/wiki/Cluster_analysis) proposed
-by Ester et al. in 1996. DBSCAN is one of the [most cited clustering
+Density-based spacial clustering of applications with noise (DBSCAN) is a [clustering algorithm](https://en.wikipedia.org/wiki/Cluster_analysis) proposed by Ester et al. in 1996. DBSCAN is one of the [most cited clustering
 algorithms](https://web.archive.org/web/20100421170848/http://academic.research.microsoft.com/CSDirectory/paper_category_7.htm)
 in scientific literature.
 
