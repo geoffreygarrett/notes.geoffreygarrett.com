@@ -104,7 +104,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.9dd838ca12668b4ed16873e0c2039ae2.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.2a0f22418b22da374e2a4cd990016edb.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -149,10 +149,12 @@
   </script>
   
   
-  <script>
-    window.navigate = (url) => window.location.href = url;
-    draw();
+  <script type="module">
+    import { attachSPARouting } from 'https:\/\/notes.geoffreygarrett.com\/js\/router.88d6def7f687fe498bfc6de6c16d554b.min.js';
+    
+    attachSPARouting(draw);
   </script>
+  
   
 </head>
 
@@ -315,7 +317,7 @@ $$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$...</p>
                 <ul class="tags">
                     
                 </ul>
-                <p>Test 1 2 3 4 5  mkdir %USERPROFILE%/src cd %USERPROFILE%/src git clone https://github.com/gohugoio/hugo.git cd hugo go install --tags extended -v -x   </p>
+                <p>Test mkdir %USERPROFILE%/src cd %USERPROFILE%/src git clone https://github.com/gohugoio/hugo.git cd hugo go install --tags extended -v -x </p>
             </div>
             <p class="meta">
                 1 minute read. Last updated June 21, 2022

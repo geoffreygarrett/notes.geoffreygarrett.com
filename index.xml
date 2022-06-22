@@ -149,7 +149,7 @@ $$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/notes-website/</guid>
-      <description>Test 1 2 3 4 5  mkdir %USERPROFILE%/src cd %USERPROFILE%/src git clone https://github.com/gohugoio/hugo.git cd hugo go install --tags extended -v -x   </description>
+      <description>Test mkdir %USERPROFILE%/src cd %USERPROFILE%/src git clone https://github.com/gohugoio/hugo.git cd hugo go install --tags extended -v -x </description>
     </item>
     
     <item>
