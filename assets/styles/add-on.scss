@@ -73,4 +73,12 @@ div.highlight pre {
   border-top-right-radius: 5px;
   font-size: 13px;
   font-weight: 400;
+    @media (max-width: 600px){
+    margin-left: -5%;
+  //@media (max-width: 380px) {
+  //  margin-left: -5%;
+  //  width:110%;
+  //}
+
+  }
 }
