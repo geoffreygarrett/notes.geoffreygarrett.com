@@ -7,6 +7,14 @@ tags:
 - library
 ---
 
+`three.js` is a cross-browser Javascript API
+which allows for the creation and display of
+3D computer graphics in a web browser using 
+WebGL - a lower level Javascript API allowing
+for GPU-accelerated physics, image 
+processing snd effects locally, as part of 
+the web page canvas.
+
 ````html {linenostart=1, linenos=false, title="index.html"}
 <!DOCTYPE html>
 <html>
