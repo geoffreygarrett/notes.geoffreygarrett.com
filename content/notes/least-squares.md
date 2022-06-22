@@ -6,9 +6,25 @@ tags:
 - linear-algebra
 ---
 
-The least-squares method was officially discovered and published by Adrien-Marie
-Legendre in their work _"Nouvelles methodes pour la determination des orbites
-des cometes"_, published in 1805 \[citation needed\].
+The least-squares method is a method of solving a set of linear equation and was
+officially discovered and published by Adrien-Marie Legendre in their work
+_"Nouvelles methodes pour la determination des orbites des cometes"_, published
+in 1805.
+
+```bibtex {linenos=false}
+@Book{Legendre1805,
+    author = { Legendre, A. M. },
+    title = { Nouvelles methodes pour la determination des orbites des cometes [microform] / par A.M. Legendre },
+    publisher = { F. Didot Paris },
+    pages = { viii, 80 p., [1] leaf of plates : },
+    year = { 1805 },
+    type = { Book, Microform },
+    language = { French },
+    subjects = { Comets -- Orbits. },
+    life-dates = { 1970 - 1805 },
+    catalogue-url = { https://nla.gov.au/nla.cat-vn866184 },
+}
+```
 
 ## Ordinary Least Squares
 
