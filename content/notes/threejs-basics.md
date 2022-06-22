@@ -57,20 +57,14 @@ custom_js: |
    
 ---
 
-
-Three.js is a cross-browser Javascript API
-which allows for the creation and display of
-3D computer graphics in a web browser using 
-[WebGL](https://en.wikipedia.org/wiki/WebGL?wprov=sfla1)
-(a lower level Javascript API allowing
-for GPU-accelerated physics and image 
-processing locally, as part of 
-the web page canvas). There exists a 
-[plethora of examples](https://threejs.org/)
-which can be used as starting points in your
-projects, one of which I often come
-see when
-[signing into GitHub](https://github.com/home).
+Three.js is a cross-browser Javascript API which allows for the creation and
+display of 3D computer graphics in a web browser using
+[WebGL](https://en.wikipedia.org/wiki/WebGL?wprov=sfla1) (a lower level
+Javascript API allowing for GPU-accelerated physics and image processing
+locally, as part of the web page canvas). There exists a [plethora of
+examples](https://threejs.org/) which can be used as starting points in your
+projects, one of which I often see when [signing into
+GitHub](https://github.com/home).
 
 {{< rawhtml >}}
 
@@ -79,7 +73,7 @@ see when
 {{< /rawhtml >}}
 
 
-````html {linenostart=1, linenos=false, title="index.html"}
+````html {linenostart=1, linenos=false, title="/index.html"}
 <!DOCTYPE html>
 <html>
 <head>
@@ -100,7 +94,7 @@ see when
 The main components of any `three.js` app are the scene, the camera, and the
 renderer. These are setup as demonstrated in the following code:
 
-````javascript {title="main.js", linenos=false}
+````javascript {title="/main.js", linenos=false}
 // 1. Create a scene
 var scene = new THREE.Scene();
 
