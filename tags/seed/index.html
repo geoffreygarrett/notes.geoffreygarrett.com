@@ -9,7 +9,7 @@
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
-    404 Page not found
+    seed
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link
@@ -149,27 +149,26 @@ if (!doNotTrack) {
 </script>
 
 
+
 <body>
-<canvas id="artifactCanvas" myattr="myattr">
-</canvas>
+<div id="search-container">
+    <div id="search-space">
+        <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search" placeholder="Search for something...">
+        <div id="results-container">
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js" integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
 
-<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
-<script type="importmap">
-  {
-    "imports": {
-      "three": "https://unpkg.com/three@0.141.0/build/three.module.js",
-      "three/examples/": "https://unpkg.com/three@0.141.0/examples/"
-    }
-  }
-</script>
-<script defer type="module" src="https://notes.geoffreygarrett.com/js/space.53ca1a32940122ff78ae82a7b9bbce49.min.js"></script>
-
-
-
-
+<script defer src="https://notes.geoffreygarrett.com/js/search.06935f6a9c1dd79aa33fe3a725067dbc.js"></script>
 
 <div class="singlePage">
-    <div class='darkmode'>
+    
+    <header>
+        <h1 id="page-title"><a href="https://notes.geoffreygarrett.com/">Geoffrey&#39;s Notes</a></h1>
+        <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+        <div class="spacer"></div>
+        <div class='darkmode'>
     <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
     <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
@@ -184,12 +183,46 @@ if (!doNotTrack) {
         </svg>
     </label>
 </div>
-    <div class="centered">
-        <h1>404.</h1>
-        <h3>Hey! You look a little lost. This page doesn't exist (or may be
-            private).</h3>
-        <a href="https://notes.geoffreygarrett.com/">↳ Let's get you home.</a>
-    </div>
+    </header>
+    <article>
+        <h1>Tag: Seed</h1>
+        <ul class="section-ul"><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/dbscan/">DBSCAN</a></h3>
+                <ul class="tags">
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/computer-science/">Computer-Science</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/data-clustering/">Data-Clustering</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/algorithm/">Algorithm</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/seed/">Seed</a></li>
+                    
+                </ul>
+                <p>Density-based spacial clustering of applications with noise (DBSCAN) is a clustering algorithm proposed by Ester et al. in 1996. DBSCAN is one of the most cited clustering algorithms in scientific literature....</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 22, 2022
+            </p>
+
+        </div>
+    </li></ul>
+
+        
+    </article>
+    
+<div id="contact_buttons">
+    <footer>
+        <p>Made by Geoffrey Garrett using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <ul>
+            
+            <li><a href="/">Home</a></li>
+            <li><a href="https://twitter.com/GarrettHGeoff">Twitter</a></li><li><a href="https://github.com/geoffreygarrett">GitHub</a></li></ul>
+    </footer>
+</div>
+
 </div>
 </body>
 
