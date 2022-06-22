@@ -6,7 +6,7 @@ enableLatex: true
 enableSPA: false
 enableEmoji: true
 enableContextualBacklinks: true
-enableRecentNotes: true
+enableRecentNotes: false
 description:
   My little piece of the internet.
 page_title:
