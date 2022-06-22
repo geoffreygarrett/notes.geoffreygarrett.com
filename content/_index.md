@@ -27,6 +27,7 @@ on the surface. They might help me organise my thoughts in the long-term, or
 lookup information and resources that I desire at my fingertips.
 
 - [Concept Definitions](/notes/concept-definitions.md)
+- [Writing Guide](https://salman.io/notes/writing/)
 - [All Notes](/notes)
 
 ## Types of Notes ℹ️
