@@ -6,54 +6,7 @@ tags:
 - javascript
 - library
 - sapling
-custom_js: |
-   var fn = function(event) {
-   var canvas = document.getElementById('ad');
-   
-   var w = canvas.clientWidth;  // offsetWidth is with border included
-   var h = canvas.clientHeight; // offsetHeight is with border included
-   
-   // 1. Create a scene
-   var scene = new THREE.Scene();
-   
-   // 2. Create a camera
-   var camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
-   
-   // 3. Create a render
-   var renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
-   
-   // 4. Set the size of the render
-   renderer.setSize(w, h);
-   
-   canvas.appendChild(renderer.domElement);
-   
-   var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-   // const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-   var material = new THREE.MeshNormalMaterial( {  } );
-   var cube = new THREE.Mesh( geometry, material );
-   scene.add( cube );
-   
-   camera.position.z = 2;
-   
-   // RESIZE LISTENER
-   window.addEventListener('resize', () => {
-   let w = canvas.clientWidth;  // offsetWidth is with border included
-   let h = canvas.clientHeight; // offsetHeight is with border included
-   camera.aspect = w / h;
-   camera.updateProjectionMatrix();
-   renderer.setSize(w, h);
-   });
-   
-   
-   function animate() {
-   requestAnimationFrame( animate );
-   cube.rotation.x += 0.002;
-   cube.rotation.y += 0.002;
-   renderer.render( scene, camera );
-   }
-   animate();
-   }
-   window.addEventListener("DOMContentLoaded", fn);
+custom_js_path: "/js/cube-basic.js"
    
 ---
 
@@ -67,9 +20,8 @@ projects, one of which I often see when [signing into
 GitHub](https://github.com/home).
 
 {{< rawhtml >}}
-
-  <div class="canvas" id="ad">
-  </div>
+<div class="canvas" id="threejs">
+</div>
 {{< /rawhtml >}}
 
 

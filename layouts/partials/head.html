@@ -16,7 +16,6 @@
     type="image/png"
     href="{{$.Site.BaseURL}}/icon.png"
   />
-  <script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.min.js"></script>
   <!-- CSS Stylesheets and Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap"
@@ -105,12 +104,14 @@
   resources.Minify }}
   <script type="module">
     import { attachSPARouting } from '{{$router.Permalink}}';
-    console.log("Why")
     {{ .Params.custom_js | safeJS -}}
     // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page.
     attachSPARouting(draw);
   </script>
   {{else}}
+  {{if .Params.custom_js_path -}}
+  <script src="{{ .Params.custom_js_path }}" type="module"></script>
+  {{end}}
   <script>
     window.navigate = (url) => window.location.href = url;
     {{ .Params.custom_js | safeJS -}}
