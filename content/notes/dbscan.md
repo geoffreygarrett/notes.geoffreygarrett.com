@@ -1,8 +1,6 @@
 ---
 title: "DBSCAN"
 tags:
-- computer-science
-- data-clustering
 - algorithm
 - machine-learning
 - seed

@@ -4,7 +4,7 @@ tags:
 - [software-engineering]
 ---
 ## Algorithms
-- [Algorithms](notes/dbscan.md)
+- [Density-based spacial clustering of applications with noise (DBSCAN)](notes/dbscan.md)
 
 ## Object Oriented
 - [SOLID Principles](notes/solid-principles.md)
