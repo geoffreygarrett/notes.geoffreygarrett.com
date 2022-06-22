@@ -20,3 +20,7 @@ in scientific literature.
    year = {1996},
 }
 ```
+
+## Resources
+
+- [How HDBSCAN Works](https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html)
