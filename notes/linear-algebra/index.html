@@ -79,13 +79,13 @@ $$ \bm{A}\bm{x} = \bm{b}, $$"
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.cd14a247bbe5c81958dc7b0997a70ec5.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.8b076e855650a54ac448c475adf31f06.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.c3fbc634f8ccad5fd6830e45f1873cfe.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.ef6d6c529109bdb8c2c22cebb9fb1c45.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({

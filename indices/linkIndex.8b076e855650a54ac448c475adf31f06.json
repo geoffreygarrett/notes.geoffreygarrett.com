@@ -14,7 +14,7 @@
         },
         {
           "source": "/",
-          "target": "/notes/dbscane",
+          "target": "/notes/dbscan",
           "text": "machine learning\nalgorithms"
         },
         {
@@ -196,16 +196,14 @@
       ],
       "/notes/dbscan": [
         {
+          "source": "/",
+          "target": "/notes/dbscan",
+          "text": "machine learning\nalgorithms"
+        },
+        {
           "source": "/notes/software-engineering",
           "target": "/notes/dbscan",
           "text": "Density-based spacial clustering of applications with noise (DBSCAN)"
-        }
-      ],
-      "/notes/dbscane": [
-        {
-          "source": "/",
-          "target": "/notes/dbscane",
-          "text": "machine learning\nalgorithms"
         }
       ],
       "/notes/deep-learning": [
@@ -336,7 +334,7 @@
     },
     {
       "source": "/",
-      "target": "/notes/dbscane",
+      "target": "/notes/dbscan",
       "text": "machine learning\nalgorithms"
     },
     {
