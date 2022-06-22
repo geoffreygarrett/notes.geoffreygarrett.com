@@ -14,10 +14,10 @@ in scientific literature.
 
 ```bibtex {linenos=false}
 @inproceedings{Ester1996,
-   author = { Martin Ester and Hans-Peter Kriegel and Jörg Sander and Xiaowei Xu },
-   journal = { KDD },
-   title = { A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise },
-   year = { 1996 },
+   author = {Martin Ester and Hans-Peter Kriegel and Jörg Sander and Xiaowei Xu},
+   journal = {KDD},
+   title = {A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise},
+   year = {1996},
 }
 ```
 
