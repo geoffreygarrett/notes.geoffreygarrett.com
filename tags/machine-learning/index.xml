@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>DBSCAN</title>
+      <link>https://notes.geoffreygarrett.com/notes/dbscan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/notes/dbscan/</guid>
+      <description>Density-based spacial clustering of applications with noise (DBSCAN) is a clustering algorithm proposed by Ester et al. in 1996. DBSCAN is one of the most cited clustering algorithms in scientific literature.</description>
+    </item>
+    
+    <item>
       <title>Deep Learning</title>
       <link>https://notes.geoffreygarrett.com/notes/deep-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
