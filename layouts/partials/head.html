@@ -108,6 +108,9 @@
     // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page.
     attachSPARouting(draw);
   </script>
+  {{if .Params.custom_js_path -}}
+  <script src="{{.Params.custom_js_path}}" type="module"></script>
+  {{end}}
   {{else}}
   {{if .Params.custom_js_path -}}
   <script src="{{ .Params.custom_js_path }}" type="module"></script>
