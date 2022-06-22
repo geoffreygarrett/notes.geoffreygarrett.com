@@ -20,12 +20,11 @@ projects, one of which I often see when [signing into
 GitHub](https://github.com/home).
 
 {{< rawhtml >}}
-<div class="canvas" id="threejs">
-</div>
+<div id="threejs"></div>
 {{< /rawhtml >}}
 
 
-````html {linenostart=1, linenos=false, title="/index.html"}
+````html {title="/index.html"}
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,29 +33,35 @@ GitHub](https://github.com/home).
     <style> body {
         margin: 0;
     } </style>
-    <link rel="stylesheet" href="/styles/mystyle.css">
-    <script src="js/first-cube.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="first-cube.js" type="module"></script>
 </head>
 <body>
-<div class="canvas" id="threejs"></div>
+<div id="threejs"></div>
 </body>
 ````
 
 The main components of any `three.js` app are the scene, the camera, and the
 renderer. These are setup as demonstrated in the following code:
 
-````javascript {title="/main.js", linenos=false}
+````javascript {linenos=true, linenostart=5, title="/first-cube.js"}
+// 0. Get your desired element to render on
+let element = document.getElementById('threejs');
+let w = window.innerWidth;
+let h = window.innerHeight;
+
 // 1. Create a scene
 var scene = new THREE.Scene();
 
 // 2. Create a camera
-var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+let camera = new THREE.PerspectiveCamera(
+    75, w / h, 0.1, 1000);
 
 // 3. Create a render
 var renderer = new THREE.WebGLRenderer();
 
 // 4. Set the size of the render
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(w, h);
 ````
 
 - There are different types of cameras in `three.js`:
