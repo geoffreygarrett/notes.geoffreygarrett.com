@@ -1,18 +1,21 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js';
-import { TrackballControls } from "https://cdn.skypack.dev/three-trackballcontrols-ts@0.2.3";
+import * as THREE
+    from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js';
+import {TrackballControls} from "https://cdn.skypack.dev/three-trackballcontrols-ts@0.2.3";
 
 
 const renderCube = function (event) {
 
     let element = document.getElementById('threejs');
-    let w = element.clientWidth;  // offsetWidth is with border included
-    let h = element.clientHeight; // offsetHeight is with border included
+
 
     // 1. Create a scene
     let scene = new THREE.Scene();
 
     // 2. Create a camera
-    let camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
+    let w = element.clientWidth;  // offsetWidth is with border included
+    let h = element.clientHeight; // offsetHeight is with border included
+    let camera = new THREE.PerspectiveCamera(
+        75, w / h, 0.1, 1000);
 
     // 3. Create a render
     let renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
@@ -38,7 +41,6 @@ const renderCube = function (event) {
     controls.minDistance = 1.5;
     controls.rotateSpeed = 4;
     controls.dynamicDampingFactor = 0.15;
-
 
 
     camera.position.z = 2;
