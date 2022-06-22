@@ -22,9 +22,9 @@ comments enabled if I feel that a note is well-developed enough.
 
 ## Useful 🛠️
 
-This is a general catch-all for anything I feel I want to keep visible on the
-surface. They might help me organise my thoughts in the long-term, or lookup
-information and resources that I need I want at my fingertips.
+This section is a general catch-all for anything I feel I want to keep visible
+on the surface. They might help me organise my thoughts in the long-term, or
+lookup information and resources that I desire at my fingertips.
 
 - [Concept Definitions](/notes/concept-definitions.md)
 - [All Notes](/notes)

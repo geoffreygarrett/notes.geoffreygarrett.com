@@ -4,6 +4,7 @@ openToc: false
 enableLinkPreview: true
 enableLatex: true
 enableSPA: true
+enableEmoji: true
 enableContextualBacklinks: true
 enableRecentNotes: true
 description:
