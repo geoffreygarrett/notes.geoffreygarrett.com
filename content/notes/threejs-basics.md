@@ -18,7 +18,7 @@ the web page canvas). There exists a
 [plethora of examples](https://threejs.org/)
 which can be used as starting points in your
 projects, one of which I often come
-in contact with when
+see when
 [signing into GitHub](https://github.com/home).
 
 ````html {linenostart=1, linenos=false, title="index.html"}
