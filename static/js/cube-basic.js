@@ -34,6 +34,7 @@ const renderCube = function (event) {
     //Trackball Controls for Camera
     const controls = new TrackballControls(camera, renderer.domElement);
     controls.maxDistance = 10;
+    controls.noPan = true;
     controls.minDistance = 1.5;
     controls.rotateSpeed = 4;
     controls.dynamicDampingFactor = 0.15;
