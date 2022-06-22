@@ -102,7 +102,7 @@
         {
           "source": "/notes/software-engineering",
           "target": "/notes/dbscan",
-          "text": "Algorithms"
+          "text": "Density-based spacial clustering of applications with noise (DBSCAN)"
         },
         {
           "source": "/notes/software-engineering",
@@ -178,7 +178,7 @@
         {
           "source": "/notes/software-engineering",
           "target": "/notes/dbscan",
-          "text": "Algorithms"
+          "text": "Density-based spacial clustering of applications with noise (DBSCAN)"
         }
       ],
       "/notes/deep-learning": [
@@ -370,7 +370,7 @@
     {
       "source": "/notes/software-engineering",
       "target": "/notes/dbscan",
-      "text": "Algorithms"
+      "text": "Density-based spacial clustering of applications with noise (DBSCAN)"
     },
     {
       "source": "/notes/software-engineering",
