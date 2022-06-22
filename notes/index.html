@@ -42,7 +42,10 @@
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.31e57327420797fa0d72b734fe4121ba.css" rel="stylesheet" />
+  
+  
+  
+  <link href="https://notes.geoffreygarrett.com/styles.b2a1c999a7ef81486a56f19357545d5e.css" rel="stylesheet" />
 
   
   <script defer src="https://notes.geoffreygarrett.com/js/add-on.6d45d3a41113c6dec27c0b366d667f3b.js"></script>
@@ -78,13 +81,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.8b076e855650a54ac448c475adf31f06.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.82e3340e37c0542f104ba0630457ff71.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.ac203c5d71063391420a9dde459e8123.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5f251a281f2188ad0e74a7ae6f822857.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -189,26 +192,6 @@ if (!doNotTrack) {
         <ul class="section-ul"><li class="section-li">
         <div class="section">
             <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/dbscan/">DBSCAN</a></h3>
-                <ul class="tags">
-                    
-                    <li><a href="https://notes.geoffreygarrett.com/tags/algorithm/">Algorithm</a></li>
-                    
-                    <li><a href="https://notes.geoffreygarrett.com/tags/machine-learning/">Machine-Learning</a></li>
-                    
-                    <li><a href="https://notes.geoffreygarrett.com/tags/Seed/">Seed🌰</a></li>
-                    
-                </ul>
-                <p>Density-based spacial clustering of applications with noise (DBSCAN) is a clustering algorithm proposed by Ester et al. in 1996. DBSCAN is one of the most cited clustering algorithms in scientific literature....</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated June 22, 2022
-            </p>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
                 <h3><a href="https://notes.geoffreygarrett.com/notes/least-squares/">Least Squares</a></h3>
                 <ul class="tags">
                     
@@ -221,6 +204,38 @@ if (!doNotTrack) {
             </div>
             <p class="meta">
                 2 minute read. Last updated June 22, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/kalman-filter/">Kalman Filter</a></h3>
+                <ul class="tags">
+                    
+                </ul>
+                <p>Linearised Kalman filter Extended Kalman filter  Non-linear filter  Hidden Markov model  Unscented Kalman filter  Non-linear filter  $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\hat{\mathbf{x}}) &amp;&amp; \mathbf{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \hat{\mathbf{x}} _{i-1}^{+} \ \mathcal{X}_j &amp;= \hat{\mathbf{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \mathbf{A}_j &amp;&amp; j=1,&hellip;,L \ \mathcal{X} _{L+j} &amp;= \hat{\mathbf{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \mathbf{A}_j &amp;&amp; j=1,&hellip;,L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(c)} &amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L+\lambda)} &amp;&amp; j=1,&hellip;,2L \ \end{aligned} \end{equation} $$...</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 22, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/notes/dbscan/">DBSCAN</a></h3>
+                <ul class="tags">
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/algorithm/">Algorithm</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/machine-learning/">Machine-Learning</a></li>
+                    
+                </ul>
+                <p>Density-based spacial clustering of applications with noise (DBSCAN) is a clustering algorithm proposed by Ester et al. in 1996. DBSCAN is one of the most cited clustering algorithms in scientific literature....</p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 22, 2022
             </p>
 
         </div>
@@ -283,20 +298,6 @@ if (!doNotTrack) {
             </div>
             <p class="meta">
                 0 minute read. Last updated June 4, 2022
-            </p>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/kalman-filter/">Kalman Filter</a></h3>
-                <ul class="tags">
-                    
-                </ul>
-                <p>Linearised Kalman filter Extended Kalman filter  Non-linear filter  Hidden Markov model  Unscented Kalman filter  Non-linear filter  $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\hat{\bm{x}}) &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \hat{\bm{x}} _{i-1}^{+} \ \mathcal{X}_j &amp;= \hat{\bm{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \bm{A}_j &amp;&amp; j=1,&hellip;,L \ \mathcal{X} _{L+j} &amp;= \hat{\bm{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \bm{A}_j &amp;&amp; j=1,&hellip;,L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(c)} &amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L+\lambda)} &amp;&amp; j=1,&hellip;,2L \ \end{aligned} \end{equation} $$...</p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated June 3, 2022
             </p>
 
         </div>

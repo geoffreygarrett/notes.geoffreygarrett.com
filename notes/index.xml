@@ -84,7 +84,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/kalman-filter/</guid>
-      <description>Linearised Kalman filter Extended Kalman filter  Non-linear filter  Hidden Markov model  Unscented Kalman filter  Non-linear filter  $$ \begin{equation} \begin{aligned} L &amp;amp;= \text{dim}(\hat{\bm{x}}) &amp;amp;&amp;amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;amp;= \hat{\bm{x}} _{i-1}^{+} \ \mathcal{X}_j &amp;amp;= \hat{\bm{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \bm{A}_j &amp;amp;&amp;amp; j=1,&amp;hellip;,L \ \mathcal{X} _{L+j} &amp;amp;= \hat{\bm{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \bm{A}_j &amp;amp;&amp;amp; j=1,&amp;hellip;,L \ W_0^{(m)} &amp;amp;= \lambda(L-\lambda) \ W_0^{(c)} &amp;amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta) \ W_k^{(m)} &amp;amp;= W_k^{(c)} = 1/{2(L+\lambda)} &amp;amp;&amp;amp; j=1,&amp;hellip;,2L \ \end{aligned} \end{equation} $$</description>
+      <description>Linearised Kalman filter Extended Kalman filter  Non-linear filter  Hidden Markov model  Unscented Kalman filter  Non-linear filter  $$ \begin{equation} \begin{aligned} L &amp;amp;= \text{dim}(\hat{\mathbf{x}}) &amp;amp;&amp;amp; \mathbf{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;amp;= \hat{\mathbf{x}} _{i-1}^{+} \ \mathcal{X}_j &amp;amp;= \hat{\mathbf{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \mathbf{A}_j &amp;amp;&amp;amp; j=1,&amp;hellip;,L \ \mathcal{X} _{L+j} &amp;amp;= \hat{\mathbf{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \mathbf{A}_j &amp;amp;&amp;amp; j=1,&amp;hellip;,L \ W_0^{(m)} &amp;amp;= \lambda(L-\lambda) \ W_0^{(c)} &amp;amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta) \ W_k^{(m)} &amp;amp;= W_k^{(c)} = 1/{2(L+\lambda)} &amp;amp;&amp;amp; j=1,&amp;hellip;,2L \ \end{aligned} \end{equation} $$</description>
     </item>
     
     <item>
@@ -103,7 +103,7 @@
       
       <guid>https://notes.geoffreygarrett.com/notes/linear-algebra/</guid>
       <description>Definitions (System of) Linear Equation(s) A system of linear equations may be represented as the matrix equation:
-$$ \bm{A}\bm{x} = \bm{b}, $$</description>
+$$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$</description>
     </item>
     
     <item>
@@ -130,7 +130,7 @@ $$ \bm{A}\bm{x} = \bm{b}, $$</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://notes.geoffreygarrett.com/notes/orbit-determination/</guid>
-      <description>Predicting the state ($\bm{x}_t$) of a spacecraft given an initial condition ($\bm{x}_0$), and models which form the equations of motion of the satellite, ($\dot{\bm{x}}=f(t,\bm{x})$), is a straightforward task involving the solution of an initial value problem (IVP) in the form of an ordinary differential equation (ODE).</description>
+      <description>Predicting the state ($\mathbf{x}_t$) of a spacecraft given an initial condition ($\mathbf{x}_0$), and models which form the equations of motion of the satellite, ($\dot{\mathbf{x}}=f(t,\mathbf{x})$), is a straightforward task involving the solution of an initial value problem (IVP) in the form of an ordinary differential equation (ODE).</description>
     </item>
     
     <item>
@@ -170,7 +170,7 @@ $$ \bm{A}\bm{x} = \bm{b}, $$</description>
     </item>
     
     <item>
-      <title>three.js Library</title>
+      <title>Three.js Fundamentals</title>
       <link>https://notes.geoffreygarrett.com/notes/threejs-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Predicting the state ($\bm{x}_t$) of a spacecraft given an initial condition ($\bm{x}_0$), and models which form the equations of motion of the satellite, ($\dot{\bm{x}}=f(t,\bm{x})$), is a straightforward task involving the solution of an initial value problem (IVP) in the form of an ordinary differential equation (ODE)."
+    content="Predicting the state ($\mathbf{x}_t$) of a spacecraft given an initial condition ($\mathbf{x}_0$), and models which form the equations of motion of the satellite, ($\dot{\mathbf{x}}=f(t,\mathbf{x})$), is a straightforward task involving the solution of an initial value problem (IVP) in the form of an ordinary differential equation (ODE)."
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
@@ -42,7 +42,10 @@
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.31e57327420797fa0d72b734fe4121ba.css" rel="stylesheet" />
+  
+  
+  
+  <link href="https://notes.geoffreygarrett.com/styles.b2a1c999a7ef81486a56f19357545d5e.css" rel="stylesheet" />
 
   
   <script defer src="https://notes.geoffreygarrett.com/js/add-on.6d45d3a41113c6dec27c0b366d667f3b.js"></script>
@@ -78,13 +81,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.8b076e855650a54ac448c475adf31f06.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.82e3340e37c0542f104ba0630457ff71.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.ac203c5d71063391420a9dde459e8123.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5f251a281f2188ad0e74a7ae6f822857.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -187,7 +190,7 @@ if (!doNotTrack) {
   <article>
       <h1>Orbit Determination and Parameter Estimation</h1>
       <p class="meta">
-          Last updated May 29, 2022
+          Last updated June 22, 2022
       </p>
       <ul class="tags">
           
@@ -234,33 +237,33 @@ if (!doNotTrack) {
 
 
 
-<p>Predicting the state ($\bm{x}_t$) of a spacecraft given an initial condition
-($\bm{x}_0$), and models which form the equations of motion of the satellite,
-($\dot{\bm{x}}=f(t,\bm{x})$), is a straightforward task involving the solution
+<p>Predicting the state ($\mathbf{x}_t$) of a spacecraft given an initial condition
+($\mathbf{x}_0$), and models which form the equations of motion of the satellite,
+($\dot{\mathbf{x}}=f(t,\mathbf{x})$), is a straightforward task involving the solution
 of an initial value problem (IVP) in the form of an ordinary differential
 equation (ODE). However the inverse problem  is more involved, that is, given a
-set of measurements ($\bm{z}$) resulting from the dynamical system, we would
+set of measurements ($\mathbf{z}$) resulting from the dynamical system, we would
 like to estimate the trajectory of the satellite and the parameters describing
 the dynamical models, described mathematically as:</p>
 <p>$$
 \begin{equation}
-\bm{x}(t) =
+\mathbf{x}(t) =
 \begin{bmatrix}
-\bm{r}(t) \\\bm{v}(t) \\\bm{p} \\\bm{q} \\\end{bmatrix},
+\mathbf{r}(t) \\\mathbf{v}(t) \\\mathbf{p} \\\mathbf{q} \\\end{bmatrix},
 \end{equation}
 $$</p>
 <p>$$
 \begin{aligned}
 \textrm{where  }
-\bm{r}(t), \bm{v}(t) &amp;= \text{the position and velocity of the spacecraft as a function of time,} \\\bm{p}               &amp;= \text{the parameters describing the force models,} \\\bm{q}               &amp;= \text{the parameters describing the measurement models.} \\\end{aligned}
+\mathbf{r}(t), \mathbf{v}(t) &amp;= \text{the position and velocity of the spacecraft as a function of time,} \\\mathbf{p}               &amp;= \text{the parameters describing the force models,} \\\mathbf{q}               &amp;= \text{the parameters describing the measurement models.} \\\end{aligned}
 $$</p>
 <p>The measurements made throughout the trajectory of the spacecraft at times
-$t_1,&hellip;,t_n$ are described by $\bm{z}=[z_1,&hellip;,z_n]^T$, where each $z_i$ is
+$t_1,&hellip;,t_n$ are described by $\mathbf{z}=[z_1,&hellip;,z_n]^T$, where each $z_i$ is
 either defined as a function of the state of the spacecraft at time $t_i$, or
 as a function of the state of the spacecraft at time $t_0$:</p>
 <p>$$
 \begin{equation}
-z_i(t_i) = g_i(t_i, \bm{x}(t_i))+\epsilon_i = h_i(t_i, \bm{x}_0)+\epsilon_i.
+z_i(t_i) = g_i(t_i, \mathbf{x}(t_i))+\epsilon_i = h_i(t_i, \mathbf{x}_0)+\epsilon_i.
 \end{equation}
 $$</p>
 <p>$$
@@ -272,15 +275,15 @@ $$</p>
 measurement model predictions, to account for the fact that the measurements are
 often made at different times than the respective instantaneous states of the
 spacecraft. This is done using variational equations, which are simulated to
-obtain the state transition matrix $\bm{\Phi}(t_0, t)$ of the spacecraft, which
+obtain the state transition matrix $\mathbf{\Phi}(t_0, t)$ of the spacecraft, which
 may be interpolated for any arbitrary time within the temporal bounds of the ODE
 solution across $t_i\in[t_0, t_f]$, so that one may
-relate an empirical $z_i$ at $\bm{x}(t_i)$ to $\bm{x}_0$ through $\bm{\Phi}(t_0,
-t_i)^{-1}\bm{x}_0$. This effectively constrains the trajectory to the designed m
+relate an empirical $z_i$ at $\mathbf{x}(t_i)$ to $\mathbf{x}_0$ through $\mathbf{\Phi}(t_0,
+t_i)^{-1}\mathbf{x}_0$. This effectively constrains the trajectory to the designed m
 IVP dynamical solution. Consequentially, the measurements concisely:</p>
 <p>$$
 \begin{equation}
-\bm{z} = \bm{h}(\bm{x}_0) + \bm{\epsilon}.
+\mathbf{z} = \mathbf{h}(\mathbf{x}_0) + \mathbf{\epsilon}.
 \end{equation}
 $$</p>
 

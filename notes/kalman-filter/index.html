@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta
     name="description"
-    content="Linearised Kalman filter Extended Kalman filter  Non-linear filter  Hidden Markov model  Unscented Kalman filter  Non-linear filter  $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\hat{\bm{x}}) &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \hat{\bm{x}} _{i-1}^{&#43;} \ \mathcal{X}_j &amp;= \hat{\bm{x}} _{i-1}^{&#43;} &#43; \sqrt{(L&#43;\lambda)} \bm{A}_j &amp;&amp; j=1,&hellip;,L \ \mathcal{X} _{L&#43;j} &amp;= \hat{\bm{x}} _{i-1}^{&#43;} - \sqrt{(L&#43;\lambda)} \bm{A}_j &amp;&amp; j=1,&hellip;,L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(c)} &amp;= \lambda(L-\lambda) &#43; (1-\alpha^2 &#43; \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L&#43;\lambda)} &amp;&amp; j=1,&hellip;,2L \ \end{aligned} \end{equation} $$"
+    content="Linearised Kalman filter Extended Kalman filter  Non-linear filter  Hidden Markov model  Unscented Kalman filter  Non-linear filter  $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\hat{\mathbf{x}}) &amp;&amp; \mathbf{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \hat{\mathbf{x}} _{i-1}^{&#43;} \ \mathcal{X}_j &amp;= \hat{\mathbf{x}} _{i-1}^{&#43;} &#43; \sqrt{(L&#43;\lambda)} \mathbf{A}_j &amp;&amp; j=1,&hellip;,L \ \mathcal{X} _{L&#43;j} &amp;= \hat{\mathbf{x}} _{i-1}^{&#43;} - \sqrt{(L&#43;\lambda)} \mathbf{A}_j &amp;&amp; j=1,&hellip;,L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(c)} &amp;= \lambda(L-\lambda) &#43; (1-\alpha^2 &#43; \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L&#43;\lambda)} &amp;&amp; j=1,&hellip;,2L \ \end{aligned} \end{equation} $$"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
@@ -42,7 +42,10 @@
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.31e57327420797fa0d72b734fe4121ba.css" rel="stylesheet" />
+  
+  
+  
+  <link href="https://notes.geoffreygarrett.com/styles.b2a1c999a7ef81486a56f19357545d5e.css" rel="stylesheet" />
 
   
   <script defer src="https://notes.geoffreygarrett.com/js/add-on.6d45d3a41113c6dec27c0b366d667f3b.js"></script>
@@ -78,13 +81,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.8b076e855650a54ac448c475adf31f06.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.82e3340e37c0542f104ba0630457ff71.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.ac203c5d71063391420a9dde459e8123.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5f251a281f2188ad0e74a7ae6f822857.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -187,7 +190,7 @@ if (!doNotTrack) {
   <article>
       <h1>Kalman Filter</h1>
       <p class="meta">
-          Last updated June 3, 2022
+          Last updated June 22, 2022
       </p>
       <ul class="tags">
           
@@ -240,13 +243,13 @@ if (!doNotTrack) {
 <p>$$
 \begin{equation}
 \begin{aligned}
-L                   &amp;= \text{dim}(\hat{\bm{x}})                                                      &amp;&amp; \bm{x}\in{\mathbb{R}}^{L} \\\mathcal{X}_0       &amp;= \hat{\bm{x}} _{i-1}^{+}                                                                                     \\\mathcal{X}_j       &amp;= \hat{\bm{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \bm{A}_j                         &amp;&amp; j=1,&hellip;,L                 \\\mathcal{X} _{L+j}  &amp;= \hat{\bm{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \bm{A}_j                         &amp;&amp; j=1,&hellip;,L                 \\W_0^{(m)}           &amp;= \lambda(L-\lambda)                                                                                         \\W_0^{(c)}           &amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta)                                                                  \\W_k^{(m)}           &amp;= W_k^{(c)} = 1/{2(L+\lambda)}                                                &amp;&amp; j=1,&hellip;,2L                \\\end{aligned}
+L                   &amp;= \text{dim}(\hat{\mathbf{x}})                                                      &amp;&amp; \mathbf{x}\in{\mathbb{R}}^{L} \\\mathcal{X}_0       &amp;= \hat{\mathbf{x}} _{i-1}^{+}                                                                                     \\\mathcal{X}_j       &amp;= \hat{\mathbf{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \mathbf{A}_j                         &amp;&amp; j=1,&hellip;,L                 \\\mathcal{X} _{L+j}  &amp;= \hat{\mathbf{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \mathbf{A}_j                         &amp;&amp; j=1,&hellip;,L                 \\W_0^{(m)}           &amp;= \lambda(L-\lambda)                                                                                         \\W_0^{(c)}           &amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta)                                                                  \\W_k^{(m)}           &amp;= W_k^{(c)} = 1/{2(L+\lambda)}                                                &amp;&amp; j=1,&hellip;,2L                \\\end{aligned}
 \end{equation}
 $$</p>
 <p>$$
 \begin{aligned}
 \text{where  }
-\lambda &amp;= \alpha^2(L+\kappa)-L,\text{ a scaling parameter,} \\\alpha  &amp;= \text{parameter determining spread of sigma points about }\hat{\bm{x}}\text{,} \\\kappa  &amp;= \text{secondary scaling parameter, usually set to }0, \\\beta   &amp;= \text{ parameter for incorporation of prior knowledge of }p(\hat{\bm{x}}).\\\end{aligned}
+\lambda &amp;= \alpha^2(L+\kappa)-L,\text{ a scaling parameter,} \\\alpha  &amp;= \text{parameter determining spread of sigma points about }\hat{\mathbf{x}}\text{,} \\\kappa  &amp;= \text{secondary scaling parameter, usually set to }0, \\\beta   &amp;= \text{ parameter for incorporation of prior knowledge of }p(\hat{\mathbf{x}}).\\\end{aligned}
 $$</p>
 <figure>
     <div style="text-align: center;">

@@ -9,7 +9,7 @@
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
-    three.js Library
+    Three.js Fundamentals
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link
@@ -42,7 +42,10 @@
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.31e57327420797fa0d72b734fe4121ba.css" rel="stylesheet" />
+  
+  
+  
+  <link href="https://notes.geoffreygarrett.com/styles.b2a1c999a7ef81486a56f19357545d5e.css" rel="stylesheet" />
 
   
   <script defer src="https://notes.geoffreygarrett.com/js/add-on.6d45d3a41113c6dec27c0b366d667f3b.js"></script>
@@ -78,13 +81,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.8b076e855650a54ac448c475adf31f06.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.82e3340e37c0542f104ba0630457ff71.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.ac203c5d71063391420a9dde459e8123.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5f251a281f2188ad0e74a7ae6f822857.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -185,7 +188,7 @@ if (!doNotTrack) {
 </div>
   </header>
   <article>
-      <h1>three.js Library</h1>
+      <h1>Three.js Fundamentals</h1>
       <p class="meta">
           Last updated June 22, 2022
       </p>
@@ -196,6 +199,8 @@ if (!doNotTrack) {
           <li><a href="https://notes.geoffreygarrett.com/tags/javascript/">Javascript</a></li>
           
           <li><a href="https://notes.geoffreygarrett.com/tags/library/">Library</a></li>
+          
+          <li><a href="https://notes.geoffreygarrett.com/tags/sapling/">Sapling</a></li>
           
       </ul>
       
@@ -252,6 +257,76 @@ see when
 
 
 <a href="https://github.com/home" rel="noopener">signing into GitHub</a>.</p>
+
+
+  <style>
+  #canvas {
+    
+    
+    position: relative;
+    width: 100%;
+    /*height: 0;*/
+    padding-bottom: 50%;
+    border-color: var(--lightgray);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: medium;
+    margin: 1em auto;
+    box-sizing: border-box;
+  }
+  </style>
+  <div class="canvas" id="canvas">
+    
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.min.js"></script>
+<script defer>
+  let canvas = document.getElementById('canvas');
+  let w = canvas.clientWidth;  // offsetWidth is with border included
+  let h = canvas.clientHeight; // offsetHeight is with border included
+
+  // 1. Create a scene
+  let scene = new THREE.Scene();
+
+  // 2. Create a camera
+  let camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
+
+  // 3. Create a render
+  let renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+
+  // 4. Set the size of the render
+  renderer.setSize(w, h);
+
+  canvas.appendChild(renderer.domElement);
+
+  const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+  // const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+  const material = new THREE.MeshNormalMaterial( {  } );
+  const cube = new THREE.Mesh( geometry, material );
+  scene.add( cube );
+
+  camera.position.z = 2;
+
+  // RESIZE LISTENER
+  window.addEventListener('resize', () => {
+    let w = canvas.clientWidth;  // offsetWidth is with border included
+    let h = canvas.clientHeight; // offsetHeight is with border included
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(w, h);
+  });
+
+
+  function animate() {
+    requestAnimationFrame( animate );
+    cube.rotation.x += 0.002;
+    cube.rotation.y += 0.002;
+    renderer.render( scene, camera );
+  }
+  animate();
+
+</script>
+
+
 <div class="highlight" title="index.html"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>

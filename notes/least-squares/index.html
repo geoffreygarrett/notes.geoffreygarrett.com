@@ -42,7 +42,10 @@
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.31e57327420797fa0d72b734fe4121ba.css" rel="stylesheet" />
+  
+  
+  
+  <link href="https://notes.geoffreygarrett.com/styles.b2a1c999a7ef81486a56f19357545d5e.css" rel="stylesheet" />
 
   
   <script defer src="https://notes.geoffreygarrett.com/js/add-on.6d45d3a41113c6dec27c0b366d667f3b.js"></script>
@@ -78,13 +81,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.8b076e855650a54ac448c475adf31f06.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.82e3340e37c0542f104ba0630457ff71.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.ac203c5d71063391420a9dde459e8123.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5f251a281f2188ad0e74a7ae6f822857.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -253,57 +256,6 @@ if (!doNotTrack) {
       
       
       
-      
-      
-        
-        
-      
-    
-  
-
-  
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-      
-    
-  
-
-  
-  
-  
-    
-  
-  
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-      
     
   
 
@@ -335,20 +287,10 @@ published in 1805.</p>
 \end{equation}
 $$</p>
 <ul>
-<li>
-<p><a class="internal-link broken">test</a></p>
-</li>
-<li>
-<p><a class="internal-link broken">Linear Algebra</a></p>
-</li>
-<li>
-<p><strong>Linearity in parameters</strong>: The system model is <em>linear in
-parameters</em>, that is, <a class="internal-link broken">$\bm{z} = \bm{A}\bm{\beta}+\bm{\epsilon}$</a>.</p>
-</li>
-<li>
-<p><strong>Strict exogenity</strong>: The errors in the regression are should have conditional mean
-zero, that is, $\mathbb{E}[\bm{\epsilon}|\bm{A}] = \bm{0}$.</p>
-</li>
+<li><strong>Linearity in parameters</strong>: The system model is <em>linear in
+parameters</em>, that is, $\mathbf{z} = \mathbf{A}\mathbf{\beta}+\mathbf{\epsilon}$.</li>
+<li><strong>Strict exogenity</strong>: The errors in the regression are should have conditional mean
+zero, that is, $\mathbb{E}[\mathbf{\epsilon}|\mathbf{A}] = \mathbf{0}$.</li>
 </ul>
 <figure>
     <div style="text-align: center;">
@@ -365,27 +307,28 @@ zero, that is, $\mathbb{E}[\bm{\epsilon}|\bm{A}] = \bm{0}$.</p>
 
 
 
+<p><img src="/notes/images/OLS-geometric-interpretation.svg" title="/notes/images/OLS-geometric-interpretation.svg"></p>
 <a href="#weighted-least-squares"><h2 id="weighted-least-squares"><span class="hanchor" ariaLabel="Anchor"># </span>Weighted Least Squares</h2></a>
 <p>The Weighted Least Squares (WLS) method is an application of the
 Generalised Least Squares (GLS) algorithm, which aims at
-estimating unknown parameters ($\bm{\beta}$) in a linear regression model, given a
-set of observations ($\bm{z}$), where there is a certain degree of correlation
-($\bm{W}$) between the residuals ($\bm{\epsilon}$) in the regression model. It
+estimating unknown parameters ($\mathbf{\beta}$) in a linear regression model, given a
+set of observations ($\mathbf{z}$), where there is a certain degree of correlation
+($\mathbf{W}$) between the residuals ($\mathbf{\epsilon}$) in the regression model. It
 is usually written as:</p>
 <p>$$
 \begin{equation}
 \begin{aligned}
-\bm{z} &amp;= \bm{A}\bm{\beta}+\bm{\epsilon}, \\\mathbb{E}[\bm{\epsilon}|\bm{A}] &amp;= \bm{0}, \\\text{Cov}(\bm{\epsilon}|\bm{A}) &amp;= \bm{W}. \\\end{aligned}
+\mathbf{z} &amp;= \mathbf{A}\mathbf{\beta}+\mathbf{\epsilon}, \\\mathbb{E}[\mathbf{\epsilon}|\mathbf{A}] &amp;= \mathbf{0}, \\\text{Cov}(\mathbf{\epsilon}|\mathbf{A}) &amp;= \mathbf{W}. \\\end{aligned}
 \end{equation}
 $$</p>
-<p>The residual vector is defined as $\rho=\bm{z}-\bm{A}\bm{\beta}$. The Weighted
-Least Squares estimate ($\bm{\hat{\beta}}$) is unbiased, consistent and
-efficient, and obtained through minimising $\bm{\rho}^T\bm{W}^{-1}\bm{\rho}$. The
+<p>The residual vector is defined as $\rho=\mathbf{z}-\mathbf{A}\mathbf{\beta}$. The Weighted
+Least Squares estimate ($\mathbf{\hat{\beta}}$) is unbiased, consistent and
+efficient, and obtained through minimising $\mathbf{\rho}^T\mathbf{W}^{-1}\mathbf{\rho}$. The
 estimate is given, without derivation, by:</p>
 <p>$$
 \begin{equation}
 \begin{aligned}
-\bm{\hat{\beta}} &amp;= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}\bm{A}^T\bm{W}^{-1}\bm{z}, \\\mathbb{E}[\bm{\hat{\beta}}] &amp;= \bm{\beta}, \\\text{Cov}[\bm{\hat{\beta}}|\bm{A}] &amp;= (\bm{A}^T\bm{W}^{-1}\bm{A})^{-1}. \\\end{aligned}
+\mathbf{\hat{\beta}} &amp;= (\mathbf{A}^T\mathbf{W}^{-1}\mathbf{A})^{-1}\mathbf{A}^T\mathbf{W}^{-1}\mathbf{z}, \\\mathbb{E}[\mathbf{\hat{\beta}}] &amp;= \mathbf{\beta}, \\\text{Cov}[\mathbf{\hat{\beta}}|\mathbf{A}] &amp;= (\mathbf{A}^T\mathbf{W}^{-1}\mathbf{A})^{-1}. \\\end{aligned}
 \end{equation}
 $$</p>
 <a href="#generalised-least-squares"><h2 id="generalised-least-squares"><span class="hanchor" ariaLabel="Anchor"># </span>Generalised Least Squares</h2></a>
@@ -394,13 +337,13 @@ $$</p>
 <a href="https://en.wikipedia.org/wiki/Generalized_least_squares#cite_note-1" rel="noopener">1</a>]</p>
 <a href="#non-linear-least-squares"><h2 id="non-linear-least-squares"><span class="hanchor" ariaLabel="Anchor"># </span>Non-linear Least Squares</h2></a>
 <p>The problem arises when considering the highly non-linear modelled measurements
-$\bm{h}(\bm{x}_0)$ cannot be described by the linear relation above. For this
+$\mathbf{h}(\mathbf{x}_0)$ cannot be described by the linear relation above. For this
 reason, the model is linearized by approximation to a first-order Taylor
-polynomial expansion about $\bm{x}_0^k$, where $k$ is an iteration number:</p>
+polynomial expansion about $\mathbf{x}_0^k$, where $k$ is an iteration number:</p>
 <p>$$
 \begin{equation}
 \begin{aligned}
-\bm{z}                              &amp;=        \bm{f}(\bm{\beta}) + \bm{\epsilon}                                                              \\\bm{f}(\bm{\beta}+\Delta\bm{\beta}) &amp;\approx  \bm{f}(\bm{\beta}) + \frac{\partial{\bm{f}(\bm{\beta})}}{\partial{\bm{\beta}}}\Delta\bm{\beta}  \\\end{aligned}
+\mathbf{z}                              &amp;=        \mathbf{f}(\mathbf{\beta}) + \mathbf{\epsilon}                                                              \\\mathbf{f}(\mathbf{\beta}+\Delta\mathbf{\beta}) &amp;\approx  \mathbf{f}(\mathbf{\beta}) + \frac{\partial{\mathbf{f}(\mathbf{\beta})}}{\partial{\mathbf{\beta}}}\Delta\mathbf{\beta}  \\\end{aligned}
 \end{equation}
 $$</p>
 

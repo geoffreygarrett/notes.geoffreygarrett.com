@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>frontend on </title>
-    <link>https://notes.geoffreygarrett.com/tags/frontend/</link>
-    <description>Recent content in frontend on </description>
+    <title>sapling on </title>
+    <link>https://notes.geoffreygarrett.com/tags/sapling/</link>
+    <description>Recent content in sapling on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://notes.geoffreygarrett.com/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://notes.geoffreygarrett.com/tags/sapling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Three.js Fundamentals</title>
       <link>https://notes.geoffreygarrett.com/notes/threejs-basics/</link>

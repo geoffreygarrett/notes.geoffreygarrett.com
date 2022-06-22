@@ -6,7 +6,7 @@
   <meta
     name="description"
     content="Definitions (System of) Linear Equation(s) A system of linear equations may be represented as the matrix equation:
-$$ \bm{A}\bm{x} = \bm{b}, $$"
+$$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$"
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
@@ -43,7 +43,10 @@ $$ \bm{A}\bm{x} = \bm{b}, $$"
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.31e57327420797fa0d72b734fe4121ba.css" rel="stylesheet" />
+  
+  
+  
+  <link href="https://notes.geoffreygarrett.com/styles.b2a1c999a7ef81486a56f19357545d5e.css" rel="stylesheet" />
 
   
   <script defer src="https://notes.geoffreygarrett.com/js/add-on.6d45d3a41113c6dec27c0b366d667f3b.js"></script>
@@ -79,13 +82,13 @@ $$ \bm{A}\bm{x} = \bm{b}, $$"
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.8b076e855650a54ac448c475adf31f06.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.82e3340e37c0542f104ba0630457ff71.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.ac203c5d71063391420a9dde459e8123.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5f251a281f2188ad0e74a7ae6f822857.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -188,7 +191,7 @@ if (!doNotTrack) {
   <article>
       <h1>Linear Algebra</h1>
       <p class="meta">
-          Last updated June 4, 2022
+          Last updated June 22, 2022
       </p>
       <ul class="tags">
           
@@ -231,7 +234,7 @@ if (!doNotTrack) {
 <a href="#system-of-linear-equations"><h3 id="system-of-linear-equations"><span class="hanchor" ariaLabel="Anchor"># </span>(System of) Linear Equation(s)</h3></a>
 <p>A system of linear equations may be represented as the matrix equation:</p>
 <p>$$
-\bm{A}\bm{x} = \bm{b},
+\mathbf{A}\mathbf{x} = \mathbf{b},
 $$</p>
 <p>and is equivalent to the following systems of linear equations:</p>
 <p>$$
@@ -264,16 +267,16 @@ $$</p>
 </ul>
 <a href="#definitions-1"><h2 id="definitions-1"><span class="hanchor" ariaLabel="Anchor"># </span>Definitions</h2></a>
 <ul>
-<li>A symmetric matrix $\bm{A}\n\mathbb{R}^{n\times{n}}$ is positive semidefinite if:</li>
+<li>A symmetric matrix $\mathbf{A}\n\mathbb{R}^{n\times{n}}$ is positive semidefinite if:</li>
 </ul>
 <p>$$
-\bm{x}^T\bm{A}\bm{x}\geq 0 \forall,\bm{x} \in\mathbb{R}^n.
+\mathbf{x}^T\mathbf{A}\mathbf{x}\geq 0 \forall,\mathbf{x} \in\mathbb{R}^n.
 $$</p>
 <ul>
-<li>A symmetric matrix $\bm{A}\n\mathbb{R}^{n\times{n}}$ is positive definite if:</li>
+<li>A symmetric matrix $\mathbf{A}\n\mathbb{R}^{n\times{n}}$ is positive definite if:</li>
 </ul>
 <p>$$
-\bm{x}^T\bm{A}\bm{x}&gt; 0 \forall,\bm{x}\neq 0 \in\mathbb{R}^n.
+\mathbf{x}^T\mathbf{A}\mathbf{x}&gt; 0 \forall,\mathbf{x}\neq 0 \in\mathbb{R}^n.
 $$</p>
 
 

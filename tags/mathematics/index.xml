@@ -22,7 +22,7 @@
       
       <guid>https://notes.geoffreygarrett.com/notes/linear-algebra/</guid>
       <description>Definitions (System of) Linear Equation(s) A system of linear equations may be represented as the matrix equation:
-$$ \bm{A}\bm{x} = \bm{b}, $$</description>
+$$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$</description>
     </item>
     
   </channel>
