@@ -4,6 +4,12 @@
   margin-top: 10vh;
 }
 
+//p, li {
+//  width: clamp(45ch, 100%, 75ch) !important;
+//  margin-left: auto;
+//  margin-right: auto;
+//}
+
 .singlePage{
   width: clamp(40ch, 80%, 63ch) !important;
   padding-top: 6vw !important;

@@ -7,7 +7,7 @@ tags:
 - library
 - sapling
 custom_js_path: "/js/cube-basic.js"
-   
+
 ---
 
 Three.js is a cross-browser Javascript API which allows for the creation and
@@ -34,12 +34,11 @@ GitHub](https://github.com/home).
     <style> body {
         margin: 0;
     } </style>
+    <link rel="stylesheet" href="/styles/mystyle.css">
+    <script src="js/first-cube.js" type="module"></script>
 </head>
 <body>
-<script src="js/three.js"></script>
-<script>
-    // Our Javascript will go here.
-</script>
+<div class="canvas" id="threejs"></div>
 </body>
 ````
 
