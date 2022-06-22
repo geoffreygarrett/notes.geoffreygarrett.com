@@ -4,6 +4,26 @@
       "/": [
         {
           "source": "/",
+          "target": "/notes/software-engineering",
+          "text": "software engineering"
+        },
+        {
+          "source": "/",
+          "target": "/notes/machine-learning",
+          "text": "machine\nlearning"
+        },
+        {
+          "source": "/",
+          "target": "/notes/dbscane",
+          "text": "machine learning\nalgorithms"
+        },
+        {
+          "source": "/",
+          "target": "/notes/software-engineering",
+          "text": "software\nengineering"
+        },
+        {
+          "source": "/",
           "target": "/notes/linear-algebra",
           "text": "Linear Algebra MOC"
         },
@@ -181,6 +201,13 @@
           "text": "Density-based spacial clustering of applications with noise (DBSCAN)"
         }
       ],
+      "/notes/dbscane": [
+        {
+          "source": "/",
+          "target": "/notes/dbscane",
+          "text": "machine learning\nalgorithms"
+        }
+      ],
       "/notes/deep-learning": [
         {
           "source": "/notes/machine-learning",
@@ -227,6 +254,11 @@
         {
           "source": "/",
           "target": "/notes/machine-learning",
+          "text": "machine\nlearning"
+        },
+        {
+          "source": "/",
+          "target": "/notes/machine-learning",
           "text": "Machine Learning MOC"
         }
       ],
@@ -252,6 +284,16 @@
         }
       ],
       "/notes/software-engineering": [
+        {
+          "source": "/",
+          "target": "/notes/software-engineering",
+          "text": "software engineering"
+        },
+        {
+          "source": "/",
+          "target": "/notes/software-engineering",
+          "text": "software\nengineering"
+        },
         {
           "source": "/",
           "target": "/notes/software-engineering",
@@ -282,6 +324,26 @@
     }
   },
   "links": [
+    {
+      "source": "/",
+      "target": "/notes/software-engineering",
+      "text": "software engineering"
+    },
+    {
+      "source": "/",
+      "target": "/notes/machine-learning",
+      "text": "machine\nlearning"
+    },
+    {
+      "source": "/",
+      "target": "/notes/dbscane",
+      "text": "machine learning\nalgorithms"
+    },
+    {
+      "source": "/",
+      "target": "/notes/software-engineering",
+      "text": "software\nengineering"
+    },
     {
       "source": "/",
       "target": "/notes/linear-algebra",
