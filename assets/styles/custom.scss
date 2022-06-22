@@ -1,97 +1,22 @@
-// Add your own CSS here!
-:root {
-  --light: #faf8f8;
-  --dark: #141021;
-  --secondary: #284b63;
-  --tertiary: #84a59d;
-  --visited: #afbfc9;
-  --primary: #f28482;
-  --gray: #4e4e4e;
-  --lightgray: #f0f0f0;
-  --outlinegray: #dadada;
-  --svgfilter: invert(0%) hue-rotate(0deg);
-}
-//.chroma .h1 {
-//  background-color:  !important;
-//}
-// table of class "general" should be limited to 600px
-// table of class "full" should be limited to 1200px
-// table of class "full-wide" should be limited to 1400px
+
 
 .centered {
   margin-top: 10vh;
 }
-canvas {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    z-index: -9999;
+
+.singlePage{
+  width: clamp(40ch, 80%, 63ch) !important;
+  padding-top: 6vw !important;
+  padding-bottom: 6vw !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  @media (max-width: 380px) {
+    width: unquote('max(90%, 200px)') !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-table {
-  max-width: 600px !important;
-}
-
-.tg {
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse !important;
-  border-spacing: 0 !important;
-}
-
-.tg td {
-  border-color: var(--outlinegray) !important;
-  border-style: solid !important;
-  border-width: 1px !important;
-  //font-family: Arial, sans-serif;
-  font-size: 14px !important;
-  overflow: hidden !important;
-  padding: 10px 5px !important;
-  word-break: normal !important;
-}
-
-.tg th {
-  border-color: var(--outlinegray) !important;
-  border-style: solid !important;
-  border-width: 1px !important;
-  //font-family: Arial, sans-serif;
-  font-size: 14px !important;
-  font-weight: normal !important;
-  overflow: hidden !important;
-  padding: 10px 5px !important;
-  word-break: normal !important;
-}
-
-.tg .tg-fymr {
-  border-color: inherit;
-  font-weight: bold;
-  text-align: left;
-  vertical-align: top
-}
-
-.tg .tg-0pky {
-  border-color: inherit;
-  text-align: left;
-  vertical-align: top
-}
-
-// not the way...
-.singlePage {
-  //width: clamp(45ch, 50%, 45ch) !important;
-  //width: clamp(35ch, 50%, 75ch) !important;
-  //padding: 4em 30vw !important;
-  //margin-left: auto !important;
-  //margin-right: auto !important;
-  //max-width: 660pt;
-}
-
-.giscus-frame {
-  padding-top: 4rem;
-}
 
 ul {
   padding-left: 1.5em;
@@ -128,6 +53,7 @@ img {
   height: auto;
 }
 
+// Fonts
 :root {
   --lineheight: 1.8em;
   --textalign: left;
@@ -136,25 +62,9 @@ img {
 }
 
 // LaTeX
-.katex {
-  font-size: 1em !important;
-}
 
 //
 //$primary_font_family: 'Computer Modern Serif', serif;
 //$secondary_font_family: 'Computer Modern Serif', serif;
 
 //$primary_font_family: 'Whitney-Bold', sans-serif;
-
-[saved-theme="dark"] {
-  --light: #1e1e21 !important;
-  --dark: #fbfffe !important;
-  --secondary: #6b879a !important;
-  --visited: #4a575e !important;
-  --tertiary: #84a59d !important;
-  --primary: #f58382 !important;
-  --gray: #d4d4d4 !important;
-  --lightgray: #292633 !important;
-  --outlinegray: #343434 !important;
-  --svgfilter: invert(100%) hue-rotate(180deg);
-}

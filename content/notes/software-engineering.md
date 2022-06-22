@@ -1,7 +1,8 @@
 ---
 title: "Software Engineering"
 tags:
-- [software-engineering]
+- computer-science
+- sapling
 ---
 ## Algorithms
 - [Density-based spacial clustering of applications with noise (DBSCAN)](notes/dbscan.md)
@@ -10,8 +11,8 @@ tags:
 - [SOLID Principles](notes/solid-principles.md)
 
 ## Frontend
-- [CSS Tips](notes/css-notes.md)
-- [three.js basics](notes/threejs-basics.md)
+- [Cascading Style Sheets (CSS)](notes/css.md)
+- [Three.js](notes/threejs-basics.md)
 
 ## Personalised Development
 - [Windows Development](notes/windows-development.md)

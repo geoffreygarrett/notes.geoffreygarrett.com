@@ -1,0 +1,46 @@
+table {
+  max-width: 600px !important;
+}
+
+.tg {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+}
+
+.tg td {
+  border-color: var(--outlinegray) !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  //font-family: Arial, sans-serif;
+  font-size: 14px !important;
+  overflow: hidden !important;
+  padding: 10px 5px !important;
+  word-break: normal !important;
+}
+
+.tg th {
+  border-color: var(--outlinegray) !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  //font-family: Arial, sans-serif;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  overflow: hidden !important;
+  padding: 10px 5px !important;
+  word-break: normal !important;
+}
+
+.tg .tg-fymr {
+  border-color: inherit;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: top
+}
+
+.tg .tg-0pky {
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top
+}
