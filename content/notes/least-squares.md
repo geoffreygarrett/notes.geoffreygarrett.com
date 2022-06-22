@@ -4,6 +4,7 @@ comments: true
 tags:
 - estimation-theory
 - linear-algebra
+- 🌱
 ---
 
 The least-squares method, a method of solving overdetermined sets of linear
