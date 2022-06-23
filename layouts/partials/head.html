@@ -29,7 +29,7 @@
   {{end}}
   {{$finalCss := $css | resources.Concat "styles.css" | resources.Fingerprint "md5"  }}
   <link href="{{$finalCss.Permalink}}" rel="stylesheet" />
-
+  
   {{$addOn := resources.Get "js/add-on.js" | resources.Fingerprint "md5"  }}
   <script src="{{$addOn.Permalink}}"></script>
 
@@ -108,10 +108,9 @@
     // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page.
     attachSPARouting(draw);
   </script>
-
   {{else}}
-  {{if .Params.custom_js_path -}}
-  <script src="{{ .Params.custom_js_path }}" type="module"></script>
+  {{range .Params.custom_js_path -}}
+  <script src="{{ . }}" type="module" ></script>
   {{end}}
   <script>
     window.navigate = (url) => window.location.href = url;

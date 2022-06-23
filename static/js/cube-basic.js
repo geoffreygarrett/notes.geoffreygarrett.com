@@ -1,11 +1,9 @@
-import * as THREE
-    from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js';
-import {TrackballControls} from "https://cdn.skypack.dev/three-trackballcontrols-ts@0.2.3";
-
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.127.0/build/three.module.js";
+import {TrackballControls} from "https://cdn.jsdelivr.net/npm/three@0.127.0/examples/jsm/controls/TrackballControls.js";
 
 const renderCube = function (event) {
 
-    let element = document.getElementById('threejs');
+    let element = document.getElementById('threejs-cube');
 
 
     // 1. Create a scene

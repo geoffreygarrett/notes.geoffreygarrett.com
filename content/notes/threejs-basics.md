@@ -6,8 +6,8 @@ tags:
 - javascript
 - library
 - sapling
-custom_js_path: "/js/cube-basic.js"
 
+custom_js_path: ["/js/cube-basic.js", "/js/voyager.js"]
 ---
 
 Three.js is a cross-browser Javascript API which allows for the creation and
@@ -20,7 +20,7 @@ projects, one of which I often see when [signing into
 GitHub](https://github.com/home).
 
 {{< rawhtml >}}
-<div id="threejs"></div>
+<div class="threejs" id="threejs-cube"></div>
 {{< /rawhtml >}}
 
 
@@ -106,6 +106,11 @@ each other. To avoid this, we simply move the camera out a bit.
 > If you copied the code from above into the HTML file we created earlier, you
 wouldn't be able to see anything. This is because we're not actually rendering
 anything yet. For that, we need what's called a render or animate loop.
+
+{{< rawhtml >}}
+<div class="threejs sqrd" id="threejs-voyager"></div>
+{{< /rawhtml >}}
+
 
 ### Resources
 
