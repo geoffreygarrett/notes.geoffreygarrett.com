@@ -11,10 +11,10 @@ custom_js_path: ["/js/cube-basic.js"]
 ---
 
 Three.js is a cross-browser Javascript API which allows for the creation and
-display of 3D computer graphics in a web browser using
-[WebGL](https://en.wikipedia.org/wiki/WebGL?wprov=sfla1) (a lower level
+display of 3D computer graphics in a web browser built on top of
+[WebGL](https://en.wikipedia.org/wiki/WebGL?wprov=sfla1), a lower level
 Javascript API allowing for GPU-accelerated physics and image processing
-locally, as part of the web page canvas). 
+locally, as part of the web page canvas.
 
 {{< rawhtml >}}
 <div class="threejs" id="threejs-cube"></div>
