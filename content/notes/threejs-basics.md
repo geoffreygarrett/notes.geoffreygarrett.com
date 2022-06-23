@@ -14,14 +14,18 @@ Three.js is a cross-browser Javascript API which allows for the creation and
 display of 3D computer graphics in a web browser using
 [WebGL](https://en.wikipedia.org/wiki/WebGL?wprov=sfla1) (a lower level
 Javascript API allowing for GPU-accelerated physics and image processing
-locally, as part of the web page canvas). There exists a [plethora of
-examples](https://threejs.org/) which can be used as starting points in your
-projects, one of which I often see when [signing into
-GitHub](https://github.com/home).
+locally, as part of the web page canvas). 
 
 {{< rawhtml >}}
 <div class="threejs" id="threejs-cube"></div>
 {{< /rawhtml >}}
+
+There exists a [plethora of examples](https://threejs.org/) which can be used as
+starting points in your projects, one of which I often see when [signing into
+GitHub](https://github.com/home). Another personal favourite of mine is SpaceX's
+simulator which demonstrates the [**actual interface** used by NASA
+Astronauts](https://iss-sim.spacex.com/) to manually pilot the Spacex Dragon 2
+spacecraft to the International Space Station (ISS).
 
 
 ````html {title="/index.html"}
@@ -106,8 +110,6 @@ each other. To avoid this, we simply move the camera out a bit.
 > If you copied the code from above into the HTML file we created earlier, you
 wouldn't be able to see anything. This is because we're not actually rendering
 anything yet. For that, we need what's called a render or animate loop.
-
-
 
 
 ### Resources
