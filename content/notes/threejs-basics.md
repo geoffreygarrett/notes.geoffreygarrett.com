@@ -21,9 +21,9 @@ locally, as part of the web page canvas.
 {{< /rawhtml >}}
 
 There exists a [plethora of examples](https://threejs.org/) which can be used as
-starting points in your projects, one of which I often see when [signing into
-GitHub](https://github.com/home). Another personal favourite of mine is SpaceX's
-simulator which demonstrates the [**actual interface** used by NASA
+starting points in your projects, one of which I often encounter when [signing
+into GitHub](https://github.com/home). Another personal favourite of mine is
+SpaceX's simulator which demonstrates the [**actual interface** used by NASA
 Astronauts](https://iss-sim.spacex.com/) to manually pilot the Spacex Dragon 2
 spacecraft to the International Space Station (ISS).
 
