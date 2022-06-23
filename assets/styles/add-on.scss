@@ -66,9 +66,9 @@ div.highlight pre {
   //display: flex;
   //flex-direction:column-reverse;
   //margin-top: 0em;
-  background-color: rgba(68, 74, 90, 0.53);
+  background-color: var(--code-name-background-color);
   paint-order: fill;
-  color: rgba(238, 130, 238, 0.87);
+  color: var(--code-name-text-color);
   //border-radius: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
