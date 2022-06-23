@@ -7,7 +7,7 @@ tags:
 - library
 - sapling
 
-custom_js_path: ["/js/cube-basic.js", "/js/voyager.js"]
+custom_js_path: ["/js/cube-basic.js"]
 ---
 
 Three.js is a cross-browser Javascript API which allows for the creation and
@@ -107,9 +107,7 @@ each other. To avoid this, we simply move the camera out a bit.
 wouldn't be able to see anything. This is because we're not actually rendering
 anything yet. For that, we need what's called a render or animate loop.
 
-{{< rawhtml >}}
-<div class="threejs sqrd" id="threejs-voyager"></div>
-{{< /rawhtml >}}
+
 
 
 ### Resources
