@@ -103,7 +103,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.c4e5d5ba337156ce0d08c01f2881b606.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.56f3ae0fd618c4563acc6a0208a339f8.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -148,7 +148,6 @@
   </script>
   
   <script src="/js/cube-basic.js" type="module" ></script>
-  <script src="/js/voyager.js" type="module" ></script>
   
   <script>
     window.navigate = (url) => window.location.href = url;
@@ -383,11 +382,6 @@ each other. To avoid this, we simply move the camera out a bit.</p>
 wouldn&rsquo;t be able to see anything. This is because we&rsquo;re not actually rendering
 anything yet. For that, we need what&rsquo;s called a render or animate loop.</p>
 </blockquote>
-
-
-<div class="threejs sqrd" id="threejs-voyager"></div>
-
-
 <a href="#resources"><h3 id="resources"><span class="hanchor" ariaLabel="Anchor"># </span>Resources</h3></a>
 <ul>
 <li>
