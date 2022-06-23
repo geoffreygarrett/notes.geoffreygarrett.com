@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://notes.geoffreygarrett.com/notes/singular-value-decomposition/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/singular-value-decomposition/</loc>
     <lastmod>2022-06-04T00:20:28+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/algorithm/</loc>
@@ -10,31 +10,31 @@
   </url><url>
     <loc>https://notes.geoffreygarrett.com/categories/</loc>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/cholesky-decomposition/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/cholesky-decomposition/</loc>
     <lastmod>2022-06-04T00:20:28+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/computer-science/</loc>
-    <lastmod>2022-06-22T19:12:04+02:00</lastmod>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/concept-definitions/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/concept-definitions/</loc>
     <lastmod>2022-06-01T12:19:19+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/css/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/css/</loc>
     <lastmod>2022-06-22T19:12:04+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/data-sampling-methods/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/data-sampling-methods/</loc>
     <lastmod>2022-06-06T15:28:38+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/dbscan/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/dbscan/</loc>
     <lastmod>2022-06-22T16:09:20+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/deep-learning/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/deep-learning/</loc>
     <lastmod>2022-06-01T11:10:56+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/deep-learning/</loc>
     <lastmod>2022-06-01T11:10:56+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/estimation-theory/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/estimation-theory/</loc>
     <lastmod>2022-05-31T05:55:33+01:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/estimation-theory/</loc>
@@ -44,72 +44,78 @@
     <lastmod>2022-06-01T12:19:19+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/frontend/</loc>
-    <lastmod>2022-06-23T16:38:07+02:00</lastmod>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/</loc>
-    <lastmod>2022-06-23T09:20:56+01:00</lastmod>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/information-theory/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/information-theory/</loc>
     <lastmod>2022-06-21T13:35:15+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/javascript/</loc>
-    <lastmod>2022-06-23T16:38:07+02:00</lastmod>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/kalman-filter/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/kalman-filter/</loc>
     <lastmod>2022-06-22T16:09:20+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/least-squares/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/least-squares/</loc>
     <lastmod>2022-06-22T16:09:20+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/library/</loc>
-    <lastmod>2022-06-23T16:38:07+02:00</lastmod>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/linear-algebra/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/linear-algebra/</loc>
     <lastmod>2022-06-22T16:09:20+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/linear-algebra/</loc>
     <lastmod>2022-06-22T16:09:20+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/machine-learning/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/machine-learning/</loc>
     <lastmod>2022-06-06T15:25:06+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/machine-learning/</loc>
     <lastmod>2022-06-22T16:09:20+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/markov-models/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/markov-models/</loc>
     <lastmod>2022-06-01T17:05:29+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/mathematics/</loc>
     <lastmod>2022-06-22T16:09:20+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/notes/</loc>
-    <lastmod>2022-06-23T16:38:07+02:00</lastmod>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/orbit-determination/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/orbit-determination/</loc>
     <lastmod>2022-06-22T16:09:20+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/notes-website/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/notes-website/</loc>
     <lastmod>2022-06-21T18:30:08+01:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/sapling/</loc>
-    <lastmod>2022-06-23T16:38:07+02:00</lastmod>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
+  </url><url>
+    <loc>https://notes.geoffreygarrett.com/public/javascript-dependencies/</loc>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/seed/</loc>
     <lastmod>2022-06-22T19:12:04+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/software-engineering/</loc>
-    <lastmod>2022-06-22T19:12:04+02:00</lastmod>
+    <loc>https://notes.geoffreygarrett.com/public/software-engineering/</loc>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/solid-principles/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/solid-principles/</loc>
     <lastmod>2022-05-30T13:03:01+02:00</lastmod>
   </url><url>
     <loc>https://notes.geoffreygarrett.com/tags/</loc>
-    <lastmod>2022-06-23T16:38:07+02:00</lastmod>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/threejs-basics/</loc>
-    <lastmod>2022-06-23T16:38:07+02:00</lastmod>
+    <loc>https://notes.geoffreygarrett.com/public/threejs/</loc>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
   </url><url>
-    <loc>https://notes.geoffreygarrett.com/notes/windows-development/</loc>
+    <loc>https://notes.geoffreygarrett.com/public/typescript/</loc>
+    <lastmod>2022-06-24T00:01:23+02:00</lastmod>
+  </url><url>
+    <loc>https://notes.geoffreygarrett.com/public/windows-development/</loc>
     <lastmod>2022-06-21T18:30:08+01:00</lastmod>
   </url>
 </urlset>

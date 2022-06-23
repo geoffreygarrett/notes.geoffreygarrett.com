@@ -8,183 +8,202 @@
     <language>en-us</language><atom:link href="https://notes.geoffreygarrett.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://notes.geoffreygarrett.com/notes/singular-value-decomposition/</link>
+      <link>https://notes.geoffreygarrett.com/public/singular-value-decomposition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/singular-value-decomposition/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/singular-value-decomposition/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cholesky Decomposition</title>
-      <link>https://notes.geoffreygarrett.com/notes/cholesky-decomposition/</link>
+      <link>https://notes.geoffreygarrett.com/public/cholesky-decomposition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/cholesky-decomposition/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/cholesky-decomposition/</guid>
       <description>Cholesky Decomposition (a.k.a. Cholesky factorisation) is a method of decomposing a positive semidefinite matrix into a lower triangular matrix.</description>
     </item>
     
     <item>
       <title>Concept Definitions</title>
-      <link>https://notes.geoffreygarrett.com/notes/concept-definitions/</link>
+      <link>https://notes.geoffreygarrett.com/public/concept-definitions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/concept-definitions/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/concept-definitions/</guid>
       <description>A dynamic collection of concept definitions which are either relevant to my work or are of interest to me. These definitions may be referred to from other parts of my notes.</description>
     </item>
     
     <item>
       <title>CSS</title>
-      <link>https://notes.geoffreygarrett.com/notes/css/</link>
+      <link>https://notes.geoffreygarrett.com/public/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/css/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/css/</guid>
       <description>Cascading style sheets (CSS)
 Loose Links   min(), max(), and clamp(): three logical CSS functions to use today  </description>
     </item>
     
     <item>
       <title>Data Sampling Methods</title>
-      <link>https://notes.geoffreygarrett.com/notes/data-sampling-methods/</link>
+      <link>https://notes.geoffreygarrett.com/public/data-sampling-methods/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/data-sampling-methods/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/data-sampling-methods/</guid>
       <description>Stochastic Methods Deterministic Methods Low discrepancy Experimental design methods Geometric Methods Uniform grid Latin hypercube Centroidal Voronoi Tesellation Opposite methods Hybrid methods Sampling non-uniform distributions Importance sampling Bibliography   Smart sampling and incremental function learning for very large high dimensional data.</description>
     </item>
     
     <item>
       <title>DBSCAN</title>
-      <link>https://notes.geoffreygarrett.com/notes/dbscan/</link>
+      <link>https://notes.geoffreygarrett.com/public/dbscan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/dbscan/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/dbscan/</guid>
       <description>Density-based spacial clustering of applications with noise (DBSCAN) is a clustering algorithm proposed by Ester et al. in 1996. DBSCAN is one of the most cited clustering algorithms in scientific literature.</description>
     </item>
     
     <item>
       <title>Deep Learning</title>
-      <link>https://notes.geoffreygarrett.com/notes/deep-learning/</link>
+      <link>https://notes.geoffreygarrett.com/public/deep-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/deep-learning/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/deep-learning/</guid>
       <description>Deep Learning (DL) is a field of Machine Learning (ML) that is primarily concerned with the learning of representations of data.</description>
     </item>
     
     <item>
       <title>Estimation Theory</title>
-      <link>https://notes.geoffreygarrett.com/notes/estimation-theory/</link>
+      <link>https://notes.geoffreygarrett.com/public/estimation-theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/estimation-theory/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/estimation-theory/</guid>
       <description>Estimation theory is a branch of statistics that addresses the estimation of unknown parameters based on empirical measurements, which contain a random component.</description>
     </item>
     
     <item>
       <title>Information Theory</title>
-      <link>https://notes.geoffreygarrett.com/notes/information-theory/</link>
+      <link>https://notes.geoffreygarrett.com/public/information-theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/information-theory/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/information-theory/</guid>
       <description>Self-information The self-information (a.k.a. information content, surprisal, or Shannon information) is a quantity used in information theory which is derived from the probability of a certain event occurring from a random variable.</description>
     </item>
     
     <item>
       <title>Kalman Filter</title>
-      <link>https://notes.geoffreygarrett.com/notes/kalman-filter/</link>
+      <link>https://notes.geoffreygarrett.com/public/kalman-filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/kalman-filter/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/kalman-filter/</guid>
       <description>Linearised Kalman filter Extended Kalman filter  Non-linear filter  Hidden Markov model  Unscented Kalman filter  Non-linear filter  $$ \begin{equation} \begin{aligned} L &amp;amp;= \text{dim}(\hat{\mathbf{x}}) &amp;amp;&amp;amp; \mathbf{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;amp;= \hat{\mathbf{x}} _{i-1}^{+} \ \mathcal{X}_j &amp;amp;= \hat{\mathbf{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \mathbf{A}_j &amp;amp;&amp;amp; j=1,&amp;hellip;,L \ \mathcal{X} _{L+j} &amp;amp;= \hat{\mathbf{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \mathbf{A}_j &amp;amp;&amp;amp; j=1,&amp;hellip;,L \ W_0^{(m)} &amp;amp;= \lambda(L-\lambda) \ W_0^{(c)} &amp;amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta) \ W_k^{(m)} &amp;amp;= W_k^{(c)} = 1/{2(L+\lambda)} &amp;amp;&amp;amp; j=1,&amp;hellip;,2L \ \end{aligned} \end{equation} $$</description>
     </item>
     
     <item>
       <title>Least Squares</title>
-      <link>https://notes.geoffreygarrett.com/notes/least-squares/</link>
+      <link>https://notes.geoffreygarrett.com/public/least-squares/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/least-squares/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/least-squares/</guid>
       <description>The least-squares method, a method of solving overdetermined sets of linear equations, was officially discovered and published by Adrien-Marie Legendre in their work &amp;ldquo;Nouvelles methodes pour la determination des orbites des cometes&amp;rdquo;, published in 1805.</description>
     </item>
     
     <item>
       <title>Linear Algebra</title>
-      <link>https://notes.geoffreygarrett.com/notes/linear-algebra/</link>
+      <link>https://notes.geoffreygarrett.com/public/linear-algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/linear-algebra/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/linear-algebra/</guid>
       <description>Definitions (System of) Linear Equation(s) A system of linear equations may be represented as the matrix equation:
 $$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$</description>
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>https://notes.geoffreygarrett.com/notes/machine-learning/</link>
+      <link>https://notes.geoffreygarrett.com/public/machine-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/machine-learning/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/machine-learning/</guid>
       <description>Sub-fields   Deep Learning  Useful Topics   Data Sampling Methods  </description>
     </item>
     
     <item>
       <title>Markov Models</title>
-      <link>https://notes.geoffreygarrett.com/notes/markov-models/</link>
+      <link>https://notes.geoffreygarrett.com/public/markov-models/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/markov-models/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/markov-models/</guid>
       <description>Characterization Fully Observable Partially Observable     Autonomous Markov chain/ process Hidden Markov model   Controlled Markov decision process</description>
     </item>
     
     <item>
       <title>Orbit Determination and Parameter Estimation</title>
-      <link>https://notes.geoffreygarrett.com/notes/orbit-determination/</link>
+      <link>https://notes.geoffreygarrett.com/public/orbit-determination/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/orbit-determination/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/orbit-determination/</guid>
       <description>Predicting the state ($\mathbf{x}_t$) of a spacecraft given an initial condition ($\mathbf{x}_0$), and models which form the equations of motion of the satellite, ($\dot{\mathbf{x}}=f(t,\mathbf{x})$), is a straightforward task involving the solution of an initial value problem (IVP) in the form of an ordinary differential equation (ODE).</description>
     </item>
     
     <item>
       <title>Quartz, Obsidian, and Hugo</title>
-      <link>https://notes.geoffreygarrett.com/notes/notes-website/</link>
+      <link>https://notes.geoffreygarrett.com/public/notes-website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/notes-website/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/notes-website/</guid>
       <description>Test mkdir %USERPROFILE%/src cd %USERPROFILE%/src git clone https://github.com/gohugoio/hugo.git cd hugo go install --tags extended -v -x </description>
     </item>
     
     <item>
-      <title>Software Engineering</title>
-      <link>https://notes.geoffreygarrett.com/notes/software-engineering/</link>
+      <title>Satisfying JavaScript Dependencies</title>
+      <link>https://notes.geoffreygarrett.com/public/javascript-dependencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/software-engineering/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/javascript-dependencies/</guid>
+      <description>Content Delivery Network (CDN) Import Map Node Package Manager (NPM) </description>
+    </item>
+    
+    <item>
+      <title>Software Engineering</title>
+      <link>https://notes.geoffreygarrett.com/public/software-engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/public/software-engineering/</guid>
       <description>Algorithms   Density-based spacial clustering of applications with noise (DBSCAN)  Object Oriented   SOLID Principles  Frontend   Cascading Style Sheets (CSS)  Three.</description>
     </item>
     
     <item>
       <title>SOLID Principles</title>
-      <link>https://notes.geoffreygarrett.com/notes/solid-principles/</link>
+      <link>https://notes.geoffreygarrett.com/public/solid-principles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/solid-principles/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/solid-principles/</guid>
       <description>In software engineering, SOLID is a mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable.</description>
     </item>
     
     <item>
       <title>Three.js Fundamentals</title>
-      <link>https://notes.geoffreygarrett.com/notes/threejs-basics/</link>
+      <link>https://notes.geoffreygarrett.com/public/threejs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/threejs-basics/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/threejs/</guid>
       <description>Three.js is a cross-browser Javascript API which allows for the creation and display of 3D computer graphics in a web browser built on top of WebGL, a lower level Javascript API allowing for GPU-accelerated physics and image processing locally, as part of the web page canvas.</description>
     </item>
     
     <item>
-      <title>Windows Development</title>
-      <link>https://notes.geoffreygarrett.com/notes/windows-development/</link>
+      <title>TypeScript</title>
+      <link>https://notes.geoffreygarrett.com/public/typescript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/windows-development/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/typescript/</guid>
+      <description>Some links I&amp;rsquo;m collecting:
+  Get Started With Typescript in 2019  </description>
+    </item>
+    
+    <item>
+      <title>Windows Development</title>
+      <link>https://notes.geoffreygarrett.com/public/windows-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/public/windows-development/</guid>
       <description>  Setting up Windows Terminal, WSL and Oh-my-Zsh  </description>
     </item>
     

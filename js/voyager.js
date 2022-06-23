@@ -2,10 +2,9 @@ import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.127.0/build/three.m
 import {TrackballControls} from "https://cdn.jsdelivr.net/npm/three@0.127.0/examples/jsm/controls/TrackballControls.js";
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.127.0/examples/jsm/loaders/GLTFLoader.min.js';
 
+export async function renderVoyager() {
 
-const renderCube = function (event) {
-
-    let element = document.getElementById('threejs-voyager');
+    let element = await document.getElementById('threejs-voyager');
 
     // 1. Create a scene
     let scene = new THREE.Scene();
@@ -108,5 +107,3 @@ const renderCube = function (event) {
 
     animate();
 }
-
-window.addEventListener("DOMContentLoaded", renderCube);

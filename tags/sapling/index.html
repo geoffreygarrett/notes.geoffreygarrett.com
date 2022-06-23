@@ -62,13 +62,11 @@
   
   
   
-  <link href="https://notes.geoffreygarrett.com/styles.49eb21570b7efeca23724c7ac839377d.css" rel="stylesheet" />
-  
-  
-  <script src="https://notes.geoffreygarrett.com/js/add-on.30b7374f74460007ac305eba442edaf1.js"></script>
+  <link href="https://notes.geoffreygarrett.com/styles.13d5409a991cebeb484aec171e0a7084.css" rel="stylesheet" />
 
   
   <script src="https://notes.geoffreygarrett.com/js/darkmode.d2f0ee97155fcdb9fc2b573dfd2ba98d.min.js"></script>
+
   
 <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
@@ -90,20 +88,22 @@
 
 
 
+
   
   <script src="https://notes.geoffreygarrett.com/js/popover.688c5dcb89a57776d7f1cbeaf6f7c44b.min.js"></script>
+
   
    
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.43b42c33d25def010b6cb2adaa29ec7f.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.879a4a32e7407aa497ec0ee66ae58269.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.cddf21055e5390ac3b9447d6fe1add5d.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.b5e24cedf08d18b79f77ed5aed1c2acd.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -147,9 +147,12 @@
     };
   </script>
   
-  
-  <script>
-    window.navigate = (url) => window.location.href = url;
+
+  <script type="module">
+    
+    
+    import { addTitleToCodeBlock } from 'https:\/\/notes.geoffreygarrett.com\/js\/codetitle.f40f6b6b3e0b0dd162cff9dbf1dd2808.min.js' ;
+    addTitleToCodeBlock();window.navigate = (url) => window.location.href = url;
     draw();
   </script>
   
@@ -207,7 +210,7 @@ if (!doNotTrack) {
         <ul class="section-ul"><li class="section-li">
         <div class="section">
             <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/software-engineering/">Software Engineering</a></h3>
+                <h3><a href="https://notes.geoffreygarrett.com/public/software-engineering/">Software Engineering</a></h3>
                 <ul class="tags">
                     
                     <li><a href="https://notes.geoffreygarrett.com/tags/computer-science/">Computer-Science</a></li>
@@ -218,14 +221,14 @@ if (!doNotTrack) {
                 <p>Algorithms   Density-based spacial clustering of applications with noise (DBSCAN)  Object Oriented   SOLID Principles  Frontend   Cascading Style Sheets (CSS)  Three....</p>
             </div>
             <p class="meta">
-                1 minute read. Last updated June 22, 2022
+                1 minute read. Last updated June 24, 2022
             </p>
 
         </div>
     </li><li class="section-li">
         <div class="section">
             <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/notes/threejs-basics/">Three.js Fundamentals</a></h3>
+                <h3><a href="https://notes.geoffreygarrett.com/public/threejs/">Three.js Fundamentals</a></h3>
                 <ul class="tags">
                     
                     <li><a href="https://notes.geoffreygarrett.com/tags/frontend/">Frontend</a></li>
@@ -240,7 +243,7 @@ if (!doNotTrack) {
                 <p>Three.js is a cross-browser Javascript API which allows for the creation and display of 3D computer graphics in a web browser built on top of WebGL, a lower level Javascript API allowing for GPU-accelerated physics and image processing locally, as part of the web page canvas....</p>
             </div>
             <p class="meta">
-                3 minute read. Last updated June 23, 2022
+                3 minute read. Last updated June 24, 2022
             </p>
 
         </div>

@@ -8,19 +8,19 @@
     <language>en-us</language><atom:link href="https://notes.geoffreygarrett.com/tags/estimation-theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Estimation Theory</title>
-      <link>https://notes.geoffreygarrett.com/notes/estimation-theory/</link>
+      <link>https://notes.geoffreygarrett.com/public/estimation-theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/estimation-theory/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/estimation-theory/</guid>
       <description>Estimation theory is a branch of statistics that addresses the estimation of unknown parameters based on empirical measurements, which contain a random component.</description>
     </item>
     
     <item>
       <title>Least Squares</title>
-      <link>https://notes.geoffreygarrett.com/notes/least-squares/</link>
+      <link>https://notes.geoffreygarrett.com/public/least-squares/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/least-squares/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/least-squares/</guid>
       <description>The least-squares method, a method of solving overdetermined sets of linear equations, was officially discovered and published by Adrien-Marie Legendre in their work &amp;ldquo;Nouvelles methodes pour la determination des orbites des cometes&amp;rdquo;, published in 1805.</description>
     </item>
     

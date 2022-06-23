@@ -8,19 +8,19 @@
     <language>en-us</language><atom:link href="https://notes.geoffreygarrett.com/tags/mathematics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cholesky Decomposition</title>
-      <link>https://notes.geoffreygarrett.com/notes/cholesky-decomposition/</link>
+      <link>https://notes.geoffreygarrett.com/public/cholesky-decomposition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/cholesky-decomposition/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/cholesky-decomposition/</guid>
       <description>Cholesky Decomposition (a.k.a. Cholesky factorisation) is a method of decomposing a positive semidefinite matrix into a lower triangular matrix.</description>
     </item>
     
     <item>
       <title>Linear Algebra</title>
-      <link>https://notes.geoffreygarrett.com/notes/linear-algebra/</link>
+      <link>https://notes.geoffreygarrett.com/public/linear-algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/notes/linear-algebra/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/linear-algebra/</guid>
       <description>Definitions (System of) Linear Equation(s) A system of linear equations may be represented as the matrix equation:
 $$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$</description>
     </item>
