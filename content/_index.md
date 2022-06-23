@@ -27,6 +27,8 @@ on the surface. They might help me organise my thoughts in the long-term, or
 lookup information and resources that I desire at my fingertips.
 
 - [Concept Definitions](/notes/concept-definitions.md)
+- [Writing Guide](https://salman.io/notes/writing/)
+- [Reflection on two years of writing evergreen notes: not optimal for skill acquisition and learning](https://engineeringideas.substack.com/p/reflection-on-two-years-of-writing)
 - [All Notes](/notes)
 
 ## Types of Notes ℹ️
