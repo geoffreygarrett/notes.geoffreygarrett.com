@@ -10,7 +10,7 @@ that I deem necessary to add at a later time. For example, I currently have the
 maps of [software engineering](notes/software-engineering.md) and [machine
 learning](notes/machine-learning.md) present, with some [machine learning
 algorithms](notes/dbscan.md) in [software
-engineering](notes/software-engineering.md), both of which _might_ later be
+engineering](notes/software-engineering.md), both of which _may_ later be
 found under **computer science**. Feel free to peruse, some notes may have
 comments enabled if I feel that a note is well-developed enough.
 
@@ -26,7 +26,7 @@ This section is a general catch-all for anything I feel I want to keep visible
 on the surface. They might help me organise my thoughts in the long-term, or
 lookup information and resources that I desire at my fingertips.
 
-- [Concept Definitions](/notes/concept-definitions.md)
+- [Concept Definitions](notes/concept-definitions.md)
 - [Writing Guide](https://salman.io/notes/writing/)
 - [Reflection on two years of writing evergreen notes: not optimal for skill acquisition and learning](https://engineeringideas.substack.com/p/reflection-on-two-years-of-writing)
 - [All Notes](/notes)

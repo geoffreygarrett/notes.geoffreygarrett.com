@@ -6,8 +6,9 @@ tags:
 - javascript
 - library
 - sapling
-
-custom_js_path: ["/js/cube-basic.js"]
+custom_js:
+- path: "/js/cube-basic.js"
+  callback: renderCube
 ---
 
 Three.js is a cross-browser Javascript API which allows for the creation and
@@ -23,9 +24,10 @@ locally, as part of the web page canvas.
 There exists a [plethora of examples](https://threejs.org/) which can be used as
 starting points in your projects, one of which I often encounter when [signing
 into GitHub](https://github.com/home). Another personal favourite of mine is
-SpaceX's simulator which demonstrates the [**actual interface** used by NASA
-Astronauts](https://iss-sim.spacex.com/) to manually pilot the Spacex Dragon 2
-spacecraft to the International Space Station (ISS).
+SpaceX's simulator which demonstrates the [**actual
+interface**](https://iss-sim.spacex.com/) used by NASA Astronauts to manually
+pilot the SpaceX Dragon 2 spacecraft to the International Space Station (ISS).
+
 
 
 ````html {title="/index.html"}

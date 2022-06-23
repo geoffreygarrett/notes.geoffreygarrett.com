@@ -1,10 +1,11 @@
+// themese from https://xyproto.github.io/splash/docs/
 
 :root  {
+   // monokailight theme
    --code-name-text-color: #187076;
    --code-name-background-color: #f3f3f3;
    --coden-text-color: #000000;
    --background-background-color: #eeeeee;
-   //--background-background-color: #fafafa;
    --pre-wrapper-background-color: #fafafa;
    --error-background-color: #1e0010;
    --line-highlight-background-color: #ffffcc;
@@ -74,6 +75,7 @@
 }
 
 [saved-theme="dark"] {
+   // dracula theme
    --code-name-text-color: rgba(238, 130, 238, 0.87);
    --code-name-background-color: rgba(68, 74, 90, 0.53);
    --coden-text-color: #f8f8f2;

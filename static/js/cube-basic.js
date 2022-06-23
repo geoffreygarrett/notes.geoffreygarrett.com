@@ -1,15 +1,15 @@
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.127.0/build/three.module.js";
 import {TrackballControls} from "https://cdn.jsdelivr.net/npm/three@0.127.0/examples/jsm/controls/TrackballControls.js";
 
-const renderCube = function (event) {
+export async function renderCube() {
 
-    let element = document.getElementById('threejs-cube');
+    let element = await document.getElementById('threejs-cube');
 
 
     // 1. Create a scene
     let scene = new THREE.Scene();
 
-    // 2. Create a camera
+    // 2. Create a
     let w = element.clientWidth;  // offsetWidth is with border included
     let h = element.clientHeight; // offsetHeight is with border included
     let camera = new THREE.PerspectiveCamera(
@@ -63,6 +63,10 @@ const renderCube = function (event) {
     }
 
     animate();
+
+    renderer.dispose();
+    // scene.dispose();
+    material.dispose();
+    geometry.dispose();
 }
 
-window.addEventListener("DOMContentLoaded", renderCube);

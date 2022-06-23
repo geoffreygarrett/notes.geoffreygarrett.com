@@ -12,7 +12,7 @@ tags:
 
 ## Frontend
 - [Cascading Style Sheets (CSS)](notes/css.md)
-- [Three.js](notes/threejs-basics.md)
+- [Three.js (Web 3D Computer Graphics)](notes/threejs.md)
 
 ## Personalised Development
 - [Windows Development](notes/windows-development.md)

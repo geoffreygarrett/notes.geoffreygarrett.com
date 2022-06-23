@@ -29,18 +29,18 @@
   {{end}}
   {{$finalCss := $css | resources.Concat "styles.css" | resources.Fingerprint "md5"  }}
   <link href="{{$finalCss.Permalink}}" rel="stylesheet" />
-  
-  {{$addOn := resources.Get "js/add-on.js" | resources.Fingerprint "md5"  }}
-  <script src="{{$addOn.Permalink}}"></script>
 
   {{ $darkMode := resources.Get "js/darkmode.js" | resources.Fingerprint "md5" |
   resources.Minify }}
   <script src="{{$darkMode.Permalink}}"></script>
+
   {{partial "katex.html" .}}
+
 
   {{ $popover := resources.Get "js/popover.js" | resources.Fingerprint "md5" |
   resources.Minify }}
   <script src="{{$popover.Permalink}}"></script>
+
   <!--  Preload page vars  -->
   {{$linkIndex := resources.Get "indices/linkIndex.json" | resources.Fingerprint
   "md5" | }} {{$contentIndex := resources.Get
@@ -105,14 +105,55 @@
 
     import { attachSPARouting } from '{{$router.Permalink}}';
 
+
+    {{range $index, $element := .Params.custom_js -}}
+    import { {{ .callback | safeJS }} } from '{{ .path }}' ;
+    {{ end -}}
+    {{ if $.Site.Data.config.enableCodeBlockTitle }}
+    {{ $codetitle := resources.Get "js/codetitle.js" | resources.Fingerprint "md5" | resources.Minify }}
+    import { addTitleToCodeBlock } from '{{$codetitle.Permalink}}' ;
+    {{- end -}}
+
     // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page.
+    {{- if or (.Params.custom_js) ($.Site.Data.config.enableCodeBlockTitle)}}
+    let attachCustom = function(fn){
+      return function(){
+        try{
+          {{range $index, $element := .Params.custom_js -}}
+          {{ .callback | safeJS }}();
+          {{end -}}
+          {{if $.Site.Data.config.enableCodeBlockTitle }}
+          addTitleToCodeBlock();
+          {{end -}}
+          return fn.apply(this, arguments);
+        }catch(ex){
+          console.log(ex);// ErrorHandler.Exception(ex);
+        }
+      };
+    };
+    attachSPARouting(attachCustom(draw));
+    {{ else }}
     attachSPARouting(draw);
+    {{ end }}
   </script>
-  {{else}}
   {{range .Params.custom_js_path -}}
   <script src="{{ . }}" type="module" ></script>
   {{end}}
-  <script>
+  {{else}}
+
+  <script type="module">
+    {{range $index, $element := .Params.custom_js -}}
+    import { {{ .callback | safeJS }} } from '{{ .path }}' ;
+    {{ end -}}
+    {{range $index, $element := .Params.custom_js -}}
+    {{ .callback | safeJS }}();
+    {{end -}}
+    {{ if $.Site.Data.config.enableCodeBlockTitle }}
+    {{ $codetitle := resources.Get "js/codetitle.js" | resources.Fingerprint "md5" | resources.Minify }}
+    import { addTitleToCodeBlock } from '{{$codetitle.Permalink}}' ;
+    addTitleToCodeBlock();
+    {{- end -}}
+
     window.navigate = (url) => window.location.href = url;
     draw();
   </script>
