@@ -1,0 +1,475 @@
+{
+  "index": {
+    "links": {
+      "/": [
+        {
+          "source": "/",
+          "target": "/public/software-engineering",
+          "text": "software engineering"
+        },
+        {
+          "source": "/",
+          "target": "/public/machine-learning",
+          "text": "machine\nlearning"
+        },
+        {
+          "source": "/",
+          "target": "/public/dbscan",
+          "text": "machine learning\nalgorithms"
+        },
+        {
+          "source": "/",
+          "target": "/public/software-engineering",
+          "text": "software\nengineering"
+        },
+        {
+          "source": "/",
+          "target": "/public/linear-algebra",
+          "text": "Linear Algebra MOC"
+        },
+        {
+          "source": "/",
+          "target": "/public/estimation-theory",
+          "text": "Estimation Theory MOC"
+        },
+        {
+          "source": "/",
+          "target": "/public/information-theory",
+          "text": "Information Theory MOC"
+        },
+        {
+          "source": "/",
+          "target": "/public/software-engineering",
+          "text": "Software Engineering MOC"
+        },
+        {
+          "source": "/",
+          "target": "/public/machine-learning",
+          "text": "Machine Learning MOC"
+        },
+        {
+          "source": "/",
+          "target": "/public/concept-definitions",
+          "text": "Concept Definitions"
+        },
+        {
+          "source": "/",
+          "target": "/public",
+          "text": "All Notes"
+        }
+      ],
+      "/public/estimation-theory": [
+        {
+          "source": "/public/estimation-theory",
+          "target": "/public/least-squares",
+          "text": "Least squares"
+        },
+        {
+          "source": "/public/estimation-theory",
+          "target": "/public/kalman-filter",
+          "text": "Kalman filter"
+        },
+        {
+          "source": "/public/estimation-theory",
+          "target": "/public/orbit-determination",
+          "text": "Orbit determination"
+        }
+      ],
+      "/public/javascript-dependencies": [
+        {
+          "source": "/public/javascript-dependencies",
+          "target": "/public/cdn",
+          "text": "Content Delivery Network (CDN)"
+        }
+      ],
+      "/public/kalman-filter": [
+        {
+          "source": "/public/kalman-filter",
+          "target": "/public/markov-models.md",
+          "text": "Hidden Markov model"
+        }
+      ],
+      "/public/linear-algebra": [
+        {
+          "source": "/public/linear-algebra",
+          "target": "/public/cholesky-decomposition",
+          "text": "Cholesky Decomposition"
+        },
+        {
+          "source": "/public/linear-algebra",
+          "target": "/public/singular-value-decomposition",
+          "text": "Singular Value Decomposition"
+        }
+      ],
+      "/public/machine-learning": [
+        {
+          "source": "/public/machine-learning",
+          "target": "/public/deep-learning",
+          "text": "Deep Learning"
+        },
+        {
+          "source": "/public/machine-learning",
+          "target": "/public/data-sampling-methods",
+          "text": "Data Sampling Methods"
+        }
+      ],
+      "/public/software-engineering": [
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/dbscan",
+          "text": "Density-based spacial clustering of applications with noise (DBSCAN)"
+        },
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/solid-principles",
+          "text": "SOLID Principles"
+        },
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/css",
+          "text": "Cascading Style Sheets (CSS)"
+        },
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/threejs",
+          "text": "Three.js (Web 3D Computer Graphics)"
+        },
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/windows-environment",
+          "text": "Windows Environments"
+        },
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/ubuntu-environment",
+          "text": "Ubuntu Environment"
+        },
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/jetbrains-environment",
+          "text": "JetBrains Environment"
+        }
+      ]
+    },
+    "backlinks": {
+      "/public": [
+        {
+          "source": "/",
+          "target": "/public",
+          "text": "All Notes"
+        }
+      ],
+      "/public/cdn": [
+        {
+          "source": "/public/javascript-dependencies",
+          "target": "/public/cdn",
+          "text": "Content Delivery Network (CDN)"
+        }
+      ],
+      "/public/cholesky-decomposition": [
+        {
+          "source": "/public/linear-algebra",
+          "target": "/public/cholesky-decomposition",
+          "text": "Cholesky Decomposition"
+        }
+      ],
+      "/public/concept-definitions": [
+        {
+          "source": "/",
+          "target": "/public/concept-definitions",
+          "text": "Concept Definitions"
+        }
+      ],
+      "/public/css": [
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/css",
+          "text": "Cascading Style Sheets (CSS)"
+        }
+      ],
+      "/public/data-sampling-methods": [
+        {
+          "source": "/public/machine-learning",
+          "target": "/public/data-sampling-methods",
+          "text": "Data Sampling Methods"
+        }
+      ],
+      "/public/dbscan": [
+        {
+          "source": "/",
+          "target": "/public/dbscan",
+          "text": "machine learning\nalgorithms"
+        },
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/dbscan",
+          "text": "Density-based spacial clustering of applications with noise (DBSCAN)"
+        }
+      ],
+      "/public/deep-learning": [
+        {
+          "source": "/public/machine-learning",
+          "target": "/public/deep-learning",
+          "text": "Deep Learning"
+        }
+      ],
+      "/public/estimation-theory": [
+        {
+          "source": "/",
+          "target": "/public/estimation-theory",
+          "text": "Estimation Theory MOC"
+        }
+      ],
+      "/public/information-theory": [
+        {
+          "source": "/",
+          "target": "/public/information-theory",
+          "text": "Information Theory MOC"
+        }
+      ],
+      "/public/jetbrains-environment": [
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/jetbrains-environment",
+          "text": "JetBrains Environment"
+        }
+      ],
+      "/public/kalman-filter": [
+        {
+          "source": "/public/estimation-theory",
+          "target": "/public/kalman-filter",
+          "text": "Kalman filter"
+        }
+      ],
+      "/public/least-squares": [
+        {
+          "source": "/public/estimation-theory",
+          "target": "/public/least-squares",
+          "text": "Least squares"
+        }
+      ],
+      "/public/linear-algebra": [
+        {
+          "source": "/",
+          "target": "/public/linear-algebra",
+          "text": "Linear Algebra MOC"
+        }
+      ],
+      "/public/machine-learning": [
+        {
+          "source": "/",
+          "target": "/public/machine-learning",
+          "text": "machine\nlearning"
+        },
+        {
+          "source": "/",
+          "target": "/public/machine-learning",
+          "text": "Machine Learning MOC"
+        }
+      ],
+      "/public/markov-models.md": [
+        {
+          "source": "/public/kalman-filter",
+          "target": "/public/markov-models.md",
+          "text": "Hidden Markov model"
+        }
+      ],
+      "/public/orbit-determination": [
+        {
+          "source": "/public/estimation-theory",
+          "target": "/public/orbit-determination",
+          "text": "Orbit determination"
+        }
+      ],
+      "/public/singular-value-decomposition": [
+        {
+          "source": "/public/linear-algebra",
+          "target": "/public/singular-value-decomposition",
+          "text": "Singular Value Decomposition"
+        }
+      ],
+      "/public/software-engineering": [
+        {
+          "source": "/",
+          "target": "/public/software-engineering",
+          "text": "software engineering"
+        },
+        {
+          "source": "/",
+          "target": "/public/software-engineering",
+          "text": "software\nengineering"
+        },
+        {
+          "source": "/",
+          "target": "/public/software-engineering",
+          "text": "Software Engineering MOC"
+        }
+      ],
+      "/public/solid-principles": [
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/solid-principles",
+          "text": "SOLID Principles"
+        }
+      ],
+      "/public/threejs": [
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/threejs",
+          "text": "Three.js (Web 3D Computer Graphics)"
+        }
+      ],
+      "/public/ubuntu-environment": [
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/ubuntu-environment",
+          "text": "Ubuntu Environment"
+        }
+      ],
+      "/public/windows-environment": [
+        {
+          "source": "/public/software-engineering",
+          "target": "/public/windows-environment",
+          "text": "Windows Environments"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "source": "/",
+      "target": "/public/software-engineering",
+      "text": "software engineering"
+    },
+    {
+      "source": "/",
+      "target": "/public/machine-learning",
+      "text": "machine\nlearning"
+    },
+    {
+      "source": "/",
+      "target": "/public/dbscan",
+      "text": "machine learning\nalgorithms"
+    },
+    {
+      "source": "/",
+      "target": "/public/software-engineering",
+      "text": "software\nengineering"
+    },
+    {
+      "source": "/",
+      "target": "/public/linear-algebra",
+      "text": "Linear Algebra MOC"
+    },
+    {
+      "source": "/",
+      "target": "/public/estimation-theory",
+      "text": "Estimation Theory MOC"
+    },
+    {
+      "source": "/",
+      "target": "/public/information-theory",
+      "text": "Information Theory MOC"
+    },
+    {
+      "source": "/",
+      "target": "/public/software-engineering",
+      "text": "Software Engineering MOC"
+    },
+    {
+      "source": "/",
+      "target": "/public/machine-learning",
+      "text": "Machine Learning MOC"
+    },
+    {
+      "source": "/",
+      "target": "/public/concept-definitions",
+      "text": "Concept Definitions"
+    },
+    {
+      "source": "/",
+      "target": "/public",
+      "text": "All Notes"
+    },
+    {
+      "source": "/public/estimation-theory",
+      "target": "/public/least-squares",
+      "text": "Least squares"
+    },
+    {
+      "source": "/public/estimation-theory",
+      "target": "/public/kalman-filter",
+      "text": "Kalman filter"
+    },
+    {
+      "source": "/public/estimation-theory",
+      "target": "/public/orbit-determination",
+      "text": "Orbit determination"
+    },
+    {
+      "source": "/public/javascript-dependencies",
+      "target": "/public/cdn",
+      "text": "Content Delivery Network (CDN)"
+    },
+    {
+      "source": "/public/kalman-filter",
+      "target": "/public/markov-models.md",
+      "text": "Hidden Markov model"
+    },
+    {
+      "source": "/public/linear-algebra",
+      "target": "/public/cholesky-decomposition",
+      "text": "Cholesky Decomposition"
+    },
+    {
+      "source": "/public/linear-algebra",
+      "target": "/public/singular-value-decomposition",
+      "text": "Singular Value Decomposition"
+    },
+    {
+      "source": "/public/machine-learning",
+      "target": "/public/deep-learning",
+      "text": "Deep Learning"
+    },
+    {
+      "source": "/public/machine-learning",
+      "target": "/public/data-sampling-methods",
+      "text": "Data Sampling Methods"
+    },
+    {
+      "source": "/public/software-engineering",
+      "target": "/public/dbscan",
+      "text": "Density-based spacial clustering of applications with noise (DBSCAN)"
+    },
+    {
+      "source": "/public/software-engineering",
+      "target": "/public/solid-principles",
+      "text": "SOLID Principles"
+    },
+    {
+      "source": "/public/software-engineering",
+      "target": "/public/css",
+      "text": "Cascading Style Sheets (CSS)"
+    },
+    {
+      "source": "/public/software-engineering",
+      "target": "/public/threejs",
+      "text": "Three.js (Web 3D Computer Graphics)"
+    },
+    {
+      "source": "/public/software-engineering",
+      "target": "/public/windows-environment",
+      "text": "Windows Environments"
+    },
+    {
+      "source": "/public/software-engineering",
+      "target": "/public/ubuntu-environment",
+      "text": "Ubuntu Environment"
+    },
+    {
+      "source": "/public/software-engineering",
+      "target": "/public/jetbrains-environment",
+      "text": "JetBrains Environment"
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="description"
+    content="Last carried out with Ubuntu 20.0.4  General Install htop sudo apt-get install htop Install git sudo apt-get install git Install build tools sudo apt-get install build-essential Connect to your Android or Apple devices   Install the &ldquo;KDE Connect&rdquo; app on your mobile device from its respective app store, whether it&rsquo;s Apple iOS or Android"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
+  <title>
+    Ubuntu Environment
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    href="https://notes.geoffreygarrett.com//icon.png"
+  />
+  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link href="https://notes.geoffreygarrett.com/styles.372a9c9c3e39f9d7603f2280c808ec0b.css" rel="stylesheet" />
+
+  
+  <script src="https://notes.geoffreygarrett.com/js/darkmode.d2f0ee97155fcdb9fc2b573dfd2ba98d.min.js"></script>
+
+  
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+      integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs"
+      crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/copy-tex.css"
+      rel="stylesheet" type="text/css">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+        integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx"
+        crossorigin="anonymous"></script>
+<script defer
+        src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+        integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/copy-tex.min.js"
+        integrity="sha384-Ep9Es0VCjVn9dFeaN2uQxgGcGmG+pfZ4eBaHxUpxXDORrrVACZVOpywyzvFRGbmv"
+        crossorigin="anonymous"></script>
+
+
+
+
+  
+  <script src="https://notes.geoffreygarrett.com/js/popover.688c5dcb89a57776d7f1cbeaf6f7c44b.min.js"></script>
+
+  
+   
+  <script>
+    const BASE_URL = "https://notes.geoffreygarrett.com/"
+    const fetchData = Promise.all([
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.74f836acc1959b27dd4a585f57c8839a.json")
+            .then(data => data.json())
+            .then(data => ({
+              index: data.index,
+              links: data.links,
+            })),
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5c3e4d8af2b5897e85416973caaa771d.min.json")
+            .then(data => data.json()),
+        ])
+        .then(([{index, links}, content]) => ({
+          index,
+          links,
+          content,
+        }))
+
+    const draw = () => {
+      const container = document.getElementById("graph-container")
+      
+      if (!container) return requestAnimationFrame(draw)
+      
+      container.textContent = ""
+
+      drawGraph(
+        "https://notes.geoffreygarrett.com",
+        [{"/moc":"#4388cc"}],
+         -1 ,
+         true ,
+         false ,
+         true 
+      );
+
+      
+      initPopover(
+        "https://notes.geoffreygarrett.com",
+         true ,
+         true 
+      )
+      
+      
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+        ],
+        throwOnError : false
+      });
+      
+    };
+  </script>
+  
+
+  <script type="module">
+    
+    
+    import { addTitleToCodeBlock } from 'https:\/\/notes.geoffreygarrett.com\/js\/codetitle.f40f6b6b3e0b0dd162cff9dbf1dd2808.min.js' ;
+    addTitleToCodeBlock();window.navigate = (url) => window.location.href = url;
+    draw();
+  </script>
+  
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1RCSBZMTSN"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-1RCSBZMTSN', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+<body>
+<div id="search-container">
+    <div id="search-space">
+        <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search" placeholder="Search for something...">
+        <div id="results-container">
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js" integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin="anonymous" defer></script>
+
+<script defer src="https://notes.geoffreygarrett.com/js/search.06935f6a9c1dd79aa33fe3a725067dbc.js"></script>
+
+<div class="singlePage">
+    
+    <header>
+        <h1 id="page-title"><a href="https://notes.geoffreygarrett.com/">Geoffrey&#39;s Notes</a></h1>
+      <svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+      <div class="spacer"></div>
+      <div class='darkmode'>
+    <input class='toggle' id='darkmode-toggle' type='checkbox' tabindex="-1">
+    <label id="toggle-label-light" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+            <title>Light Mode</title>
+            <path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+        </svg>
+    </label>
+    <label id="toggle-label-dark" for='darkmode-toggle' tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xml:space="preserve">
+            <title>Dark Mode</title>
+            <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+        </svg>
+    </label>
+</div>
+  </header>
+  <article>
+      <h1>Ubuntu Environment</h1>
+      <p class="meta">
+          Last updated June 28, 2022
+      </p>
+      <ul class="tags">
+          
+          <li><a href="https://notes.geoffreygarrett.com/tags/sofware-engineering/">Sofware engineering</a></li>
+          
+      </ul>
+      
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#general">General</a>
+      <ol>
+        <li><a href="#install-htop">Install <code>htop</code></a></li>
+        <li><a href="#install-git">Install <code>git</code></a></li>
+        <li><a href="#install-build-tools">Install build tools</a></li>
+        <li><a href="#connect-to-your-android-or-apple-devices">Connect to your Android or Apple devices</a></li>
+      </ol>
+    </li>
+    <li><a href="#setting-up-with-an-nvidia-gpu">Setting up with an NVIDIA GPU</a>
+      <ol>
+        <li><a href="#select-appropriate-drivers">Select appropriate drivers</a></li>
+        <li><a href="#configure-high-refresh-rates">Configure high refresh rates</a></li>
+        <li><a href="#problem-login-screen-is-not-on-primary-monitor">Problem: Login screen is not on primary monitor</a></li>
+        <li><a href="#how-to-check-card-model">How to: Check Card Model</a></li>
+      </ol>
+    </li>
+    <li><a href="#installing-latex">Installing LaTeX</a>
+      <ol>
+        <li><a href="#install-everything">Install everything</a></li>
+        <li><a href="#install-msc-thesis-dependencies">Install M.Sc. thesis dependencies</a></li>
+      </ol>
+    </li>
+    <li><a href="#customizing-terminal">Customizing Terminal</a></li>
+    <li><a href="#i-want-fn-keys-as-non-default">I want <code>Fn</code> keys as non-default</a></li>
+    <li><a href="#installing-pycharm">Installing PyCharm</a></li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul>
+<li>Last carried out with <code>Ubuntu 20.0.4</code></li>
+</ul>
+<a href="#general"><h2 id="general"><span class="hanchor" ariaLabel="Anchor"># </span>General</h2></a>
+<a href="#install-htop"><h3 id="install-htop"><span class="hanchor" ariaLabel="Anchor"># </span>Install <code>htop</code></h3></a>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install htop 
+</span></span></code></pre></div><a href="#install-git"><h3 id="install-git"><span class="hanchor" ariaLabel="Anchor"># </span>Install <code>git</code></h3></a>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install git 
+</span></span></code></pre></div><a href="#install-build-tools"><h3 id="install-build-tools"><span class="hanchor" ariaLabel="Anchor"># </span>Install build tools</h3></a>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install build-essential
+</span></span></code></pre></div><a href="#connect-to-your-android-or-apple-devices"><h3 id="connect-to-your-android-or-apple-devices"><span class="hanchor" ariaLabel="Anchor"># </span>Connect to your Android or Apple devices</h3></a>
+<ol>
+<li>
+<p>Install the &ldquo;KDE Connect&rdquo; app on your mobile device from its respective app store, whether it&rsquo;s
+
+
+<a href="https://apps.apple.com/us/app/kde-connect/id1580245991" rel="noopener">Apple iOS</a> or 
+
+<a href="https://play.google.com/store/apps/details?id=org.kde.kdeconnect_tp&amp;hl=en_ZA&amp;gl=US" rel="noopener">Android</a></p>
+</li>
+<li>
+<p>If you&rsquo;re using gnome, install <code>GSConnect</code> via the 
+
+<a href="https://extensions.gnome.org/extension/1319/gsconnect/" rel="noopener">gnome extensions</a>, otherwise <code>KDE Connect</code> via <code>apt</code> (you will probably be using the commandline interface for the latter.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install kdeconnect
+</span></span></code></pre></div><ol start="3">
+<li>
+<p>Configure GSConnect (Under mobile devices) on the taskbar of Ubuntu, ensure both devices are on the same network, select the device, and <code>Request pair</code>. I haven&rsquo;t used <code>KDE Connect</code>, so I don&rsquo;t provide any info here on that.</p>
+</li>
+<li>
+<p>Accpet the pair request on your mobile device.</p>
+</li>
+</ol>
+<p>You can now access the following functions/features on your Ubuntu task bar, relating to your mobile device:</p>
+<ul>
+<li><code>Battery &lt;Status&gt;</code></li>
+<li><code>Browse device</code></li>
+<li><code>Ring device</code></li>
+<li><code>Send file</code></li>
+<li><code>SMS Messages...</code></li>
+</ul>
+<a href="#setting-up-with-an-nvidia-gpu"><h2 id="setting-up-with-an-nvidia-gpu"><span class="hanchor" ariaLabel="Anchor"># </span>Setting up with an NVIDIA GPU</h2></a>
+<a href="#select-appropriate-drivers"><h3 id="select-appropriate-drivers"><span class="hanchor" ariaLabel="Anchor"># </span>Select appropriate drivers</h3></a>
+<p>If immediately after installation, you have some display issues, it&rsquo;s likely
+that a display driver hasn&rsquo;t been selected as was the case with me on my desktop.
+Ensure latest <code>(proprietary, tested)</code> drivers used for NVIDIA GPU in <code>Software &amp; Updates &gt; Additional Drivers</code></p>
+<a href="#configure-high-refresh-rates"><h3 id="configure-high-refresh-rates"><span class="hanchor" ariaLabel="Anchor"># </span>Configure high refresh rates</h3></a>
+<p>Can be set (if defaults aren&rsquo;t correct) through:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nvidia-settings
+</span></span></code></pre></div><p>If you&rsquo;re using multiple monitors, one at 60 Hz and another at 144 Hz (for example),
+you might notice that dragging a window around on the 144 Hz monitor will render
+in 60 Hz, however your cursor will render at 144 Hz. This has to do with the
+&ldquo;display server&rdquo; used. <code>X.org</code> is used by default with nvidia, however Wayland needs to be
+used to properly support mixed refresh rate monitors, however there is limited support of Wayland by nvidia.
+<em>If</em> your nvidia driver supports it:</p>
+<ol>
+<li>Edit <code>/etc/gdm3/custom.conf</code> and set <code>WaylandEnable=true</code></li>
+<li>
+
+<a href="https://askubuntu.com/questions/1403854/cant-use-wayland-with-nvidia-510-drivers-on-ubuntu-22-04-lts" rel="noopener">Comment out the lines mentioned here</a></li>
+</ol>
+<p><em>Note</em>: This worked for my NVIDIA 1080 TI with the NVIDIA 510 drivers, using
+a 60 Hz 4k monitor with a G-SYNC 144 Hz. I have yet to encounter any
+undesirable consequences, but will add it here if I do.</p>
+<a href="#problem-login-screen-is-not-on-primary-monitor"><h3 id="problem-login-screen-is-not-on-primary-monitor"><span class="hanchor" ariaLabel="Anchor"># </span>Problem: Login screen is not on primary monitor</h3></a>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo cp ~/.config/monitors.xml ~gdm/.config/monitors.xml
+</span></span></code></pre></div><a href="#how-to-check-card-model"><h3 id="how-to-check-card-model"><span class="hanchor" ariaLabel="Anchor"># </span>How to: Check Card Model</h3></a>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">lspci <span class="p">|</span> grap VGA
+</span></span></code></pre></div><a href="#installing-latex"><h2 id="installing-latex"><span class="hanchor" ariaLabel="Anchor"># </span>Installing LaTeX</h2></a>
+<ul>
+<li>texlive-base – 160 MB</li>
+<li>texlive-latex-recommended – 203 MB</li>
+<li>texlive – 269 MB</li>
+<li>texlive-latex-extra – 464 MB</li>
+<li>texlive-full – 5903 MB</li>
+</ul>
+<a href="#install-everything"><h3 id="install-everything"><span class="hanchor" ariaLabel="Anchor"># </span>Install everything</h3></a>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"> sudo apt install texlive-full -y  <span class="c1"># 5903 MB</span>
+</span></span></code></pre></div><a href="#install-msc-thesis-dependencies"><h3 id="install-msc-thesis-dependencies"><span class="hanchor" ariaLabel="Anchor"># </span>Install M.Sc. thesis dependencies</h3></a>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install texlive-latex-extra  <span class="c1"># 464 MB</span>
+</span></span></code></pre></div><a href="#xelatex"><h4 id="xelatex"><span class="hanchor" ariaLabel="Anchor"># </span>Xelatex</h4></a>
+<ul>
+<li>missing <code>xelatex</code> ?</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install texlive-xetex  <span class="c1"># 18.4 MB </span>
+</span></span></code></pre></div><a href="#science-packages"><h4 id="science-packages"><span class="hanchor" ariaLabel="Anchor"># </span>Science packages</h4></a>
+<ul>
+<li>missing <code>physics.sty</code> ?</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install texlive-science  <span class="c1"># 115 MB </span>
+</span></span></code></pre></div><a href="#math-fonts"><h4 id="math-fonts"><span class="hanchor" ariaLabel="Anchor"># </span>Math fonts</h4></a>
+<ul>
+<li>missing <code>mathabx.sty</code> ?</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install texlive-fonts-extra  <span class="c1"># 1,383 MB</span>
+</span></span></code></pre></div><a href="#biblatex"><h4 id="biblatex"><span class="hanchor" ariaLabel="Anchor"># </span>BibLaTeX</h4></a>
+<ul>
+<li>(
+
+<a href="https://tex.stackexchange.com/questions/102817/setting-up-texmaker-on-ubuntu-biblatex-sty-not-found" rel="noopener">src</a>) missing <code>bibtex.sty</code> ?</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install texlive-bibtex-extra biber  <span class="c1"># 118 MB</span>
+</span></span></code></pre></div><a href="#customizing-terminal"><h2 id="customizing-terminal"><span class="hanchor" ariaLabel="Anchor"># </span>Customizing Terminal</h2></a>
+<a href="#i-want-fn-keys-as-non-default"><h2 id="i-want-fn-keys-as-non-default"><span class="hanchor" ariaLabel="Anchor"># </span>I want <code>Fn</code> keys as non-default</h2></a>
+<p>As mentioned 
+
+<a href="https://www.hashbangcode.com/article/turning-or-fn-mode-ubuntu-linux" rel="noopener">here</a>,
+I fixed this for my Keychron keyboard with:</p>
+<p><strong>Temporary</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="m">2</span> <span class="p">|</span> sudo tee /sys/module/hid_apple/parameters/fnmode
+</span></span></code></pre></div><p><strong>Permanent</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> options hid_apple <span class="nv">fnmode</span><span class="o">=</span><span class="m">2</span> <span class="p">|</span> sudo tee -a /etc/modprobe.d/hid_apple.conf
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo update-initramfs -u -k all 
+</span></span></code></pre></div><a href="#installing-pycharm"><h2 id="installing-pycharm"><span class="hanchor" ariaLabel="Anchor"># </span>Installing PyCharm</h2></a>
+<p>Visit Jetbrains 
+
+<a href="https://www.jetbrains.com/pycharm/download/" rel="noopener">download link</a> or
+use <code>Ubuntu Software</code>.</p>
+
+
+    </article>
+    <hr/>
+<div class="page-end">
+    <div class="backlinks-container">
+        <h3>Backlinks</h3>
+<ul class="backlinks">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      <li>
+        <a href="/public/software-engineering/" data-ctx="Ubuntu Environment" data-src="/public/software-engineering" class="internal-link">Software Engineering</a>
+      </li>
+      
+      
+      
+</ul>
+
+    </div>
+    <div>
+        <script
+  src="https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js"
+  integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI="
+  crossorigin="anonymous"
+></script>
+<h3>Interactive Graph</h3>
+<div id="graph-container"></div>
+<style>
+  :root {
+    --g-node: var(--secondary);
+    --g-node-active: var(--primary);
+    --g-node-inactive: var(--visited);
+    --g-link: var(--outlinegray);
+    --g-link-active: #5a7282;
+  }
+</style>
+
+<script src="https://notes.geoffreygarrett.com/js/graph.0eb0c81d58a703569f31b6053242af38.js"></script>
+
+    </div>
+</div>
+
+
+
+
+<div id="contact_buttons">
+    <footer>
+        <p>Made by Geoffrey Garrett using <a href="https://github.com/jackyzha0/quartz">Quartz</a>, © 2022</p>
+        <ul>
+            
+            <li><a href="/">Home</a></li>
+            <li><a href="https://twitter.com/GarrettHGeoff">Twitter</a></li><li><a href="https://github.com/geoffreygarrett">GitHub</a></li></ul>
+    </footer>
+</div>
+
+</div>
+</body>
+
+</html>

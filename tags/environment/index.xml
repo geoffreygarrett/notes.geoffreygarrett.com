@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>environment on </title>
+    <link>https://notes.geoffreygarrett.com/tags/environment/</link>
+    <description>Recent content in environment on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://notes.geoffreygarrett.com/tags/environment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JetBrains Environment</title>
+      <link>https://notes.geoffreygarrett.com/public/jetbrains-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/public/jetbrains-environment/</guid>
+      <description>This note is a general collection of plugins for JetBrain&amp;rsquo;s products which I use on a daily basis. I will almost exclusively stick to free plugins with the exception of the Material Theme UI which I have yet to find a satisfactory alternative to.</description>
+    </item>
+    
+  </channel>
+</rss>
