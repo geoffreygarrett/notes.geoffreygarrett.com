@@ -97,13 +97,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.3229ece654de468e10ee8d384231636b.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.bdfa05360c08792d2cf45edfbe274396.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.f5c86daa54de72f6f3387b7177f3df67.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.e5deb045c88d0d753470d2daaf99ed5e.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
