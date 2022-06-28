@@ -24,7 +24,8 @@ command 'Fill Paragraph' and Vim's `gq` (format lines) command. It's a great
 tool for formatting raw markdown and LaTeX to a consistent column width for
 readability. After installing, the following keymappings are default.
 
-#### Linux & Windows (macOS unknown/untested)
+**Note**: This is the default for Linux & Windows, I don't personally know it
+for macOS. See `File > Settings` and search for "Wrap to" for your keybinding.
 
 | Keybinding         | Command                       |
 |--------------------|-------------------------------|
