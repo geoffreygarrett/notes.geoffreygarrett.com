@@ -7,18 +7,18 @@ title: Geoffrey's Notes
 Here are the current maps to my notes. What you see here will change overtime.
 They won't disappear, they might just be reshuffled and organised under new maps
 that I deem necessary to add at a later time. For example, I currently have the
-maps of [software engineering](notes/software-engineering.md) and [machine
-learning](notes/machine-learning.md) present, with some [machine learning
-algorithms](notes/dbscan.md) in [software
-engineering](notes/software-engineering.md), both of which _may_ later be
+maps of [software engineering](public/software-engineering.md) and [machine
+learning](public/machine-learning.md) present, with some [machine learning
+algorithms](public/dbscan.md) in [software
+engineering](public/software-engineering.md), both of which _may_ later be
 found under **computer science**. Feel free to peruse, some notes may have
 comments enabled if I feel that a note is well-developed enough.
 
-- [Linear Algebra MOC](notes/linear-algebra.md)
-- [Estimation Theory MOC](notes/estimation-theory.md)
-- [Information Theory MOC](notes/information-theory.md)
-- [Software Engineering MOC](notes/software-engineering.md)
-- [Machine Learning MOC](notes/machine-learning.md)
+- [Linear Algebra MOC](public/linear-algebra.md)
+- [Estimation Theory MOC](public/estimation-theory.md)
+- [Information Theory MOC](public/information-theory.md)
+- [Software Engineering MOC](public/software-engineering.md)
+- [Machine Learning MOC](public/machine-learning.md)
 
 ## Useful 🛠️
 
@@ -26,10 +26,10 @@ This section is a general catch-all for anything I feel I want to keep visible
 on the surface. They might help me organise my thoughts in the long-term, or
 lookup information and resources that I desire at my fingertips.
 
-- [Concept Definitions](notes/concept-definitions.md)
-- [Writing Guide](https://salman.io/notes/writing/)
+- [Concept Definitions](public/concept-definitions.md)
+- [Writing Guide](https://salman.io/public/writing/)
 - [Reflection on two years of writing evergreen notes: not optimal for skill acquisition and learning](https://engineeringideas.substack.com/p/reflection-on-two-years-of-writing)
-- [All Notes](/notes)
+- [All Notes](/public)
 
 ## Types of Notes ℹ️
 

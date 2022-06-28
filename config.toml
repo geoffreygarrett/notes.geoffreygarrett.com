@@ -33,5 +33,4 @@ enableGitInfo = true
         lastmod = ["lastmod", ":git", "date", "publishDate"]
         publishDate = ["publishDate", "date"]
 
-[permalinks]
-  notes = '/public/:filename/'
+
