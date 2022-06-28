@@ -103,7 +103,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.494ca0fe9b9280db37f3504f40caa38b.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.f5c86daa54de72f6f3387b7177f3df67.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -225,11 +225,7 @@ if (!doNotTrack) {
         <summary>Table of Contents</summary>
         <nav id="TableOfContents">
   <ol>
-    <li><a href="#wrap-to-column">Wrap to column</a>
-      <ol>
-        <li></li>
-      </ol>
-    </li>
+    <li><a href="#wrap-to-column">Wrap to column</a></li>
     <li><a href="#rainbow-brackets">Rainbow Brackets</a></li>
     <li><a href="#git-commit-template">Git Commit Template</a></li>
   </ol>
@@ -276,7 +272,8 @@ became dependent on it.</p>
 command &lsquo;Fill Paragraph&rsquo; and Vim&rsquo;s <code>gq</code> (format lines) command. It&rsquo;s a great
 tool for formatting raw markdown and LaTeX to a consistent column width for
 readability. After installing, the following keymappings are default.</p>
-<a href="#linux--windows-macos-unknownuntested"><h4 id="linux--windows-macos-unknownuntested"><span class="hanchor" ariaLabel="Anchor"># </span>Linux &amp; Windows (macOS unknown/untested)</h4></a>
+<p><strong>Note</strong>: This is the default for Linux &amp; Windows, I don&rsquo;t personally know it
+for macOS. See <code>File &gt; Settings</code> and search for &ldquo;Wrap to&rdquo; for your keybinding.</p>
 <table>
 <thead>
 <tr>
