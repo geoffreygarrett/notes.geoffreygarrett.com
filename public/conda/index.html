@@ -18,7 +18,7 @@ source ~/anaconda3/etc/profile.d/conda.sh conda activate &lt;env-name&gt; "
   
   
   
-  <link rel="shortcut icon" href="icon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="icon.svg" type="/image/svg+xml" />
 
   
 
@@ -108,7 +108,7 @@ source ~/anaconda3/etc/profile.d/conda.sh conda activate &lt;env-name&gt; "
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.3771e30044a7af4d2c79b5aef99914a5.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.dd69c396f7a1695625a8bc18e5e34128.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
