@@ -89,6 +89,15 @@ Loose Links   min(), max(), and clamp(): three logical CSS functions to use toda
     </item>
     
     <item>
+      <title>JetBrains Environment</title>
+      <link>https://notes.geoffreygarrett.com/public/jetbrains-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/public/jetbrains-environment/</guid>
+      <description>This note is a general collection of plugins for JetBrain&amp;rsquo;s products which I use on a daily basis. I will almost exclusively stick to free plugins with the exception of the Material Theme UI which I have yet to find a satisfactory alternative to.</description>
+    </item>
+    
+    <item>
       <title>Kalman Filter</title>
       <link>https://notes.geoffreygarrett.com/public/kalman-filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -199,11 +208,20 @@ $$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$</description>
     </item>
     
     <item>
-      <title>Windows Development</title>
-      <link>https://notes.geoffreygarrett.com/public/windows-development/</link>
+      <title>Ubuntu Environment</title>
+      <link>https://notes.geoffreygarrett.com/public/ubuntu-environment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.geoffreygarrett.com/public/windows-development/</guid>
+      <guid>https://notes.geoffreygarrett.com/public/ubuntu-environment/</guid>
+      <description>Last carried out with Ubuntu 20.0.4  General Install htop sudo apt-get install htop Install git sudo apt-get install git Install build tools sudo apt-get install build-essential Connect to your Android or Apple devices   Install the &amp;ldquo;KDE Connect&amp;rdquo; app on your mobile device from its respective app store, whether it&amp;rsquo;s Apple iOS or Android</description>
+    </item>
+    
+    <item>
+      <title>Windows Environment</title>
+      <link>https://notes.geoffreygarrett.com/public/windows-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.geoffreygarrett.com/public/windows-environment/</guid>
       <description>  Setting up Windows Terminal, WSL and Oh-my-Zsh  </description>
     </item>
     

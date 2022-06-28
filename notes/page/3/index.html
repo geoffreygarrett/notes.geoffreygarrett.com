@@ -97,13 +97,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.879a4a32e7407aa497ec0ee66ae58269.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.3229ece654de468e10ee8d384231636b.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.b5e24cedf08d18b79f77ed5aed1c2acd.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.f85c087daac6ed7517ce23779a6c3877.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -210,6 +210,36 @@ if (!doNotTrack) {
         <ul class="section-ul"><li class="section-li">
         <div class="section">
             <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/public/windows-environment/">Windows Environment</a></h3>
+                <ul class="tags">
+                    
+                </ul>
+                <p>  Setting up Windows Terminal, WSL and Oh-my-Zsh  </p>
+            </div>
+            <p class="meta">
+                1 minute read. Last updated June 28, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/public/ubuntu-environment/">Ubuntu Environment</a></h3>
+                <ul class="tags">
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/sofware-engineering/">Sofware-Engineering</a></li>
+                    
+                </ul>
+                <p>Last carried out with Ubuntu 20.0.4  General Install htop sudo apt-get install htop Install git sudo apt-get install git Install build tools sudo apt-get install build-essential Connect to your Android or Apple devices   Install the &ldquo;KDE Connect&rdquo; app on your mobile device from its respective app store, whether it&rsquo;s Apple iOS or Android...</p>
+            </div>
+            <p class="meta">
+                3 minute read. Last updated June 28, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
                 <h3><a href="https://notes.geoffreygarrett.com/public/typescript/">TypeScript</a></h3>
                 <ul class="tags">
                     
@@ -227,14 +257,22 @@ if (!doNotTrack) {
     </li><li class="section-li">
         <div class="section">
             <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/public/windows-development/">Windows Development</a></h3>
+                <h3><a href="https://notes.geoffreygarrett.com/public/threejs/">Three.js Fundamentals</a></h3>
                 <ul class="tags">
                     
+                    <li><a href="https://notes.geoffreygarrett.com/tags/frontend/">Frontend</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/javascript/">Javascript</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/library/">Library</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/sapling/">Sapling</a></li>
+                    
                 </ul>
-                <p>  Setting up Windows Terminal, WSL and Oh-my-Zsh  </p>
+                <p>Three.js is a cross-browser Javascript API which allows for the creation and display of 3D computer graphics in a web browser built on top of WebGL, a lower level Javascript API allowing for GPU-accelerated physics and image processing locally, as part of the web page canvas....</p>
             </div>
             <p class="meta">
-                1 minute read. Last updated June 21, 2022
+                3 minute read. Last updated June 24, 2022
             </p>
 
         </div>

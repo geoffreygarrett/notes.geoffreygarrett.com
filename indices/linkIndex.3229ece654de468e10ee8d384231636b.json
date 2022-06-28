@@ -136,8 +136,18 @@
         },
         {
           "source": "/notes/software-engineering",
-          "target": "/notes/windows-development",
-          "text": "Windows Development"
+          "target": "/notes/windows-environment",
+          "text": "Windows Environments"
+        },
+        {
+          "source": "/notes/software-engineering",
+          "target": "/notes/ubuntu-environment",
+          "text": "Ubuntu Environment"
+        },
+        {
+          "source": "/notes/software-engineering",
+          "target": "/notes/jetbrains-environment",
+          "text": "JetBrains Environment"
         }
       ]
     },
@@ -215,6 +225,13 @@
           "source": "/",
           "target": "/notes/information-theory",
           "text": "Information Theory MOC"
+        }
+      ],
+      "/notes/jetbrains-environment": [
+        {
+          "source": "/notes/software-engineering",
+          "target": "/notes/jetbrains-environment",
+          "text": "JetBrains Environment"
         }
       ],
       "/notes/kalman-filter": [
@@ -302,11 +319,18 @@
           "text": "Three.js (Web 3D Computer Graphics)"
         }
       ],
-      "/notes/windows-development": [
+      "/notes/ubuntu-environment": [
         {
           "source": "/notes/software-engineering",
-          "target": "/notes/windows-development",
-          "text": "Windows Development"
+          "target": "/notes/ubuntu-environment",
+          "text": "Ubuntu Environment"
+        }
+      ],
+      "/notes/windows-environment": [
+        {
+          "source": "/notes/software-engineering",
+          "target": "/notes/windows-environment",
+          "text": "Windows Environments"
         }
       ]
     }
@@ -434,8 +458,18 @@
     },
     {
       "source": "/notes/software-engineering",
-      "target": "/notes/windows-development",
-      "text": "Windows Development"
+      "target": "/notes/windows-environment",
+      "text": "Windows Environments"
+    },
+    {
+      "source": "/notes/software-engineering",
+      "target": "/notes/ubuntu-environment",
+      "text": "Ubuntu Environment"
+    },
+    {
+      "source": "/notes/software-engineering",
+      "target": "/notes/jetbrains-environment",
+      "text": "JetBrains Environment"
     }
   ]
 }

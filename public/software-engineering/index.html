@@ -97,13 +97,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.879a4a32e7407aa497ec0ee66ae58269.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.3229ece654de468e10ee8d384231636b.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.b5e24cedf08d18b79f77ed5aed1c2acd.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.f85c087daac6ed7517ce23779a6c3877.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -208,7 +208,7 @@ if (!doNotTrack) {
   <article>
       <h1>Software Engineering</h1>
       <p class="meta">
-          Last updated June 24, 2022
+          Last updated June 28, 2022
       </p>
       <ul class="tags">
           
@@ -286,7 +286,7 @@ if (!doNotTrack) {
   rel="noopener" class="internal-link"
   data-src="/public/threejs/">Three.js (Web 3D Computer Graphics)</a></li>
 </ul>
-<a href="#personalised-development"><h2 id="personalised-development"><span class="hanchor" ariaLabel="Anchor"># </span>Personalised Development</h2></a>
+<a href="#personalised-environments"><h2 id="personalised-environments"><span class="hanchor" ariaLabel="Anchor"># </span>Personalised Environments</h2></a>
 <ul>
 <li>
 
@@ -295,9 +295,29 @@ if (!doNotTrack) {
 
 
 <a
-  href="/public/windows-development/"
+  href="/public/windows-environment/"
   rel="noopener" class="internal-link"
-  data-src="/public/windows-development/">Windows Development</a></li>
+  data-src="/public/windows-environment/">Windows Environments</a></li>
+<li>
+
+
+
+
+
+<a
+  href="/public/ubuntu-environment/"
+  rel="noopener" class="internal-link"
+  data-src="/public/ubuntu-environment/">Ubuntu Environment</a></li>
+<li>
+
+
+
+
+
+<a
+  href="/public/jetbrains-environment/"
+  rel="noopener" class="internal-link"
+  data-src="/public/jetbrains-environment/">JetBrains Environment</a></li>
 </ul>
 
 

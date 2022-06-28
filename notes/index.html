@@ -97,13 +97,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.879a4a32e7407aa497ec0ee66ae58269.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.3229ece654de468e10ee8d384231636b.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.b5e24cedf08d18b79f77ed5aed1c2acd.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.f85c087daac6ed7517ce23779a6c3877.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -210,6 +210,26 @@ if (!doNotTrack) {
         <ul class="section-ul"><li class="section-li">
         <div class="section">
             <div class="desc">
+                <h3><a href="https://notes.geoffreygarrett.com/public/jetbrains-environment/">JetBrains Environment</a></h3>
+                <ul class="tags">
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/developer/">Developer</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/environment/">Environment</a></li>
+                    
+                    <li><a href="https://notes.geoffreygarrett.com/tags/seed/">Seed</a></li>
+                    
+                </ul>
+                <p>This note is a general collection of plugins for JetBrain&rsquo;s products which I use on a daily basis. I will almost exclusively stick to free plugins with the exception of the Material Theme UI which I have yet to find a satisfactory alternative to....</p>
+            </div>
+            <p class="meta">
+                2 minute read. Last updated June 28, 2022
+            </p>
+
+        </div>
+    </li><li class="section-li">
+        <div class="section">
+            <div class="desc">
                 <h3><a href="https://notes.geoffreygarrett.com/public/css/">CSS</a></h3>
                 <ul class="tags">
                     
@@ -220,20 +240,6 @@ if (!doNotTrack) {
                 </ul>
                 <p>Cascading style sheets (CSS)
 Loose Links   min(), max(), and clamp(): three logical CSS functions to use today  </p>
-            </div>
-            <p class="meta">
-                1 minute read. Last updated June 22, 2022
-            </p>
-
-        </div>
-    </li><li class="section-li">
-        <div class="section">
-            <div class="desc">
-                <h3><a href="https://notes.geoffreygarrett.com/public/kalman-filter/">Kalman Filter</a></h3>
-                <ul class="tags">
-                    
-                </ul>
-                <p>Linearised Kalman filter Extended Kalman filter  Non-linear filter  Hidden Markov model  Unscented Kalman filter  Non-linear filter  $$ \begin{equation} \begin{aligned} L &amp;= \text{dim}(\hat{\mathbf{x}}) &amp;&amp; \mathbf{x}\in{\mathbb{R}}^{L} \ \mathcal{X}_0 &amp;= \hat{\mathbf{x}} _{i-1}^{+} \ \mathcal{X}_j &amp;= \hat{\mathbf{x}} _{i-1}^{+} + \sqrt{(L+\lambda)} \mathbf{A}_j &amp;&amp; j=1,&hellip;,L \ \mathcal{X} _{L+j} &amp;= \hat{\mathbf{x}} _{i-1}^{+} - \sqrt{(L+\lambda)} \mathbf{A}_j &amp;&amp; j=1,&hellip;,L \ W_0^{(m)} &amp;= \lambda(L-\lambda) \ W_0^{(c)} &amp;= \lambda(L-\lambda) + (1-\alpha^2 + \beta) \ W_k^{(m)} &amp;= W_k^{(c)} = 1/{2(L+\lambda)} &amp;&amp; j=1,&hellip;,2L \ \end{aligned} \end{equation} $$...</p>
             </div>
             <p class="meta">
                 1 minute read. Last updated June 22, 2022
