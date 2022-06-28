@@ -29,3 +29,6 @@ comments:
     theme:
       dark: "https://giscus.app/themes/light.css"
       light: "https://giscus.app/themes/dark_dimmed.css"
+
+favicon: |
+  <link rel="shortcut icon" href="icon.svg" type="image/svg+xml">
