@@ -103,7 +103,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.44623c04928142503c35a5f961b89d61.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.494ca0fe9b9280db37f3504f40caa38b.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -225,13 +225,13 @@ if (!doNotTrack) {
         <summary>Table of Contents</summary>
         <nav id="TableOfContents">
   <ol>
-    <li><a href="#wrap-to-columnhttpspluginsjetbrainscomplugin7234-wrap-to-column"><a href="https://plugins.jetbrains.com/plugin/7234-wrap-to-column">Wrap to column</a></a>
+    <li><a href="#wrap-to-column">Wrap to column</a>
       <ol>
-        <li><a href="#linux--windows-macos-unknownuntested">Linux &amp; Windows (macOS unknown/untested)</a></li>
+        <li></li>
       </ol>
     </li>
-    <li><a href="#rainbow-bracketshttpspluginsjetbrainscomplugin10080-rainbow-brackets"><a href="https://plugins.jetbrains.com/plugin/10080-rainbow-brackets">Rainbow Brackets</a></a></li>
-    <li><a href="#git-commit-templatehttpspluginsjetbrainscomplugin9861-git-commit-template"><a href="https://plugins.jetbrains.com/plugin/9861-git-commit-template">Git Commit Template</a></a></li>
+    <li><a href="#rainbow-brackets">Rainbow Brackets</a></li>
+    <li><a href="#git-commit-template">Git Commit Template</a></li>
   </ol>
 </nav>
     </details>
@@ -266,21 +266,41 @@ yet to find a satisfactory alternative to. For the record, I used this plugin
 for years prior to it becoming exclusive to those willing to add another <strong>paid
 subscription</strong> to their financial commitments. I&rsquo;m not happy about it, but I
 became dependent on it.</p>
-<h2 id="wrap-to-columnhttpspluginsjetbrainscomplugin7234-wrap-to-column">
+<a href="#wrap-to-column"><h2 id="wrap-to-column"><span class="hanchor" ariaLabel="Anchor"># </span>Wrap to column</h2></a>
+<ul>
+<li>
 
-<a href="https://plugins.jetbrains.com/plugin/7234-wrap-to-column" rel="noopener">Wrap to column</a></h2>
+<a href="https://plugins.jetbrains.com/plugin/7234-wrap-to-column" rel="noopener">Plugin Page</a></li>
+</ul>
 <p>I cannot live without this plugin anymore. This plugin is Similar to the Emacs
 command &lsquo;Fill Paragraph&rsquo; and Vim&rsquo;s <code>gq</code> (format lines) command. It&rsquo;s a great
 tool for formatting raw markdown and LaTeX to a consistent column width for
 readability. After installing, the following keymappings are default.</p>
-<a href="#linux--windows-macos-unknownuntested"><h3 id="linux--windows-macos-unknownuntested"><span class="hanchor" ariaLabel="Anchor"># </span>Linux &amp; Windows (macOS unknown/untested)</h3></a>
+<a href="#linux--windows-macos-unknownuntested"><h4 id="linux--windows-macos-unknownuntested"><span class="hanchor" ariaLabel="Anchor"># </span>Linux &amp; Windows (macOS unknown/untested)</h4></a>
+<table>
+<thead>
+<tr>
+<th>Keybinding</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl+Alt+Shift+W</code></td>
+<td>Wrap Line to Column</td>
+</tr>
+<tr>
+<td><code>Ctrl+Alt+Shift+P</code></td>
+<td>Wrap Paragraph to Column</td>
+</tr>
+</tbody>
+</table>
+<a href="#rainbow-brackets"><h2 id="rainbow-brackets"><span class="hanchor" ariaLabel="Anchor"># </span>Rainbow Brackets</h2></a>
 <ul>
-<li><code>Ctrl+Alt+Shift+W</code> Wrap Line to Column</li>
-<li><code>Ctrl+Alt+Shift+P</code> Wrap Paragraph to Column</li>
-</ul>
-<h2 id="rainbow-bracketshttpspluginsjetbrainscomplugin10080-rainbow-brackets">
+<li>
 
-<a href="https://plugins.jetbrains.com/plugin/10080-rainbow-brackets" rel="noopener">Rainbow Brackets</a></h2>
+<a href="https://plugins.jetbrains.com/plugin/10080-rainbow-brackets" rel="noopener">Plugin Page</a></li>
+</ul>
 <p>A simple but highly effective plugin that adds a quality of life feature to
 JetBrains IDEs. It helps keep track of the brackets in your code by cycling
 through a rainbow of colors, one for each pair of brackets. This makes it
@@ -292,15 +312,19 @@ of cake.</p>
         </figcaption>
 </figure>
 
-<h2 id="git-commit-templatehttpspluginsjetbrainscomplugin9861-git-commit-template">
+<a href="#git-commit-template"><h2 id="git-commit-template"><span class="hanchor" ariaLabel="Anchor"># </span>Git Commit Template</h2></a>
+<ul>
+<li>
 
-<a href="https://plugins.jetbrains.com/plugin/9861-git-commit-template" rel="noopener">Git Commit Template</a></h2>
+<a href="https://plugins.jetbrains.com/plugin/9861-git-commit-template" rel="noopener">Plugin Page</a></li>
+</ul>
 <p>If you want to maintain a consistent style to your commits, according to a
 
 
 <a href="https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13" rel="noopener">Conventional Commit
 Message</a> style,
-this plugin makes it easy to do so.</p>
+this plugin makes it easy to do so. The commit template used by this plugin is
+the following:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">type</span><span class="p">&gt;</span>(<span class="p">&lt;</span><span class="nt">optional</span> <span class="na">scope</span><span class="p">&gt;</span>): <span class="p">&lt;</span><span class="nt">subject</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">empty</span> <span class="na">separator</span> <span class="na">line</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">optional</span> <span class="na">body</span><span class="p">&gt;</span>
