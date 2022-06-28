@@ -48,14 +48,17 @@ ul {
 }
 
 img {
-  width: clamp(40ch, 90%, 63ch) !important;
+  //width: clamp(40ch, 90%, 63ch) !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   height: auto;
   border: lightgray !important;
-  @media (max-width: 380px) {
-    width: unquote('max(90%, 200px)') !important;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  //@media (max-width: 380px) {
+  //  width: unquote('max(90%, 200px)') !important;
+  //  padding-left: 20px;
+  //  padding-right: 20px;
+  //}
 }
 
 figure img {
