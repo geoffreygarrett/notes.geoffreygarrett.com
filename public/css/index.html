@@ -18,7 +18,13 @@ Loose Links   min(), max(), and clamp(): three logical CSS functions to use toda
   
   
   
-  <link rel="shortcut icon" href="icon.svg" type="/image/svg+xml" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b91d47">
+<meta name="msapplication-TileColor" content="#b91d47">
+<meta name="theme-color" content="#ffffff">
 
   
 
@@ -108,7 +114,7 @@ Loose Links   min(), max(), and clamp(): three logical CSS functions to use toda
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.dd69c396f7a1695625a8bc18e5e34128.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.c4fd6feea0842cd163464e09b1f7c3e1.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
