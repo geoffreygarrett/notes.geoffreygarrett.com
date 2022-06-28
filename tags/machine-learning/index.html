@@ -12,11 +12,15 @@
     machine-learning
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link
-    rel="shortcut icon"
-    type="image/png"
-    href="https://notes.geoffreygarrett.com//icon.png"
-  />
+
+  
+  
+  
+  
+  <link rel="shortcut icon" href="icon.svg" type="image/svg+xml">
+
+  
+
   
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap"
@@ -103,7 +107,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5c3e4d8af2b5897e85416973caaa771d.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.3771e30044a7af4d2c79b5aef99914a5.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
