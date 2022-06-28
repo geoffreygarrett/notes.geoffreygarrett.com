@@ -28,14 +28,7 @@ ul {
   padding-left: 1.5em;
 }
 
-figure {
-  filter: var(--svgfilter)
-}
 
-figcaption {
-  font-style: italic;
-  opacity: 0.5;
-}
 
 .admonition-note {
   font-size: .8rem;
@@ -55,8 +48,41 @@ figcaption {
 }
 
 img {
-  width: unquote('max(70%, 300px)') !important;
+  width: clamp(40ch, 90%, 63ch) !important;
   height: auto;
+  border: lightgray !important;
+  @media (max-width: 380px) {
+    width: unquote('max(90%, 200px)') !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+figure img {
+  filter: var(--svgfilter);
+  //border: solid var(--gray) !important;
+  border: solid #515151 !important;
+  border-radius: 5px;
+}
+
+figcaption {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+figure.dark img {
+    filter: var(--drkfilter) !important;
+}
+
+figure.dark h4 {
+    text-align: center;
+    color: var(--dark) !important;
+
+}
+
+figure h4 {
+  margin: 0.1em !important;
+  padding: 0.1em !important;
 }
 
 // Fonts

@@ -10,6 +10,7 @@
   --lightgray: #f0f0f0;
   --outlinegray: #dadada;
   --svgfilter: invert(0%) hue-rotate(0deg);
+  --drkfilter: invert(100%) hue-rotate(180deg);
 }
 
 
@@ -24,4 +25,5 @@
   --lightgray: #292633 !important;
   --outlinegray: #343434 !important;
   --svgfilter: invert(100%) hue-rotate(180deg);
+  --drkfilter: invert(0%) hue-rotate(0deg);
 }
