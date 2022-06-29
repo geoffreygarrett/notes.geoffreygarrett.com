@@ -25,19 +25,18 @@ $$
 $$
 
 ## Matrix Decomposition
-
-- [Cholesky Decomposition](notes/cholesky-decomposition.md)
+- [[cholesky-decomposition |Cholesky Decomposition]]
 - [Singular Value Decomposition](notes/singular-value-decomposition.md)
 
 ## Definitions
 
-- A symmetric matrix $\mathbf{A}\n\mathbb{R}^{n\times{n}}$ is positive semidefinite if:
+- A symmetric matrix $\mathbf{A}\in\mathbb{R}^{n\times{n}}$ is positive semidefinite if:
 
 $$
 \mathbf{x}^T\mathbf{A}\mathbf{x}\geq 0 \forall\,\mathbf{x} \in\mathbb{R}^n.
 $$
 
-- A symmetric matrix $\mathbf{A}\n\mathbb{R}^{n\times{n}}$ is positive definite if:
+- A symmetric matrix $\mathbf{A}\in\mathbb{R}^{n\times{n}}$ is positive definite if:
 
 $$
 \mathbf{x}^T\mathbf{A}\mathbf{x}> 0 \forall\,\mathbf{x}\neq 0 \in\mathbb{R}^n.
