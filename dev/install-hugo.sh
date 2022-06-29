@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 
 # check for verbose flag
-
+#
 eval "$(conda shell.bash hook)"
 conda activate hugo
 export GOPATH=${HOME}/go
+export CGO_ENABLED=1  # https://github.com/uber/h3-go/issues/23
 export PATH=$PATH:$GOPATH/bin
-mkdir $HOME/src
-cd $HOME/src
+mkdir ${HOME}/src
+cd ${HOME}/src
 git clone https://github.com/gohugoio/hugo.git
 cd hugo
 go mod tidy
 #if [ "$1" == "-v" ]; then
-    go install --tags extended -v -x
+go install --tags extended -v -x
 #else
 #    go install --tags extended -v
 #fi

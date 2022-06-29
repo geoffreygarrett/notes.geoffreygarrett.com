@@ -43,6 +43,10 @@
 
   {{partial "katex.html" .}}
 
+  {{ if (findRE "<pre" .Content 1) }}
+  {{ $clipboard := resources.Get "js/clipboard.js" | resources.Fingerprint "md5" | resources.Minify }}
+    <script src="{{$clipboard.Permalink}}"></script>
+  {{ end }}
 
   {{ $popover := resources.Get "js/popover.js" | resources.Fingerprint "md5" |
   resources.Minify }}
@@ -77,6 +81,18 @@
       if (!container) return requestAnimationFrame(draw)
       // clear the graph in case there is anything within it
       container.textContent = ""
+
+      if (navigator && navigator.clipboard) {
+          addCopyButtons(navigator.clipboard);
+      } else {
+          const script = document.createElement("script");
+          script.src =
+              "https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js";
+          script.integrity = "sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=";
+          script.crossOrigin = "anonymous";
+          script.onload = () => addCopyButtons(clipboard);
+          document.body.appendChild(script);
+      }
 
       drawGraph(
         {{strings.TrimRight "/" .Site.BaseURL}},
@@ -164,9 +180,6 @@
     window.navigate = (url) => window.location.href = url;
     draw();
   </script>
-  {{ if (findRE "<pre" .Content 1) }}
-    <script src="/js/clipboard.js"></script>
-  {{ end }}
   {{end}}
 </head>
 {{ template "_internal/google_analytics.html" . }}
