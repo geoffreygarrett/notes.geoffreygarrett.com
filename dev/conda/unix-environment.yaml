@@ -1,13 +1,16 @@
-name: pyten
+name: hugo
 channels:
   - conda-forge
   - defaults
 dependencies:
   - python=3.10   # personal preference, I like the switch-case feature.
   - codecov
+  - gcc_linux-64
+  - gxx_linux-64
+  - libstdcxx-ng
   - go=1.18
 variables:
-  GOPATH: %USERPROFILE%/go
+  GOPATH: ${HOME}/go
 #  VAR1: valueA
 #  VAR2: valueB
 
