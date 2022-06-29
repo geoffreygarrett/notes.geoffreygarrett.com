@@ -164,6 +164,9 @@
     window.navigate = (url) => window.location.href = url;
     draw();
   </script>
+  {{ if (findRE "<pre" .Content 1) }}
+    <script src="/js/clipboard.js"></script>
+  {{ end }}
   {{end}}
 </head>
 {{ template "_internal/google_analytics.html" . }}
