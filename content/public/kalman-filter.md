@@ -9,7 +9,7 @@ tags:
 ## Extended Kalman filter
 
 - Non-linear filter
-- [Hidden Markov model](notes/markov-models.md#hidden-markov-model)
+- [Hidden Markov model](public/markov-models.md#hidden-markov-model)
 
 ## Unscented Kalman filter
 
@@ -39,9 +39,9 @@ $$
 \end{aligned}
 $$
 
-{{< svg src="/notes/images/sigma-points-wan.svg" caption="Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe's proposed parametrisation. $\kappa=0$, $\alpha=1$" >}}
+{{< svg src="/public/images/sigma-points-wan.svg" caption="Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe's proposed parametrisation. $\kappa=0$, $\alpha=1$" >}}
 
-[comment]: <> ({{< figure src="/notes/images/sigma-points-wan.svg" caption="Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe's proposed method." >}})
+[comment]: <> ({{< figure src="/public/images/sigma-points-wan.svg" caption="Visual representation of sigma points, $\mathcal{X}_j$, using Wan and van der Merwe's proposed method." >}})
 
 
 ## Discriminative Kalman filter

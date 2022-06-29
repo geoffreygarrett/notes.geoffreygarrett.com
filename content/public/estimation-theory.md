@@ -13,9 +13,9 @@ component.
 
 ## Estimators 
 
-- [Least squares](notes/least-squares.md)
-- [Kalman filter](notes/kalman-filter.md)
+- [Least squares](public/least-squares.md)
+- [Kalman filter](public/kalman-filter.md)
 
 ## Applications
 
-- [Orbit determination](notes/orbit-determination.md)
+- [Orbit determination](public/orbit-determination.md)

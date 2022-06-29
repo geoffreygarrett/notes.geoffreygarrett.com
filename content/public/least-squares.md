@@ -42,9 +42,9 @@ $$
 - **Strict exogenity**: The errors in the regression are should have conditional mean
   zero, that is, $\mathbb{E}[\mathbf{\epsilon}|\mathbf{A}] = \mathbf{0}$.
 
-{{< svg src="/notes/images/OLS-geometric-interpretation.svg" caption="Geometric interpretation of Ordinary Least Squares (OLS)." >}}
+{{< svg src="/public/images/OLS-geometric-interpretation.svg" caption="Geometric interpretation of Ordinary Least Squares (OLS)." >}}
 
-![[/notes/images/OLS-geometric-interpretation.svg]]
+![[/public/images/OLS-geometric-interpretation.svg]]
 
 ## Weighted Least Squares
 

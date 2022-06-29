@@ -6,7 +6,7 @@ tags:
 - javascript
 ---
 
-## [Content Delivery Network (CDN)](notes/cdn.md)
+## [Content Delivery Network (CDN)](public/cdn.md)
 
 
 
