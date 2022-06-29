@@ -18,14 +18,16 @@ Loose Links   min(), max(), and clamp(): three logical CSS functions to use toda
   
   
   
-  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
-<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+<link rel="mask-icon" href="favicon.svg" color="blue">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b91d47">
-<meta name="msapplication-TileColor" content="#b91d47">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
   
@@ -116,7 +118,7 @@ Loose Links   min(), max(), and clamp(): three logical CSS functions to use toda
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.f8d90a4636949ad8c30e028ee295bf6b.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.ba4b751bc728e4a407b783cdbd244650.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
