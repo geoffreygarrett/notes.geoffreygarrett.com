@@ -108,13 +108,13 @@ $$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$"
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.74f836acc1959b27dd4a585f57c8839a.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.3412b0da9ce8f922c0d60cc9bf8cb3ad.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.c4fd6feea0842cd163464e09b1f7c3e1.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.ccf8cf82699f17d2f363620db9843ec4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -166,6 +166,7 @@ $$ \mathbf{A}\mathbf{x} = \mathbf{b}, $$"
     addTitleToCodeBlock();window.navigate = (url) => window.location.href = url;
     draw();
   </script>
+  
   
 </head>
 
@@ -254,6 +255,28 @@ if (!doNotTrack) {
 
 
 
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+      
+    
+  
+
 
 
 
@@ -272,6 +295,7 @@ a_{1,1}x_{1} + a_{1,2}x_{2} + &amp;\cdots + a_{1,n}x_{n} = b_{1} \\&amp;\\\\\vdo
 $$</p>
 <a href="#matrix-decomposition"><h2 id="matrix-decomposition"><span class="hanchor" ariaLabel="Anchor"># </span>Matrix Decomposition</h2></a>
 <ul>
+<li><a href="/public/cholesky-decomposition" rel="noopener" class="internal-link" data-src="/public/cholesky-decomposition">Cholesky Decomposition</a></li>
 <li>
 
 
@@ -279,29 +303,19 @@ $$</p>
 
 
 <a
-  href="/public/cholesky-decomposition/"
-  rel="noopener" class="internal-link"
-  data-src="/public/cholesky-decomposition/">Cholesky Decomposition</a></li>
-<li>
-
-
-
-
-
-<a
-  href="/public/singular-value-decomposition/"
-  rel="noopener" class="internal-link"
-  data-src="/public/singular-value-decomposition/">Singular Value Decomposition</a></li>
+  
+  rel="noopener" class="internal-link broken"
+  data-src="notes/singular-value-decomposition">Singular Value Decomposition</a></li>
 </ul>
 <a href="#definitions-1"><h2 id="definitions-1"><span class="hanchor" ariaLabel="Anchor"># </span>Definitions</h2></a>
 <ul>
-<li>A symmetric matrix $\mathbf{A}\n\mathbb{R}^{n\times{n}}$ is positive semidefinite if:</li>
+<li>A symmetric matrix $\mathbf{A}\in\mathbb{R}^{n\times{n}}$ is positive semidefinite if:</li>
 </ul>
 <p>$$
 \mathbf{x}^T\mathbf{A}\mathbf{x}\geq 0 \forall,\mathbf{x} \in\mathbb{R}^n.
 $$</p>
 <ul>
-<li>A symmetric matrix $\mathbf{A}\n\mathbb{R}^{n\times{n}}$ is positive definite if:</li>
+<li>A symmetric matrix $\mathbf{A}\in\mathbb{R}^{n\times{n}}$ is positive definite if:</li>
 </ul>
 <p>$$
 \mathbf{x}^T\mathbf{A}\mathbf{x}&gt; 0 \forall,\mathbf{x}\neq 0 \in\mathbb{R}^n.

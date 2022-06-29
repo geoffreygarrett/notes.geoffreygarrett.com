@@ -92,12 +92,12 @@
       "/public/linear-algebra": [
         {
           "source": "/public/linear-algebra",
-          "target": "/public/cholesky-decomposition",
+          "target": "/cholesky-decomposition",
           "text": "Cholesky Decomposition"
         },
         {
           "source": "/public/linear-algebra",
-          "target": "/public/singular-value-decomposition",
+          "target": "/notes/singular-value-decomposition",
           "text": "Singular Value Decomposition"
         }
       ],
@@ -152,6 +152,20 @@
       ]
     },
     "backlinks": {
+      "/cholesky-decomposition": [
+        {
+          "source": "/public/linear-algebra",
+          "target": "/cholesky-decomposition",
+          "text": "Cholesky Decomposition"
+        }
+      ],
+      "/notes/singular-value-decomposition": [
+        {
+          "source": "/public/linear-algebra",
+          "target": "/notes/singular-value-decomposition",
+          "text": "Singular Value Decomposition"
+        }
+      ],
       "/public": [
         {
           "source": "/",
@@ -164,13 +178,6 @@
           "source": "/public/javascript-dependencies",
           "target": "/public/cdn",
           "text": "Content Delivery Network (CDN)"
-        }
-      ],
-      "/public/cholesky-decomposition": [
-        {
-          "source": "/public/linear-algebra",
-          "target": "/public/cholesky-decomposition",
-          "text": "Cholesky Decomposition"
         }
       ],
       "/public/concept-definitions": [
@@ -279,13 +286,6 @@
           "source": "/public/estimation-theory",
           "target": "/public/orbit-determination",
           "text": "Orbit determination"
-        }
-      ],
-      "/public/singular-value-decomposition": [
-        {
-          "source": "/public/linear-algebra",
-          "target": "/public/singular-value-decomposition",
-          "text": "Singular Value Decomposition"
         }
       ],
       "/public/software-engineering": [
@@ -418,12 +418,12 @@
     },
     {
       "source": "/public/linear-algebra",
-      "target": "/public/cholesky-decomposition",
+      "target": "/cholesky-decomposition",
       "text": "Cholesky Decomposition"
     },
     {
       "source": "/public/linear-algebra",
-      "target": "/public/singular-value-decomposition",
+      "target": "/notes/singular-value-decomposition",
       "text": "Singular Value Decomposition"
     },
     {

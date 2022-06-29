@@ -108,13 +108,13 @@
   <script>
     const BASE_URL = "https://notes.geoffreygarrett.com/"
     const fetchData = Promise.all([
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.74f836acc1959b27dd4a585f57c8839a.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/linkIndex.3412b0da9ce8f922c0d60cc9bf8cb3ad.json")
             .then(data => data.json())
             .then(data => ({
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.c4fd6feea0842cd163464e09b1f7c3e1.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.ccf8cf82699f17d2f363620db9843ec4.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -166,6 +166,7 @@
     addTitleToCodeBlock();window.navigate = (url) => window.location.href = url;
     draw();
   </script>
+  
   
 </head>
 
