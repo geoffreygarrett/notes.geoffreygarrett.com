@@ -6,7 +6,7 @@
   <meta
     name="description"
     content="Cascading style sheets (CSS)
-Loose Links   min(), max(), and clamp(): three logical CSS functions to use today  "
+Debugging CSS This is the single most useful stylesheet that I&rsquo;ve found to help with debugging. Take it for a spin and see what how it works."
   />
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/alphardex/aqua.css/dist/aqua.min.css'>
   <title>
@@ -118,7 +118,7 @@ Loose Links   min(), max(), and clamp(): three logical CSS functions to use toda
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.ba4b751bc728e4a407b783cdbd244650.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.92e807de8e4ed0006f00f90f6a6d32ac.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -239,7 +239,7 @@ if (!doNotTrack) {
   <article>
       <h1>CSS</h1>
       <p class="meta">
-          Last updated June 28, 2022
+          Last updated June 30, 2022
       </p>
       <ul class="tags">
           
@@ -249,6 +249,18 @@ if (!doNotTrack) {
           
       </ul>
       
+<aside class="mainTOC">
+    <details >
+        <summary>Table of Contents</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#debugging-css">Debugging CSS</a></li>
+    <li><a href="#loose-links">Loose Links</a></li>
+  </ol>
+</nav>
+    </details>
+</aside>
+
 
       
 
@@ -269,7 +281,37 @@ if (!doNotTrack) {
 
 
 <p>Cascading style sheets (CSS)</p>
-<a href="#loose-links"><h2 id="loose-links"><span class="hanchor" ariaLabel="Anchor"># </span>Loose Links</h2></a>
+<a href="#debugging-css"><h2 id="debugging-css"><span class="hanchor" ariaLabel="Anchor"># </span>Debugging CSS</h2></a>
+<p>This is the single most useful stylesheet that I&rsquo;ve found to help with debugging.
+Take it for a spin and see what how it works. Credit goes to
+
+
+<a href="https://gist.github.com/anytizer/8121387" rel="noopener">@anytizer</a> for the public gist.</p>
+<div class="highlight" title="debug.css"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/*http://yysource.com/2011/03/debugging-with-css-outline-all-elements/*/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="p">{</span> <span class="k">outline</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">dotted</span> <span class="kc">red</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="p">{</span> <span class="k">outline</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">dotted</span> <span class="kc">green</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="p">{</span> <span class="k">outline</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">dotted</span> <span class="kc">orange</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="p">{</span> <span class="k">outline</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">dotted</span> <span class="kc">blue</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="p">{</span> <span class="k">outline</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">red</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="p">{</span> <span class="k">outline</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">green</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="p">{</span> <span class="k">outline</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">orange</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="p">{</span> <span class="k">outline</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">blue</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/*http://www.marcofolio.net/css/css_trick_debug_your_html_and_css.html*/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span><span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#89A81E</span> <span class="p">}</span>                   <span class="c">/* Solid Green */</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span><span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#F34607</span> <span class="p">}</span>                 <span class="c">/* Solid Orange */</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span><span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#5984C3</span> <span class="p">}</span>               <span class="c">/* Solid Blue */</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span><span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#CD1821</span> <span class="p">}</span>             <span class="c">/* Solid Red */</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span><span class="mi">2</span><span class="kt">px</span> <span class="kc">dotted</span> <span class="mh">#89A81E</span> <span class="p">}</span>          <span class="c">/* Dotted Green */</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span><span class="mi">2</span><span class="kt">px</span> <span class="kc">dotted</span> <span class="mh">#F34607</span> <span class="p">}</span>        <span class="c">/* Dotted Orange */</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span><span class="mi">2</span><span class="kt">px</span> <span class="kc">dotted</span> <span class="mh">#5984C3</span> <span class="p">}</span>      <span class="c">/* Dotted Blue */</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span><span class="mi">2</span><span class="kt">px</span> <span class="kc">dotted</span> <span class="mh">#CD1821</span> <span class="p">}</span>    <span class="c">/* Dotted Red */</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/*http://bigemployee.com/4-simple-techniques-to-quickly-debug-and-fix-your-css-code-in-almost-any-browser/*/</span>
+</span></span></code></pre></div><a href="#loose-links"><h2 id="loose-links"><span class="hanchor" ariaLabel="Anchor"># </span>Loose Links</h2></a>
 <ul>
 <li>
 
