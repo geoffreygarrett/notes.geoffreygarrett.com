@@ -17,14 +17,8 @@
   
   
   
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b91d47">
-<meta name="msapplication-TileColor" content="#b91d47">
-<meta name="theme-color" content="#ffffff">
-
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" href="favicon.png">
   
 
   
@@ -113,7 +107,7 @@
               index: data.index,
               links: data.links,
             })),
-          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.5dcf2befaf60864a2dbece47c8640cdc.min.json")
+          fetch("https:\/\/notes.geoffreygarrett.com\/indices\/contentIndex.97e2bb1d3c4424991145de5e5fd7eb66.min.json")
             .then(data => data.json()),
         ])
         .then(([{index, links}, content]) => ({
@@ -157,18 +151,31 @@
     };
   </script>
   
-
+  
   <script type="module">
+
+    import { attachSPARouting } from 'https:\/\/notes.geoffreygarrett.com\/js\/router.88d6def7f687fe498bfc6de6c16d554b.min.js';
+
+
     import { renderCube } from '\/js\/cube-basic.js' ;
-    renderCube();
     
     
     import { addTitleToCodeBlock } from 'https:\/\/notes.geoffreygarrett.com\/js\/codetitle.f40f6b6b3e0b0dd162cff9dbf1dd2808.min.js' ;
-    addTitleToCodeBlock();window.navigate = (url) => window.location.href = url;
-    draw();
+    let attachCustom = function(fn){
+      return function(){
+        try{
+          renderCube();
+          
+          addTitleToCodeBlock();
+          return fn.apply(this, arguments);
+        }catch(ex){
+          console.log(ex);
+        }
+      };
+    };
+    attachSPARouting(attachCustom(draw));
+    
   </script>
-  
-    <script src="/js/clipboard.js"></script>
   
   
 </head>
